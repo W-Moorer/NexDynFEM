@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "basicAlgorithms" library , Copyright (C) 2018 USC                    *
  * All rights reserved.                                                  *
@@ -30,13 +30,13 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_FILTERITERATOR_H
-#define VEGAFEM_FILTERITERATOR_H
+#ifndef NEXDYNFEM_FILTERITERATOR_H
+#define NEXDYNFEM_FILTERITERATOR_H
 
 #include <iterator>
 #include <functional>
 
-namespace vegafem
+namespace nexdynfem
 {
 
 template <class BaseIterator>
@@ -96,7 +96,7 @@ FilterIterator<BaseIterator> makeFilterIterator(typename FilterIterator<BaseIter
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

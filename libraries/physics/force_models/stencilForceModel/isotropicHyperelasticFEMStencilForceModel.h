@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "Stencil Force Model" library , Copyright (C) 2018 USC                *
  * All rights reserved.                                                  *
@@ -30,13 +30,13 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_ISOTROPICHYPERELASTICFEM_STENCIL_FORCEMODEL_H
-#define VEGAFEM_ISOTROPICHYPERELASTICFEM_STENCIL_FORCEMODEL_H
+#ifndef NEXDYNFEM_ISOTROPICHYPERELASTICFEM_STENCIL_FORCEMODEL_H
+#define NEXDYNFEM_ISOTROPICHYPERELASTICFEM_STENCIL_FORCEMODEL_H
 
 #include "isotropicHyperelasticFEM.h"
 #include "stencilForceModel.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 // Stencils for isotropic hyperelastic FEM.
@@ -58,7 +58,7 @@ protected:
 };
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

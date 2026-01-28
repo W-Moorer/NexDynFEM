@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "sceneObject" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC    *
  * All rights reserved.                                                  *
@@ -35,8 +35,8 @@
   See also sceneObject.h . 
 */
 
-#ifndef VEGAFEM_SCENEOBJECTDEFORMABLEGPU_H
-#define VEGAFEM_SCENEOBJECTDEFORMABLEGPU_H
+#ifndef NEXDYNFEM_SCENEOBJECTDEFORMABLEGPU_H
+#define NEXDYNFEM_SCENEOBJECTDEFORMABLEGPU_H
 
 #define GL_GLEXT_PROTOTYPES 1
 
@@ -44,7 +44,7 @@
 #include "sceneObjectDeformable.h"
 #include "objMeshGPUDeformer_coarseToFine_fbo.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 class SceneObjectDeformableGPU : public virtual SceneObjectDeformable
@@ -71,7 +71,7 @@ protected:
 };
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

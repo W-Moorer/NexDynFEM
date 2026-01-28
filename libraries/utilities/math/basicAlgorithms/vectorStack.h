@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "basicAlgorithms" library , Copyright (C) 2018 USC                    *
  * All rights reserved.                                                  *
@@ -30,12 +30,12 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_VECTORSTACK_H
-#define VEGAFEM_VECTORSTACK_H
+#ifndef NEXDYNFEM_VECTORSTACK_H
+#define NEXDYNFEM_VECTORSTACK_H
 
 #include <vector>
 
-namespace vegafem
+namespace nexdynfem
 {
 
 // a stack/vector combination that holds multiple items in order and has an index
@@ -80,7 +80,7 @@ protected:
 
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

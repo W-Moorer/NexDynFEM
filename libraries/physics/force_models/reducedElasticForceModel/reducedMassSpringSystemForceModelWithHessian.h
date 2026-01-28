@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "elasticForceModel" library , Copyright (C) 2007 CMU, 2009 MIT,       *
  *                                                       2018 USC        *
@@ -38,13 +38,13 @@
   fq = U^T f(U*q)
 */
 
-#ifndef VEGAFEM_REDUCEDMASSSPRINGSYSTEMFORCEMODELWITHHESSIAN_H
-#define VEGAFEM_REDUCEDMASSSPRINGSYSTEMFORCEMODELWITHHESSIAN_H
+#ifndef NEXDYNFEM_REDUCEDMASSSPRINGSYSTEMFORCEMODELWITHHESSIAN_H
+#define NEXDYNFEM_REDUCEDMASSSPRINGSYSTEMFORCEMODELWITHHESSIAN_H
 
 #include "reducedMassSpringSystemForceModel.h"
 #include "reducedForceModelWithHessian.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 class ReducedMassSpringSystemForceModelWithHessian : public ReducedMassSpringSystemForceModel, public ReducedForceModelWithHessian
@@ -61,7 +61,7 @@ protected:
 };
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

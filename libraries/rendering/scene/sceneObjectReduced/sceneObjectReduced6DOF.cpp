@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "sceneObject" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC    *
  * All rights reserved.                                                  *
@@ -32,7 +32,7 @@
 
 #include "sceneObjectReduced6DOF.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 SceneObjectReduced6DOF::SceneObjectReduced6DOF(const char * filenameOBJ, ModalMatrix * modalMatrix): SceneObjectWithRestPosition(filenameOBJ), SceneObjectReduced(filenameOBJ, modalMatrix), SceneObject6DOF(filenameOBJ), qvel(NULL)
@@ -84,4 +84,4 @@ void SceneObjectReduced6DOF::Setqvel(double * qvel_)
 
 
 
-}//namespace vegafem
+}//namespace nexdynfem

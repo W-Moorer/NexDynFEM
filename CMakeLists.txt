@@ -9,14 +9,14 @@ if(CCACHE_PROGRAM)
 endif()
 
 project(
-  vegafem
+  nexdynfem
   VERSION 4.0
   LANGUAGES C CXX
 )
 set(CMAKE_VERBOSE_MAKEFILE ON CACHE BOOL "ON" FORCE)
-option(VEGAFEM_BUILD_COPYLEFT "build copyleft licensed libraries" OFF)
-option(VEGAFEM_BUILD_UTILITIES "build utilities applications" ON)
-option(VEGAFEM_BUILD_UTILITIES_GRAPHICS "build utilities applications requiring a graphics API" ON)
+option(NEXDYNFEM_BUILD_COPYLEFT "build copyleft licensed libraries" OFF)
+option(NEXDYNFEM_BUILD_UTILITIES "build utilities applications" ON)
+option(NEXDYNFEM_BUILD_UTILITIES_GRAPHICS "build utilities applications requiring a graphics API" ON)
 
 ################################################################################
 # Core
@@ -72,7 +72,7 @@ target_link_libraries(${PROJECT_NAME} PRIVATE GLEW::GLEW) # Linux|Windows, glslP
 #set(TBB_ENABLE_IPO OFF)
 find_package(TBB CONFIG REQUIRED)
 target_link_libraries(${PROJECT_NAME} PUBLIC TBB::tbb TBB::tbbmalloc $<$<PLATFORM_ID:Windows>:TBB::tbbmalloc_proxy>)
-target_compile_definitions(${PROJECT_NAME} PUBLIC VEGAFEM_USE_TBB)
+target_compile_definitions(${PROJECT_NAME} PUBLIC NEXDYNFEM_USE_TBB)
 ### MKL
 set(MKL_ARCH intel64)           # intel64 ia32 
 set(MKL_INTERFACE lp64)         # lp64 ilp64 https://en.wikipedia.org/wiki/64-bit_computing#64-bit_data_models
@@ -90,7 +90,7 @@ if(arpackng_FOUND)
   target_link_libraries(${PROJECT_NAME} PRIVATE ARPACK::ARPACK)
 endif()
 
-set(VegaFEM_core_libs
+set(NexDynFEM_core_libs
     core/math/minivector
     core/math/matrix
     core/math/sparseMatrix
@@ -153,7 +153,7 @@ set(VegaFEM_core_libs
 
 set(all_headers)
 set(all_sources)
-foreach(lib ${VegaFEM_core_libs})
+foreach(lib ${NexDynFEM_core_libs})
   target_include_directories(${PROJECT_NAME}
     PRIVATE $<BUILD_INTERFACE:${PROJECT_SOURCE_DIR}/libraries/${lib}>
     INTERFACE  
@@ -185,7 +185,7 @@ target_sources(${PROJECT_NAME} PRIVATE ${all_headers} PRIVATE ${all_sources})
 install(FILES ${all_headers} DESTINATION "include/${PROJECT_NAME}")
 file(COPY ${all_headers} DESTINATION "${CMAKE_CURRENT_BINARY_DIR}/include/${PROJECT_NAME}") # For uniform consumption in build/install-tree)
 
-if(VEGAFEM_BUILD_COPYLEFT)
+if(NEXDYNFEM_BUILD_COPYLEFT)
 ################################################################################
 # GPL components
 ################################################################################
@@ -254,14 +254,14 @@ install(FILES ${all_headers} DESTINATION "include/${PROJECT_NAME}")
 file(COPY ${all_headers} DESTINATION "${CMAKE_CURRENT_BINARY_DIR}/include/${PROJECT_NAME}") # For uniform consumption in build/install-tree
 endif()
 
-set(VegaFEM_opengl
+set(NexDynFEM_opengl
   openGLHelper
   glslPhong
   objMeshGPUDeformer
   sceneObject
 )
 
-set(VegaFEM_with_CG 
+set(NexDynFEM_with_CG 
   objMeshGPUDeformer
 )
 

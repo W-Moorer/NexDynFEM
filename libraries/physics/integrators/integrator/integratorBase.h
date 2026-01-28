@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "integrator" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC     *
  * All rights reserved.                                                  *
@@ -30,8 +30,8 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_INTEGRATORBASE_H
-#define VEGAFEM_INTEGRATORBASE_H
+#ifndef NEXDYNFEM_INTEGRATORBASE_H
+#define NEXDYNFEM_INTEGRATORBASE_H
 
 /*
 
@@ -104,7 +104,7 @@ Both publications are available online at www.jernejbarbic.com .
 
 #include <cstdlib>
 
-namespace vegafem
+namespace nexdynfem
 {
 
 // This abstract class is derived into: IntegratorBaseDense (dense systems)
@@ -216,7 +216,7 @@ protected:
 };
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

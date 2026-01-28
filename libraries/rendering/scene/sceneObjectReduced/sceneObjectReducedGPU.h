@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "sceneObject" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC    *
  * All rights reserved.                                                  *
@@ -36,15 +36,15 @@
   See also sceneObject.h . 
 */
 
-#ifndef VEGAFEM_SCENEOBJECTREDUCEDGPU_H
-#define VEGAFEM_SCENEOBJECTREDUCEDGPU_H
+#ifndef NEXDYNFEM_SCENEOBJECTREDUCEDGPU_H
+#define NEXDYNFEM_SCENEOBJECTREDUCEDGPU_H
 
 #include "sceneObjectReduced.h"
 #include "objMeshGPUDeformer_uUq_pbuffer.h"
 #include "objMeshGPUDeformer_uUq_fbo.h"
 #include "objMeshGPUDeformer_uUq_setLighting.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 class SceneObjectReducedGPU : virtual public SceneObjectReduced
@@ -89,7 +89,7 @@ protected:
 };
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

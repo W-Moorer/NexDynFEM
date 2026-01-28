@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "mesh" library , Copyright (C) 2018 USC                               *
  * All rights reserved.                                                  *
@@ -30,14 +30,14 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_TRIMESHMANIFOLD_H
-#define VEGAFEM_TRIMESHMANIFOLD_H
+#ifndef NEXDYNFEM_TRIMESHMANIFOLD_H
+#define NEXDYNFEM_TRIMESHMANIFOLD_H
 
 #include <map>
 #include <set>
 #include "triKey.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 // Maintain a triangle mesh to enfore manifoldness on face-edge connections.
@@ -118,7 +118,7 @@ protected:
 
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

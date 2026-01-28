@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "sceneObject" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC    *
  * All rights reserved.                                                  *
@@ -35,13 +35,13 @@
   See also sceneObject.h . 
 */
 
-#ifndef VEGAFEM_SCENEOBJECTDEFORMABLE_H
-#define VEGAFEM_SCENEOBJECTDEFORMABLE_H
+#ifndef NEXDYNFEM_SCENEOBJECTDEFORMABLE_H
+#define NEXDYNFEM_SCENEOBJECTDEFORMABLE_H
 
 #include "lighting.h"
 #include "sceneObjectWithRestPosition.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 class SceneObjectDeformable : public virtual SceneObjectWithRestPosition
@@ -105,7 +105,7 @@ inline Vec3d SceneObjectDeformable::GetSingleVertexRestPosition(int vertex) cons
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

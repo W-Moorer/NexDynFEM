@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  *  Copyright (C) 2007 CMU, 2009 MIT, 2018 USC                           *
  *                                                                       *
@@ -34,7 +34,7 @@
 #include "invZTAZSolver.h"
 #include "performanceCounter.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 InvZTAZSolver::InvZTAZSolver(SparseMatrix * A, PardisoSolver * ZTAZPardisoSolver_, SparseMatrix * P, Matrix<double> * invCp, Matrix<double> * Cn):ZTAZPardisoSolver(ZTAZPardisoSolver_)
@@ -68,4 +68,4 @@ void InvZTAZSolver::ComputeInvZTAZ(double * x, double * output)
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem

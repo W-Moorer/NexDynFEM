@@ -1,4 +1,4 @@
-# VegaFEM Libraries 重构映射表
+# NexDynFEM Libraries 重构映射表
 
 ## 方案一：按功能域分层
 

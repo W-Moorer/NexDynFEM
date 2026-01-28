@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "basicAlgorithms" library , Copyright (C) 2018 USC                    *
  * All rights reserved.                                                  *
@@ -30,8 +30,8 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_RANGE_H
-#define VEGAFEM_RANGE_H
+#ifndef NEXDYNFEM_RANGE_H
+#define NEXDYNFEM_RANGE_H
 
 // used when you don't have a container but begin(), end() are needed for a range for loop
 template<class InputIt>

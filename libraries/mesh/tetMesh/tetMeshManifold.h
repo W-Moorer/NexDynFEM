@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "mesh" library , Copyright (C) 2018 USC                               *
  * All rights reserved.                                                  *
@@ -30,13 +30,13 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_TETMESHMANIFOLD_H
-#define VEGAFEM_TETMESHMANIFOLD_H
+#ifndef NEXDYNFEM_TETMESHMANIFOLD_H
+#define NEXDYNFEM_TETMESHMANIFOLD_H
 #include <map>
 #include <set>
 #include "tetKey.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 // maintain a tet mesh to enfore manifoldness on tet-face connection
@@ -135,7 +135,7 @@ protected:
 };
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

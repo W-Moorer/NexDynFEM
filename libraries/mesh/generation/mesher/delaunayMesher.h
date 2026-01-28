@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "mesher" library , Copyright (C) 2018 USC                             *
  * All rights reserved.                                                  *
@@ -35,8 +35,8 @@
   The tetrahedralization can be updated incrementally by adding new points.
 */
 
-#ifndef VEGAFEM_DELAUNAYMESHER_H
-#define VEGAFEM_DELAUNAYMESHER_H
+#ifndef NEXDYNFEM_DELAUNAYMESHER_H
+#define NEXDYNFEM_DELAUNAYMESHER_H
 
 #include <cstddef>
 #include <cassert>
@@ -55,7 +55,7 @@
 #include "tetKey.h"
 #include "triKey.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 class TetMesh;
@@ -399,7 +399,7 @@ protected:
 };
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

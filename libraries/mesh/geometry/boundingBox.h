@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "mesh" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC           *
  * All rights reserved.                                                  *
@@ -30,8 +30,8 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_BOUNDINGBOX_H
-#define VEGAFEM_BOUNDINGBOX_H
+#ifndef NEXDYNFEM_BOUNDINGBOX_H
+#define NEXDYNFEM_BOUNDINGBOX_H
 
 //  Bounding Box
 //  Author: Jernej Barbic, CMU
@@ -42,7 +42,7 @@
 #include <cmath>
 #include <iostream>
 
-namespace vegafem
+namespace nexdynfem
 {
 
 class TriangleBasic;
@@ -173,7 +173,7 @@ BoundingBox::BoundingBox(const Vec3d * allVertices, const Vec3i * allTriangles, 
   updateData();
 }
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

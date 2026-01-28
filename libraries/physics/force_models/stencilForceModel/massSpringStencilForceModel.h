@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "Stencil Force Model" library , Copyright (C) 2018 USC                *
  * All rights reserved.                                                  *
@@ -30,13 +30,13 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_MASS_SPRING_STENCIL_FORCEMODEL_H
-#define VEGAFEM_MASS_SPRING_STENCIL_FORCEMODEL_H
+#ifndef NEXDYNFEM_MASS_SPRING_STENCIL_FORCEMODEL_H
+#define NEXDYNFEM_MASS_SPRING_STENCIL_FORCEMODEL_H
 
 #include "massSpringSystem.h"
 #include "stencilForceModel.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 // Stencils for mass-spring systems.
@@ -55,7 +55,7 @@ protected:
 };
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

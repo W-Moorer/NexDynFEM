@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "immersionMesher" library , Copyright (C) 2018 USC                    *
  * All rights reserved.                                                  *
@@ -30,8 +30,8 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_IMMERSIONMESHER_H
-#define VEGAFEM_IMMERSIONMESHER_H
+#ifndef NEXDYNFEM_IMMERSIONMESHER_H
+#define NEXDYNFEM_IMMERSIONMESHER_H
 
 #include "triKey.h"
 #include "tetMeshGeo.h"
@@ -46,7 +46,7 @@
 #include <map>
 #include <array>
 
-namespace vegafem
+namespace nexdynfem
 {
 
 /*
@@ -239,7 +239,7 @@ protected:
 };
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

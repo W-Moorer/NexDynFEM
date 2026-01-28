@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "sceneObject" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC    *
  * All rights reserved.                                                  *
@@ -32,7 +32,7 @@
 
 #include "sceneObjectReducedCPU6DOF.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 SceneObjectReducedCPU6DOF::SceneObjectReducedCPU6DOF(const char * filenameOBJ, ModalMatrix * modalMatrix): SceneObjectWithRestPosition(filenameOBJ), SceneObjectReduced(filenameOBJ, modalMatrix), SceneObjectReducedCPU(filenameOBJ, modalMatrix), SceneObjectReduced6DOF(filenameOBJ, modalMatrix)
@@ -143,4 +143,4 @@ int SceneObjectReducedCPU6DOF::GetClosestVertex(Vec3d & queryPos, double * dista
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem

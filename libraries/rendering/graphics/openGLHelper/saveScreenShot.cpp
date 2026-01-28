@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "openGLHelper" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC   *
  * All rights reserved.                                                  *
@@ -36,7 +36,7 @@
 #include "openGL-headers.h"
 #include "saveScreenShot.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 /* Write a screenshot to the specified filename */
@@ -121,4 +121,4 @@ void Screenshot::SaveStencilBuffer(const char *filename, ImageIO::fileFormatType
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem

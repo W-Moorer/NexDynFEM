@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "forceModel" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC     *
  * All rights reserved.                                                  *
@@ -34,13 +34,13 @@
   Force model for the hyperelastic isotropic nonlinear FEM material.
 */
 
-#ifndef VEGAFEM_ISOTROPICHYPERELASTICFEMFORCEMODEL_H
-#define VEGAFEM_ISOTROPICHYPERELASTICFEMFORCEMODEL_H
+#ifndef NEXDYNFEM_ISOTROPICHYPERELASTICFEMFORCEMODEL_H
+#define NEXDYNFEM_ISOTROPICHYPERELASTICFEMFORCEMODEL_H
 
 #include "isotropicHyperelasticFEM.h"
 #include "forceModel.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 class IsotropicHyperelasticFEMForceModel : public ForceModel
@@ -61,7 +61,7 @@ protected:
 };
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

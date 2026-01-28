@@ -14,7 +14,7 @@ Have fun!
 
 =========
 
-We (Vega FEM authors) have processed the model (reduced polygon count) and created a volumetric mesh for it. 
+We (NexDynFEM authors) have processed the model (reduced polygon count) and created a volumetric mesh for it. 
 We release our processed mesh and the volumetric mesh under the same terms as specified by Waldemar Barkowski (see above).
 We contacted Waldemar Barkowski, who has kindly agreed to such a release.
 

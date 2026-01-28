@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "Large Modal Deformation Factory",                                    *
  * a pre-processing utility for model reduction of                       *
@@ -39,11 +39,11 @@
 #define _CANVAS_H_
 
 #include <wx/glcanvas.h>
-#include <vegafem/camera.h>
-#include <vegafem/objMesh.h>
-#include <vegafem/cubicMesh.h>
-#include <vegafem/modalMatrix.h>
-#include <vegafem/performanceCounter.h>
+#include <nexdynfem/camera.h>
+#include <nexdynfem/objMesh.h>
+#include <nexdynfem/cubicMesh.h>
+#include <nexdynfem/modalMatrix.h>
+#include <nexdynfem/performanceCounter.h>
 #include "largeModalDeformationFactory.h"
 #include "states.h"
 

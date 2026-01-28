@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "integrator" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC     *
  * All rights reserved.                                                  *
@@ -37,7 +37,7 @@
 #include <cstring>
 #include <cfloat>
 
-namespace vegafem
+namespace nexdynfem
 {
 
 IntegratorBase::IntegratorBase(int r, double timestep, double dampingMassCoef, double dampingStiffnessCoef)
@@ -158,4 +158,4 @@ void IntegratorBase::ConstrainToSphere(double R2)
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem

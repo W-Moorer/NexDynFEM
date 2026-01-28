@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "Stencil Force Model" library , Copyright (C) 2018 USC                *
  * All rights reserved.                                                  *
@@ -32,7 +32,7 @@
 
 #include "linearFEMStencilForceModel.h"
 
-#ifdef VEGAFEM_USE_TBB
+#ifdef NEXDYNFEM_USE_TBB
 #include <tbb/tbb.h>
 #endif
 
@@ -42,7 +42,7 @@
 
 using namespace std;
 
-namespace vegafem
+namespace nexdynfem
 {
 
 LinearFEMStencilForceModel::LinearFEMStencilForceModel(StencilForceModel * fem): stencilForceModel(fem)
@@ -65,7 +65,7 @@ LinearFEMStencilForceModel::LinearFEMStencilForceModel(StencilForceModel * fem):
 
     cout << "Computing element stiffness matrices.." << endl;
 
-#ifdef VEGAFEM_USE_TBB
+#ifdef NEXDYNFEM_USE_TBB
     tbb::parallel_for(0, nele, [&] (int el) 
     {
       stencilForceModel->GetStencilLocalEnergyAndForceAndMatrix(eltype, el, u.data(), nullptr, nullptr, elementK[eltype].data() + el * nelev * nelev * 9);
@@ -121,4 +121,4 @@ const int *LinearFEMStencilForceModel::GetStencilVertexIndices(int stencilType, 
   return stencilForceModel->GetStencilVertexIndices(stencilType, stencilId);
 }
 
-}//namespace vegafem
+}//namespace nexdynfem

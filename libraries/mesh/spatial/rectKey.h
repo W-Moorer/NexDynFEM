@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "mesh" library , Copyright (C) 2018 USC                               *
  * All rights reserved.                                                  *
@@ -30,8 +30,8 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_RECTKEY_H
-#define VEGAFEM_RECTKEY_H
+#ifndef NEXDYNFEM_RECTKEY_H
+#define NEXDYNFEM_RECTKEY_H
 
 #include <algorithm>
 #include <ostream>
@@ -39,7 +39,7 @@
 #include "vec4i.h"
 #include "edgeKey.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 // unoriented rectangle key based on vtx indices
@@ -269,5 +269,5 @@ inline std::ostream & operator << (std::ostream & s, const ORectKey & v)
   return s << '(' << v[0] << ' ' << v[1] << ' '  << v[2] << ' ' << v[3] << ')';
 }
 
-}//namespace vegafem
+}//namespace nexdynfem
 #endif

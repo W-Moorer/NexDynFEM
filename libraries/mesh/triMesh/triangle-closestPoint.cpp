@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "mesh" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC           *
  * All rights reserved.                                                  *
@@ -37,7 +37,7 @@
 */
 #include "triangle.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 #ifdef __VERSION_WITH_BARYCENTRIC_COORDS_JNB_CMU__
 double TriangleWithCollisionInfo::distanceToPoint2(const Vec3d & point, int * closestFeature, double * alpha, double * beta, double * gamma) const
@@ -295,4 +295,4 @@ double TriangleWithCollisionInfo::distanceToPoint2(const Vec3d & point, int * cl
 
 }
 
-}//namespace vegafem
+}//namespace nexdynfem

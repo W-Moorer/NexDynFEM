@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "exactArithmetic" library , Copyright (C) 2018 USC                    *
  * All rights reserved.                                                  *
@@ -32,7 +32,7 @@
 
 #include "planeER.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 FastPlaneER::FastPlaneER(const Vec3ER & v0, const Vec3ER & v1, const Vec3ER & v2)
@@ -51,4 +51,4 @@ ER FastPlaneER::scaledDistance(const Vec3ER & v) const {
   return ER_abs(dot(v,dir) - d);
 }
 
-}//namespace vegafem
+}//namespace nexdynfem

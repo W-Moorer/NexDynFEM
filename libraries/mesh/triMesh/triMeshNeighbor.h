@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "mesh" library , Copyright (C) 2018 USC                               *
  * All rights reserved.                                                  *
@@ -30,15 +30,15 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_TRIMESHNEIGHBOR_H
-#define VEGAFEM_TRIMESHNEIGHBOR_H
+#ifndef NEXDYNFEM_TRIMESHNEIGHBOR_H
+#define NEXDYNFEM_TRIMESHNEIGHBOR_H
 
 #include "triMeshGeo.h"
 #include "edgeKey.h"
 #include <unordered_map>
 #include <map>
 
-namespace vegafem
+namespace nexdynfem
 {
 
 // Edge-manifold neighboring structure for vector of triangles.
@@ -182,7 +182,7 @@ std::vector<OEdgeKey> getExteriorEdges(int numTriangles, const Vec3i * triangles
 inline std::vector<OEdgeKey> getExteriorEdges(const std::vector<Vec3i> & triangles) { return getExteriorEdges(triangles.size(), triangles.data()); }
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

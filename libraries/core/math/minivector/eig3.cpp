@@ -3,7 +3,7 @@
 
 #include <cmath>
 
-namespace vegafem
+namespace nexdynfem
 {
 
 #ifdef MAX
@@ -266,4 +266,4 @@ void eigen_decomposition(double A[n][n], double V[n][n], double d[n]) {
   tql2(V, d, e);
 }
 
-}//namespace vegafem
+}//namespace nexdynfem

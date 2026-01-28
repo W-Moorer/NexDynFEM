@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "Large Modal Deformation Factory",                                    *
  * a pre-processing utility for model reduction of                       *
@@ -37,11 +37,11 @@
 
 // create the configuration files for a runtime simulation
 
-#include <vegafem/StVKReducedInternalForces.h>
-#include <vegafem/StVKReducedStiffnessMatrix.h>
-#include <vegafem/matrixIO.h>
-#include <vegafem/matrix.h>
-#include <vegafem/generateMassMatrix.h>
+#include <nexdynfem/StVKReducedInternalForces.h>
+#include <nexdynfem/StVKReducedStiffnessMatrix.h>
+#include <nexdynfem/matrixIO.h>
+#include <nexdynfem/matrix.h>
+#include <nexdynfem/generateMassMatrix.h>
 #include "largeModalDeformationFactory.h"
 
 using namespace std;

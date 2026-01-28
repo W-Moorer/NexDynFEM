@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "animationHelper" library , Copyright (C) 2018 USC                    *
  * All rights reserved.                                                  *
@@ -30,13 +30,13 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_SIMULATIONRECORDER_H
-#define VEGAFEM_SIMULATIONRECORDER_H
+#ifndef NEXDYNFEM_SIMULATIONRECORDER_H
+#define NEXDYNFEM_SIMULATIONRECORDER_H
 #include <climits>
 #include <string>
 #include <vector>
 
-namespace vegafem
+namespace nexdynfem
 {
 
 // record frames of data and save to disk
@@ -103,7 +103,7 @@ protected:
 };
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

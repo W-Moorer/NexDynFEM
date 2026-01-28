@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "quaternion" library , Copyright (C) 2007 CMU                         *
  * All rights reserved.                                                  *
@@ -32,7 +32,7 @@
 
 #include "quaternion.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 /*
@@ -116,4 +116,4 @@ template Quaternion<double> Quaternion<double>::Matrix2Quaternion(const double R
 template Quaternion<float> Quaternion<float>::Matrix2Quaternion(const float R[9]);
 
 
-}//namespace vegafem
+}//namespace nexdynfem

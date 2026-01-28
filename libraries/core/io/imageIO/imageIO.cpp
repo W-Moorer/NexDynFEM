@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "imageIO" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC        *
  * All rights reserved.                                                  *
@@ -77,7 +77,7 @@ extern "C"
 #define IMAGE_IO_HORIZONTAL_DIFFERENCING 2
 #define IMAGE_IO_UNCOMPRESSED_RGB 2
 
-namespace vegafem
+namespace nexdynfem
 {
 ImageIO::ImageIO()
 {
@@ -1046,4 +1046,4 @@ void ImageIO::flipVertically()
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem

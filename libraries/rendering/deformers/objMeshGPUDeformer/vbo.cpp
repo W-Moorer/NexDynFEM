@@ -5,7 +5,7 @@
 
 #include "glh_extensions.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 //extern PFNGLBINDBUFFERARBPROC glBindBufferARB;
 //extern PFNGLBUFFERDATAARBPROC glBufferDataARB;
@@ -31,10 +31,10 @@ bool InitializeVBOs(void)
   // cout << "return " << (glBindBufferARB && glBufferDataARB && glGenBuffersARB && glDeleteBuffersARB) << endl;
   return (glBindBufferARB && glBufferDataARB && glGenBuffersARB && glDeleteBuffersARB);
 }
-}//namespace vegafem
+}//namespace nexdynfem
 #else
-namespace vegafem
+namespace nexdynfem
 {
     bool InitializeVBOs(void) { return true; }
-}//namespace vegafem
+}//namespace nexdynfem
 #endif

@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "Stencil Force Model" library , Copyright (C) 2018 USC                *
  * All rights reserved.                                                  *
@@ -33,7 +33,7 @@
 #include "forceModelAssembler.h"
 #include <cassert>
 
-namespace vegafem
+namespace nexdynfem
 {
 
 using namespace std;
@@ -103,7 +103,7 @@ ForceModelAssembler::ForceModelAssembler(StencilForceModel *eleFM) : stencilForc
     bufferExamplars[eltype].resize(nelev * 3 + nelev * nelev * 9);
   }
 
-#ifdef VEGAFEM_USE_TBB
+#ifdef NEXDYNFEM_USE_TBB
   localBuffers.resize(stencilForceModel->GetNumStencilTypes());
   for (int eltype = 0; eltype < stencilForceModel->GetNumStencilTypes(); eltype++) 
   {
@@ -119,7 +119,7 @@ ForceModelAssembler::ForceModelAssembler(StencilForceModel *eleFM) : stencilForc
 
 ForceModelAssembler::~ForceModelAssembler()
 {
-#ifdef VEGAFEM_USE_TBB
+#ifdef NEXDYNFEM_USE_TBB
   delete[] internalForceVertexLocks;
   delete[] stiffnessMatrixVertexRowLocks;
   delete[] partitioners;
@@ -142,7 +142,7 @@ void ForceModelAssembler::GetEnergyAndForceAndMatrix(const double * u, double * 
   if (tangentStiffnessMatrix)
     tangentStiffnessMatrix->ResetToZero();
 
-#ifdef VEGAFEM_USE_TBB
+#ifdef NEXDYNFEM_USE_TBB
   for (auto itt = energyLocalBuffer.begin(); itt != energyLocalBuffer.end(); ++itt)
     *itt = 0.0;
 
@@ -330,4 +330,4 @@ void ForceModelAssembler::GetForceAndMatrix(const double * u, double * internalF
   GetEnergyAndForceAndMatrix(u, nullptr, internalForces, tangentStiffnessMatrix);
 }
 
-}//namespace vegafem
+}//namespace nexdynfem

@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "rigidBodyDynamics" library , Copyright (C) 2007 CMU                  *
  * All rights reserved.                                                  *
@@ -33,7 +33,7 @@
 #include "rigidBody_generalTensor.h"
 #include "matrixMultiplyMacros.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 RigidBody_GeneralTensor::RigidBody_GeneralTensor(double mass, double inertiaTensorAtRest[9]):
@@ -174,4 +174,4 @@ void RigidBody_GeneralTensor::GetInverseInertiaTensorAtRest(double * inverseIner
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem

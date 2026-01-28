@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "volumetricMesh" library , Copyright (C) 2007 CMU, 2009 MIT           *
  * All rights reserved.                                                  *
@@ -34,8 +34,8 @@
   Load/save many sets of interpolation weights from one file.
 */
 
-#ifndef VEGAFEM_INTERPOLATIONWEIGHTSMULTILOAD_H
-#define VEGAFEM_INTERPOLATIONWEIGHTSMULTILOAD_H
+#ifndef NEXDYNFEM_INTERPOLATIONWEIGHTSMULTILOAD_H
+#define NEXDYNFEM_INTERPOLATIONWEIGHTSMULTILOAD_H
 
 // input: filename, numModels
 // output: numTargetLocations, numElementVertices, vertices, weights

@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * Merges several obj files into one.                                    *
  * Copyright (C) 2007 CMU, 2009 MIT, 2018 USC                            *
@@ -44,10 +44,10 @@
 #include <string>
 #include <iostream>
 using namespace std;
-#include <vegafem/getopts.h>
-#include <vegafem/matrixIO.h>
-#include <vegafem/objMesh.h>
-using namespace vegafem;
+#include <nexdynfem/getopts.h>
+#include <nexdynfem/matrixIO.h>
+#include <nexdynfem/objMesh.h>
+using namespace nexdynfem;
 
 vector<string> filenames;
 

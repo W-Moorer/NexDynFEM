@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "objMesh" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC        *
  * All rights reserved.                                                  *
@@ -30,12 +30,12 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_CREATEOBJMESH_H
-#define VEGAFEM_CREATEOBJMESH_H
+#ifndef NEXDYNFEM_CREATEOBJMESH_H
+#define NEXDYNFEM_CREATEOBJMESH_H
 
 #include "objMesh.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 // create a cylinder without cap, centered at origin and axis at y-direction
@@ -50,7 +50,7 @@ ObjMesh createBoundingBoxObjMesh(Vec3d bmin, Vec3d bmax);
 
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

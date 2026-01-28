@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "mesher" library , Copyright (C) 2018 USC                             *
  * All rights reserved.                                                  *
@@ -47,7 +47,7 @@ using namespace std;
   #define M_PI 3.1415926525897932384
 #endif
 
-namespace vegafem
+namespace nexdynfem
 {
 DelaunayMesher::DelaunayBallCompare TetMesher::TetMeshWithRefineInfo::defaultComparor;
 
@@ -1362,4 +1362,4 @@ int TetMesher::flipSurface()
   //objMesh->save("flipped.obj");
 }
 
-}//namespace vegafem
+}//namespace nexdynfem

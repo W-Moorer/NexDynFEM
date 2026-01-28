@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "tet mesher" driver , Copyright (C) 2018 USC                          *
  * All rights reserved.                                                  *
@@ -53,11 +53,11 @@
 #include <iostream>
 using namespace std;
 
-#include <vegafem/getopts.h>
-#include <vegafem/objMesh.h>
-#include <vegafem/tetMesher.h>
-#include <vegafem/initPredicates.h>
-using namespace vegafem;
+#include <nexdynfem/getopts.h>
+#include <nexdynfem/objMesh.h>
+#include <nexdynfem/tetMesher.h>
+#include <nexdynfem/initPredicates.h>
+using namespace nexdynfem;
 
 int main( int argc, char** argv )
 {

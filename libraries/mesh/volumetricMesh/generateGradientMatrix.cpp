@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "volumetricMesh" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC *
  * All rights reserved.                                                  *
@@ -34,7 +34,7 @@
 #include "matrixMacros.h"
 #include "generateGradientMatrix.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 void GenerateGradientMatrix::GenerateElementMatrixEntries(const TetMesh * tetMesh, int element, double * m)
@@ -223,4 +223,4 @@ void GenerateGradientMatrix::GenerateForScalarField(const TetMesh * tetMesh, Spa
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem

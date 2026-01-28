@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "mesher" library , Copyright (C) 2018 USC                             *
  * All rights reserved.                                                  *
@@ -32,7 +32,7 @@
 
 #include "triangleTetIntersection.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 bool TriangleTetIntersection::tetrahedronIntersectTriangle(const Vec3d & v1, const Vec3d & v2, const Vec3d & v3, const Vec3d & v4, const Vec3d & t1, const Vec3d & t2, const Vec3d & t3)
@@ -148,4 +148,4 @@ bool TriangleTetIntersection::Triangle::intersect(const Vec3d & l0, const Vec3d 
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem

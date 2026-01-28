@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "elasticForceModel" library , Copyright (C) 2007 CMU, 2009 MIT,       *
  *                                                       2018 USC        *
@@ -33,7 +33,7 @@
 
 #include "reducedStVKForceModel.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 ReducedStVKForceModel::ReducedStVKForceModel(StVKReducedInternalForces * stVKReducedInternalForces_, StVKReducedStiffnessMatrix * stVKStiffnessMatrix_): stVKReducedInternalForces(stVKReducedInternalForces_), stVKStiffnessMatrix(stVKStiffnessMatrix_), useScale(0), scale(1.0), own_stVKStiffnessMatrix(false)
@@ -74,4 +74,4 @@ void ReducedStVKForceModel::GetTangentStiffnessMatrix(double * q, double * tange
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem

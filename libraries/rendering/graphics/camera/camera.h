@@ -42,10 +42,10 @@
 
 */
 
-#ifndef VEGAFEM_CAMERA_H
-#define VEGAFEM_CAMERA_H
+#ifndef NEXDYNFEM_CAMERA_H
+#define NEXDYNFEM_CAMERA_H
 
-namespace vegafem
+namespace nexdynfem
 {
 class SphericalCamera
 {
@@ -194,6 +194,6 @@ protected:
   } savedState;
 };
 
-}//namespace vegafem
+}//namespace nexdynfem
 #endif
 

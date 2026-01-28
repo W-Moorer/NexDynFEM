@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "integrator" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC     *
  * All rights reserved.                                                  *
@@ -34,12 +34,12 @@
   A class to timestep dense diagonal dynamics.
 */
 
-#ifndef VEGAFEM_IMPLICITNEWMARKDENSEMULTI1D_H
-#define VEGAFEM_IMPLICITNEWMARKDENSEMULTI1D_H
+#ifndef NEXDYNFEM_IMPLICITNEWMARKDENSEMULTI1D_H
+#define NEXDYNFEM_IMPLICITNEWMARKDENSEMULTI1D_H
 
 #include "integratorMulti1D.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 class ImplicitNewmarkDenseMulti1D : public IntegratorMulti1D, public ImplicitNewmarkDense
@@ -68,7 +68,7 @@ protected:
 };
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

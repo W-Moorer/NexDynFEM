@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "massSpringSystem" library, Copyright (C) 2007 CMU, 2009 MIT,         *
  *                                           2018 USC                    *
@@ -44,12 +44,12 @@
   You can use the class in "massSpringSystemFromTetMesh.h" to create the mass-spring system directly from a tetrahedral mesh.
 */
 
-#ifndef VEGAFEM_MASS_SPRING_SYSTEM_H
-#define VEGAFEM_MASS_SPRING_SYSTEM_H
+#ifndef NEXDYNFEM_MASS_SPRING_SYSTEM_H
+#define NEXDYNFEM_MASS_SPRING_SYSTEM_H
 
 #include "sparseMatrix.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 enum MassSpringSystemElementType {TET, CUBE};
@@ -167,7 +167,7 @@ protected:
 };
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

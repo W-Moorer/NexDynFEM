@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "matrix" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC         *
  * All rights reserved.                                                  *
@@ -44,7 +44,7 @@
 #include "matrixMacros.h"
 #include "matrixProjection.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 #ifdef CBLAS
 // if-then-else template choosing
@@ -193,4 +193,4 @@ template void ProjectSparseVector<double>(int n, int r, double * U, double * q, 
 template void ProjectSparseVector<float>(int n, int r, float * U, float * q, float * f_buffer, int * i_buffer, int k);
 
 
-}//namespace vegafem
+}//namespace nexdynfem

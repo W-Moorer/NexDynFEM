@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "openGLHelper" library , Copyright (C) 2018 USC                       *
  * All rights reserved.                                                  *
@@ -33,7 +33,7 @@
 #include "inputDevice.h"
 #include "openGLHelper.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 InputDevice::InputDevice()
@@ -70,4 +70,4 @@ void InputDevice::setModifiers()
   ctrl = (glutGetModifiers() == GLUT_ACTIVE_CTRL);
 }
 
-}//namespace vegafem
+}//namespace nexdynfem

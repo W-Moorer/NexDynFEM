@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "virtualTets" library , Copyright (C) 2018 USC                        *
  * All rights reserved.                                                  *
@@ -50,13 +50,13 @@
 #include "valueIndex.h"
 #include <iostream>
 #include <sstream>
-#ifdef VEGAFEM_USE_TBB
+#ifdef NEXDYNFEM_USE_TBB
   #include <tbb/tbb.h>
 #endif
 
 using namespace std;
 
-namespace vegafem
+namespace nexdynfem
 {
 
 class TetER
@@ -623,7 +623,7 @@ TetMeshGeo  createVirtualTetsMeshViaCSG(const TetMeshGeo & tetMesh, const TriMes
     if (outerTriVtxIDs.size() > 0)
     {
       TetMeshRef newTetMeshRef = newTetMesh.ref();
-#ifdef VEGAFEM_USE_TBB
+#ifdef NEXDYNFEM_USE_TBB
 tbb::parallel_for(0, sizei(outerTriVtxIDs), [&](const int & i)
 #else
     for(int i = 0; i < sizei(outerTriVtxIDs); i++)
@@ -643,7 +643,7 @@ tbb::parallel_for(0, sizei(outerTriVtxIDs), [&](const int & i)
       newTetMeshRef.computeTetBarycentricWeights(vi.index, pos, &weights[4*triVtxID]);
       std::memcpy(&tetVtxIndices[4*triVtxID], newTetMesh.tet(vi.index).data(), sizeof(int) * 4);
       embeddingTetIndices[triVtxID] = vi.index;
-#ifdef VEGAFEM_USE_TBB
+#ifdef NEXDYNFEM_USE_TBB
     });
 #else
     }
@@ -672,4 +672,4 @@ tbb::parallel_for(0, sizei(outerTriVtxIDs), [&](const int & i)
   return newTetMesh;
 }
 
-}//namespace vegafem
+}//namespace nexdynfem

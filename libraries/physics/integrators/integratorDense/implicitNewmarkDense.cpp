@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "integrator" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC     *
  * All rights reserved.                                                  *
@@ -37,7 +37,7 @@
 #include "implicitNewmarkDense.h"
 #include "IPIVC.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 ImplicitNewmarkDense::ImplicitNewmarkDense(int r, double timestep, double * massMatrix, ReducedForceModel * reducedForceModel, solverType solver, double dampingMassCoef, double dampingStiffnessCoef, int maxIterations, double epsilon, double NewmarkBeta, double NewmarkGamma): IntegratorBaseDense(r, timestep, massMatrix, reducedForceModel, dampingMassCoef, dampingStiffnessCoef)
@@ -399,4 +399,4 @@ void ImplicitNewmarkDense::Setq(double * q)
 
 
 
-}//namespace vegafem
+}//namespace nexdynfem

@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "Stencil Force Model" library , Copyright (C) 2018 USC                *
  * All rights reserved.                                                  *
@@ -33,7 +33,7 @@
 #include "corotationalLinearFEMStencilForceModel.h"
 #include <cassert>
 
-namespace vegafem
+namespace nexdynfem
 {
 
 CorotationalLinearFEMStencilForceModel::CorotationalLinearFEMStencilForceModel(CorotationalLinearFEM * fem) : corotationalLinearFEM(fem)
@@ -62,4 +62,4 @@ void CorotationalLinearFEMStencilForceModel::GetStencilLocalEnergyAndForceAndMat
   corotationalLinearFEM->ComputeElementEnergyAndForceAndStiffnessMatrix(stencilId, u, energy, internalForces, tangentStiffnessMatrix, warp);
 }
 
-}//namespace vegafem
+}//namespace nexdynfem

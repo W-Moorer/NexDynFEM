@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "integrator" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC     *
  * All rights reserved.                                                  *
@@ -37,7 +37,7 @@
 #include "implicitBackwardEulerDense.h"
 #include "IPIVC.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 ImplicitBackwardEulerDense::ImplicitBackwardEulerDense(int r, double timestep, double * massMatrix, ReducedForceModel * reducedForceModel, solverType solver, double dampingMassCoef, double dampingStiffnessCoef, int maxIterations, double epsilon): IntegratorBaseDense(r, timestep, massMatrix, reducedForceModel, dampingMassCoef, dampingStiffnessCoef)
@@ -382,4 +382,4 @@ int ImplicitBackwardEulerDense::DoTimestep()
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem

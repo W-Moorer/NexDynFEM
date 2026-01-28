@@ -174,7 +174,7 @@ jobs:
       if: ${{strategy.job-index == 0}}
       uses: actions/upload-artifact@v4
       with:
-        name: VegaFEM-x64-linux-${{ matrix.compiler.c }}
+        name: NexDynFEM-x64-linux-${{ matrix.compiler.c }}
         path: install
         retention-days: 2
 
@@ -292,7 +292,7 @@ jobs:
           -S . `
           -B build
 
-    - name: Build VegaFEM
+    - name: Build NexDynFEM
       run: |
         cmake.exe `
           --build build `
@@ -309,6 +309,6 @@ jobs:
       if: ${{strategy.job-index == 0}}
       uses: actions/upload-artifact@v4
       with:
-        name: VegaFEM-x64-windows-msvc
+        name: NexDynFEM-x64-windows-msvc
         path: install
         retention-days: 2

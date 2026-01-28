@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "macros" library , Copyright (C) 2018 USC                             *
  * All rights reserved.                                                  *
@@ -30,12 +30,12 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_VALUEINDEX_H
-#define VEGAFEM_VALUEINDEX_H
+#ifndef NEXDYNFEM_VALUEINDEX_H
+#define NEXDYNFEM_VALUEINDEX_H
 
 #include <cfloat>
 
-namespace vegafem
+namespace nexdynfem
 {
 
 // a simple struct to find the index of an entry with min/max value in a search algorithm
@@ -83,7 +83,7 @@ struct MinValueKey
 };
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

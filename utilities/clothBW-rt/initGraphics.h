@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "Cloth simulator" application,                                        *
  * Copyright (C) 2007 CMU, 2009 MIT, 2018 USC                            *
@@ -39,9 +39,9 @@
   #include <windows.h>
 #endif
 
-#include <vegafem/openGL-headers.h>
+#include <nexdynfem/openGL-headers.h>
 #include <GL/glui.h>
-#include <vegafem/camera.h>
+#include <nexdynfem/camera.h>
 
 void initGLUT(int argc, char* argv[], char * windowTitle, int windowWidth, int windowHeight, int * windowID);
 
@@ -50,7 +50,7 @@ void initCamera(double cameraRadius,
 				double focusPosX, double focusPosY, double focusPosZ,
 				double camera2WorldScalingFactor,
 				double * zNear, double * zFar, 
-				vegafem::SphericalCamera ** camera);
+				nexdynfem::SphericalCamera ** camera);
 
 void initGraphics(int windowWidth, int windowHeight);
 

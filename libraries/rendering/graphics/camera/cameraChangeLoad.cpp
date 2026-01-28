@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "camera" library , Copyright (C) 2018 USC                             *
  * All rights reserved.                                                  *
@@ -36,7 +36,7 @@
 #include <fstream>
 #include <cmath>
 
-namespace vegafem
+namespace nexdynfem
 {
 using namespace std;
 
@@ -114,4 +114,4 @@ void CameraChangeLoad::controlCamera(int timestepCount, SphericalCamera & camera
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem

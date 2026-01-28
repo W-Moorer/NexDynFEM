@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "objMesh" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC        *
  * All rights reserved.                                                  *
@@ -49,7 +49,7 @@ using namespace std;
 
 //#define VERBOSE
 
-namespace vegafem
+namespace nexdynfem
 {
 int ObjMeshBinaryLoader::readStringFromBinary(std::string & name, std::ifstream * fin)
 {
@@ -371,4 +371,4 @@ int ObjMeshBinaryLoader::writeToBinary(ObjMesh::Material * material, std::ofstre
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem

@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "mesher" library , Copyright (C) 2018 USC                             *
  * All rights reserved.                                                  *
@@ -42,7 +42,7 @@
 #include <cmath>
 #include <functional>
 
-namespace vegafem
+namespace nexdynfem
 {
 using namespace std;
 
@@ -1782,4 +1782,4 @@ int DelaunayMesher::segmentRecoveryUsingSteinerPoint(const OEdgeKey& edge)
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem

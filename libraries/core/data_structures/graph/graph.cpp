@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "graph" library , Copyright (C) 2018 USC                              *
  * All rights reserved.                                                  *
@@ -38,7 +38,7 @@
 #include "matrixIO.h"
 #include "graph.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 using namespace std;
 
@@ -616,4 +616,4 @@ void Graph::GetConnectedComponent(int vtx, std::set<int> &connectedVertices) con
   connectedVertices = visited;
 }
 
-}//namespace vegafem
+}//namespace nexdynfem

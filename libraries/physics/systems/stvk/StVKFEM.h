@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "StVK" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC           *
  * All rights reserved.                                                  *
@@ -30,13 +30,13 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_STVK_FEM_H
-#define VEGAFEM_STVK_FEM_H
+#ifndef NEXDYNFEM_STVK_FEM_H
+#define NEXDYNFEM_STVK_FEM_H
 
 #include "volumetricMesh.h"
 #include "StVKElementABCD.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 #include <vector>
@@ -125,7 +125,7 @@ protected:
 };
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

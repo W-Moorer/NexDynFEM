@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  *  Copyright (C) 2007 CMU, 2009 MIT, 2018 USC                           *
  *                                                                       *
@@ -35,13 +35,13 @@
   Helper class for the ARPACK solver.
 */
 
-#ifndef VEGAFEM_INVMKSOLVER_H
-#define VEGAFEM_INVMKSOLVER_H
+#ifndef NEXDYNFEM_INVMKSOLVER_H
+#define NEXDYNFEM_INVMKSOLVER_H
 
 #include "linearSolver.h"
 #include "sparseMatrix.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 // computes x |--> M^{-1} K x
@@ -59,7 +59,7 @@ protected:
 };
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

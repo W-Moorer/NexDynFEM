@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "reducedStvk" library , Copyright (C) 2007 CMU, 2009 MIT              *
  * All rights reserved.                                                  *
@@ -34,7 +34,7 @@
 #include "StVKReducedStiffnessMatrix.h"
 #include "lapack-headers.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 #if defined(_WIN32) || defined(WIN32) || defined(linux) || defined(__linux__)
   #include "mkl_service.h"
@@ -705,4 +705,4 @@ StVKReducedStiffnessMatrix * StVKReducedStiffnessMatrix::ShallowClone()
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem

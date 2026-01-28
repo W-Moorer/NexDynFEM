@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "integrator" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC     *
  * All rights reserved.                                                  *
@@ -42,8 +42,8 @@
   x_{n+1} = x_n + h * v_{n+1}
 */
 
-#ifndef VEGAFEM_EULERSPARSE_H
-#define VEGAFEM_EULERSPARSE_H
+#ifndef NEXDYNFEM_EULERSPARSE_H
+#define NEXDYNFEM_EULERSPARSE_H
 
 #include "integratorSolverSelection.h"
 #include "integratorBaseSparse.h"
@@ -58,7 +58,7 @@
   #include "CGSolver.h"
 #endif
 
-namespace vegafem
+namespace nexdynfem
 {
 class EulerSparse : public IntegratorBaseSparse
 {
@@ -95,6 +95,6 @@ protected:
   #endif
 };
 
-}//namespace vegafem
+}//namespace nexdynfem
 #endif
 

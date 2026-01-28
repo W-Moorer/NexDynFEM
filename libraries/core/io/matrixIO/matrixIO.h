@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "matrixIO" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC       *
  * All rights reserved.                                                  *
@@ -53,15 +53,15 @@
   in case of error when accessing the file.
 */
 
-#ifndef VEGAFEM_MATRIXIO_H
-#define VEGAFEM_MATRIXIO_H
+#ifndef NEXDYNFEM_MATRIXIO_H
+#define NEXDYNFEM_MATRIXIO_H
 
 #include <cstdio>
 #include <cstdlib>
 #include <vector>
 #include "matrixMacros.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 // === matrix input/output routines ===
@@ -181,7 +181,7 @@ int ReadVectorFromDisk(const char * filename, int & m, std::vector<real> & vec)
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

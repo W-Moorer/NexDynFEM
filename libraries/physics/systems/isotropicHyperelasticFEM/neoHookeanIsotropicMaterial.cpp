@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "isotropic hyperelastic FEM" library , Copyright (C) 2018 USC         *
  * All rights reserved.                                                  *
@@ -34,7 +34,7 @@
 #include "neoHookeanIsotropicMaterial.h"
 #include "volumetricMeshENuMaterial.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 NeoHookeanIsotropicMaterial::NeoHookeanIsotropicMaterial(TetMesh * tetMesh, int enableCompressionResistance_, double compressionResistance_) : IsotropicMaterialWithCompressionResistance(enableCompressionResistance_), compressionResistance(compressionResistance_)
@@ -130,4 +130,4 @@ double NeoHookeanIsotropicMaterial::GetCompressionResistanceFactor(int elementIn
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem

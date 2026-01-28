@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "Cloth simulator" application,                                        *
  * Copyright (C) 2007 CMU, 2009 MIT, 2018 USC                            *
@@ -36,22 +36,22 @@
 #include <vector>
 
 #include "initGraphics.h"
-#include <vegafem/performanceCounter.h>
-#include <vegafem/objMesh.h>
-#include <vegafem/clothBWFromObjMesh.h>
+#include <nexdynfem/performanceCounter.h>
+#include <nexdynfem/objMesh.h>
+#include <nexdynfem/clothBWFromObjMesh.h>
 
-#include <vegafem/clothBWStencilForceModel.h>
-#include <vegafem/forceModelAssembler.h>
+#include <nexdynfem/clothBWStencilForceModel.h>
+#include <nexdynfem/forceModelAssembler.h>
 
-#include <vegafem/implicitNewmarkSparse.h>
-#include <vegafem/implicitBackwardEulerSparse.h>
-#include <vegafem/configFile.h>
-#include <vegafem/listIO.h>
-#include <vegafem/sceneObjectDeformable.h>
-#include <vegafem/saveScreenShot.h>
+#include <nexdynfem/implicitNewmarkSparse.h>
+#include <nexdynfem/implicitBackwardEulerSparse.h>
+#include <nexdynfem/configFile.h>
+#include <nexdynfem/listIO.h>
+#include <nexdynfem/sceneObjectDeformable.h>
+#include <nexdynfem/saveScreenShot.h>
 #include <GL/glui.h>
 
-using namespace vegafem;
+using namespace nexdynfem;
 
 /*
   Driver for cloth simulation. Cloth is implemented using:

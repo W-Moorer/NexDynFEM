@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "mesh" library , Copyright (C) 2018 USC                               *
  * All rights reserved.                                                  *
@@ -30,13 +30,13 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_GEOMETRYQUERY_H
-#define VEGAFEM_GEOMETRYQUERY_H
+#ifndef NEXDYNFEM_GEOMETRYQUERY_H
+#define NEXDYNFEM_GEOMETRYQUERY_H
 
 #include "minivector.h"
 #include <cmath>
 
-namespace vegafem
+namespace nexdynfem
 {
 
 inline double rad2deg(double x) { return x * (180.0 / M_PI); }
@@ -128,7 +128,7 @@ void getTetBarycentricWeights(const Vec3d & queryPoint, const Vec3d & a, const V
 double getSquaredDistanceToTet(const Vec3d & queryPoint, const Vec3d & a, const Vec3d & b, const Vec3d & c, const Vec3d & d);
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "clothBW" library , Copyright (C) 2018 USC                            *
  * All rights reserved.                                                  *
@@ -33,7 +33,7 @@
 #include "macros.h"
 #include "clothBWFromObjMesh.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 using namespace std;
@@ -89,4 +89,4 @@ ClothBW * ClothBWFromObjMesh::GenerateClothBW(const ObjMesh * mesh, int numMater
   return clothBW;
 }
 
-}//namespace vegafem
+}//namespace nexdynfem

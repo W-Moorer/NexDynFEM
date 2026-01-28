@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "Reduced deformable dynamics" real-time driver application.           *
  * Uses model reduction to rapidly simulate deformable objects           *
@@ -43,7 +43,7 @@
 #include "initGraphics.h"
 
 #include <cmath>
-using namespace vegafem;
+using namespace nexdynfem;
 
 extern void displayFunction(void);
 extern void idleFunction(void);

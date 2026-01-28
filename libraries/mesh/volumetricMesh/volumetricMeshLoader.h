@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "volumetricMesh" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC *
  * All rights reserved.                                                  *
@@ -35,12 +35,12 @@
   the type of the mesh (tet mesh, cube mesh).
 */
 
-#ifndef VEGAFEM_VOLUMETRICMESHLOADER_H
-#define VEGAFEM_VOLUMETRICMESHLOADER_H
+#ifndef NEXDYNFEM_VOLUMETRICMESHLOADER_H
+#define NEXDYNFEM_VOLUMETRICMESHLOADER_H
 
 #include "volumetricMesh.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 class VolumetricMeshLoader
@@ -68,7 +68,7 @@ protected:
 };
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

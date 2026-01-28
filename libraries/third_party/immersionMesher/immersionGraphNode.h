@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "immersionMesher" library , Copyright (C) 2018 USC                    *
  * All rights reserved.                                                  *
@@ -30,8 +30,8 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_IMMERSIONGRAPHNODE_H
-#define VEGAFEM_IMMERSIONGRAPHNODE_H
+#ifndef NEXDYNFEM_IMMERSIONGRAPHNODE_H
+#define NEXDYNFEM_IMMERSIONGRAPHNODE_H
 
 #include <iostream>
 #include <vector>
@@ -53,7 +53,7 @@ enum ImmOwnership
 
 std::ostream & operator << (std::ostream & o, ImmOwnership os);
 
-namespace vegafem
+namespace nexdynfem
 {
 // whether the owerships of the two geometric neighboring B-patches on a node is compatible by Rule 5
 inline bool neighboringOwernshipValid(ImmOwnership o1, ImmOwnership o2)
@@ -131,7 +131,7 @@ struct ImmStackEntry
 };
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

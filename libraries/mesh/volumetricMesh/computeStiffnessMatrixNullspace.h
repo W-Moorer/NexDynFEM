@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "Large Modal Deformation Factory",                                    *
  * a pre-processing utility for model reduction of                       *
@@ -35,14 +35,14 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_COMPUTESTIFFNESSMATRIXNULLSPACE_H
-#define VEGAFEM_COMPUTESTIFFNESSMATRIXNULLSPACE_H
+#ifndef NEXDYNFEM_COMPUTESTIFFNESSMATRIXNULLSPACE_H
+#define NEXDYNFEM_COMPUTESTIFFNESSMATRIXNULLSPACE_H
 
 #include <cstdlib>
 #include <cstdio>
 #include <cmath>
 
-namespace vegafem
+namespace nexdynfem
 {
 
 /*
@@ -64,7 +64,7 @@ public:
 };
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

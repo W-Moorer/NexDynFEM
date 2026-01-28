@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "interpolationCoordinates" library , Copyright (C) 2018 USC           *
  * All rights reserved.                                                  *
@@ -30,8 +30,8 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_BARYCENTRICCOORDINATES_H
-#define VEGAFEM_BARYCENTRICCOORDINATES_H
+#ifndef NEXDYNFEM_BARYCENTRICCOORDINATES_H
+#define NEXDYNFEM_BARYCENTRICCOORDINATES_H
 
 #include "volumetricMesh.h"
 #include "interpolationCoordinates.h"
@@ -43,7 +43,7 @@
 #include <vector>
 #include <string>
 
-namespace vegafem
+namespace nexdynfem
 {
 
 // Compute and store barycentric coordinates.
@@ -96,7 +96,7 @@ protected:
 };
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
  /* BARYCENTRICCOORDINATES_H */

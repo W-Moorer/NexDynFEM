@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "virtualTets" library , Copyright (C) 2018 USC                        *
  * All rights reserved.                                                  *
@@ -30,8 +30,8 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_TETTRIPIECE_H
-#define VEGAFEM_TETTRIPIECE_H
+#ifndef NEXDYNFEM_TETTRIPIECE_H
+#define NEXDYNFEM_TETTRIPIECE_H
 
 #include "tetTriMeshCutting.h"
 #include "triMeshPseudoNormal.h"
@@ -43,7 +43,7 @@
 #include <vector>
 #include <map>
 
-namespace vegafem
+namespace nexdynfem
 {
 
 /*
@@ -100,7 +100,7 @@ TetTriPiece mergePiece(const TetTriPiece & comp0, const TetTriPiece & comp1, int
     const TetTriCuttingData & cutting, const TriMeshPseudoNormal & oriMeshNormal, const TetShape & tetShape);
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

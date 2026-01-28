@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "Stencil Force Model" library , Copyright (C) 2018 USC                *
  * All rights reserved.                                                  *
@@ -33,7 +33,7 @@
 #include "StVKStencilForceModel.h"
 #include <cassert>
 
-namespace vegafem
+namespace nexdynfem
 {
 using namespace std;
 
@@ -58,4 +58,4 @@ const int *StVKStencilForceModel::GetStencilVertexIndices(int stencilType, int s
   return stvkFEM->GetVolumetricMesh()->getVertexIndices(stencilId);
 }
 
-}//namespace vegafem
+}//namespace nexdynfem

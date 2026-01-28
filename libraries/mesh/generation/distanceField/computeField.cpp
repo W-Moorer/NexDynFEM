@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "distance field" library , Copyright (C) 2007 CMU, 2018 USC           *
  * All rights reserved.                                                  *
@@ -39,11 +39,11 @@
 #include "vegalong.h"
 #include "basicAlgorithms.h"
 
-#ifdef VEGAFEM_USE_TBB
+#ifdef NEXDYNFEM_USE_TBB
   #include <tbb/tbb.h>
 #endif
 
-namespace vegafem
+namespace nexdynfem
 {
 #ifdef COMPUTE_SIGNED_FIELD
   #ifdef COMPUTE_FLOOD_FIELD
@@ -243,7 +243,7 @@ namespace vegafem
   #define ZIGZAGROUTINE ZigZagUnsigned
 #endif
 {
-#ifdef VEGAFEM_USE_TBB
+#ifdef NEXDYNFEM_USE_TBB
   try
   {
     tbb::parallel_for(zMin, zMax+1, [&](int z)
@@ -491,4 +491,4 @@ namespace vegafem
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem

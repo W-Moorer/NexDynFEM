@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "shapeEdit" library , Copyright (C) 2018 USC                          *
  * All rights reserved.                                                  *
@@ -43,7 +43,7 @@
 #include "basicAlgorithms.h"
 #include "containerHelper.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 using namespace std;
 
@@ -326,4 +326,4 @@ double testLinearPrecision(const SparseMatrix * A, const VolumetricMesh * mesh)
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem

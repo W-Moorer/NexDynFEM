@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "volumetricMesh" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC *
  * All rights reserved.                                                  *
@@ -35,12 +35,12 @@
    computes the deformation gradient, and other related quantities.
 */
 
-#ifndef VEGAFEM_VOLUMETRICMESHDEFORMATIONGRADIENT_H
-#define VEGAFEM_VOLUMETRICMESHDEFORMATIONGRADIENT_H
+#ifndef NEXDYNFEM_VOLUMETRICMESHDEFORMATIONGRADIENT_H
+#define NEXDYNFEM_VOLUMETRICMESHDEFORMATIONGRADIENT_H
 
 #include "volumetricMesh.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 class VolumetricMeshDeformationGradient
@@ -63,7 +63,7 @@ protected:
 };
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

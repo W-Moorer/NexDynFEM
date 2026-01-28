@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "sceneObject" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC    *
  * All rights reserved.                                                  *
@@ -32,7 +32,7 @@
 
 #include "sceneObjectDeformableGPU6DOF.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 SceneObjectDeformableGPU6DOF::SceneObjectDeformableGPU6DOF(const char * filenameOBJ): SceneObjectWithRestPosition(filenameOBJ), SceneObjectDeformable(filenameOBJ), SceneObjectDeformableGPU(filenameOBJ), SceneObjectDeformable6DOF(filenameOBJ)
@@ -138,4 +138,4 @@ int SceneObjectDeformableGPU6DOF::closestVertex(double queryPosX, double queryPo
 }
 */
 
-}//namespace vegafem
+}//namespace nexdynfem

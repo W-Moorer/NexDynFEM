@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "mesh" library , Copyright (C) 2018 USC                               *
  * All rights reserved.                                                  *
@@ -30,15 +30,15 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_PREDICATES_H
-#define VEGAFEM_PREDICATES_H
+#ifndef NEXDYNFEM_PREDICATES_H
+#define NEXDYNFEM_PREDICATES_H
 
 // Predicates for robust geometric queries.
 // Interface to Shewchuk's exact predicates code.
 
 #include "initPredicates.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 // !!!!!!!!!! IMPORTANT !!!!!!!!!!
@@ -111,7 +111,7 @@ bool intersectSegSeg2d(const double sa[2], const double sb[2], const double ta[2
 bool intersectSegSeg2d(const double sa[2], const double sb[2], const double ta[2], const double tb[2], double sw[2], double tw[2]);
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

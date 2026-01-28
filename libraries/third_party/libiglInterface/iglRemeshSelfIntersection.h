@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "libiglInterface" library , Copyright (C) 2018 USC                    *
  * All rights reserved.                                                  *
@@ -30,13 +30,13 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_IGLREMESHSELFINTERSECTION_H
-#define VEGAFEM_IGLREMESHSELFINTERSECTION_H
+#ifndef NEXDYNFEM_IGLREMESHSELFINTERSECTION_H
+#define NEXDYNFEM_IGLREMESHSELFINTERSECTION_H
 
 #include "triMeshGeo.h"
 #include "vec3ER.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 namespace iglInterface
 {
@@ -65,7 +65,7 @@ SelfCutMeshData remeshSelfIntersection(TriMeshRef mesh, bool stitch = true, bool
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "mesh" library , Copyright (C) 2018 USC                               *
  * All rights reserved.                                                  *
@@ -36,7 +36,7 @@
 #include <cstring>
 #include <cassert>
 
-namespace vegafem
+namespace nexdynfem
 {
 using namespace std;
 
@@ -255,4 +255,4 @@ TriMeshManifold::Triangle::Triangle(const OTriKey & key) : OTriKey(key)
   memset(edge, 0, sizeof(edge));
 }
 
-}//namespace vegafem
+}//namespace nexdynfem

@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "Stencil Force Model" library , Copyright (C) 2018 USC                *
  * All rights reserved.                                                  *
@@ -30,13 +30,13 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_COROTATIONALLINEARFEM_STENCIL_FORCEMODEL_H
-#define VEGAFEM_COROTATIONALLINEARFEM_STENCIL_FORCEMODEL_H
+#ifndef NEXDYNFEM_COROTATIONALLINEARFEM_STENCIL_FORCEMODEL_H
+#define NEXDYNFEM_COROTATIONALLINEARFEM_STENCIL_FORCEMODEL_H
 
 #include "corotationalLinearFEM.h"
 #include "stencilForceModel.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 // Stencils for corotational linear FEM.
@@ -60,7 +60,7 @@ protected:
 };
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

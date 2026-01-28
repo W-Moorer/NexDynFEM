@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "volumetricMesh" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC *
  * All rights reserved.                                                  *
@@ -32,7 +32,7 @@
 
 #include "generateInterpolationMatrix.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 void GenerateInterpolationMatrix::generate(int numTargetLocations, int numElementVertices, const int * vertices, const double * weights, SparseMatrix ** A, int numSourceVertices)
@@ -56,4 +56,4 @@ void GenerateInterpolationMatrix::generate(int numTargetLocations, int numElemen
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem

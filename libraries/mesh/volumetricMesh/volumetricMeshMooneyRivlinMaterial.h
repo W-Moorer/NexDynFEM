@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "volumetricMesh" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC *
  * All rights reserved.                                                  *
@@ -30,12 +30,12 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_VOLUMETRICMESHMOONEYRIVLINMATERIAL_H
-#define VEGAFEM_VOLUMETRICMESHMOONEYRIVLINMATERIAL_H
+#ifndef NEXDYNFEM_VOLUMETRICMESHMOONEYRIVLINMATERIAL_H
+#define NEXDYNFEM_VOLUMETRICMESHMOONEYRIVLINMATERIAL_H
 
 #include "volumetricMesh.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 // Mooney-Rivlin material
@@ -83,7 +83,7 @@ inline void VolumetricMesh::MooneyRivlinMaterial::setv1(double v1) { v1_ = v1; }
 VolumetricMesh::MooneyRivlinMaterial * downcastMooneyRivlinMaterial(VolumetricMesh::Material * material); // performs a check via getType and returns NULL if material is not Mooney Rivlin
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

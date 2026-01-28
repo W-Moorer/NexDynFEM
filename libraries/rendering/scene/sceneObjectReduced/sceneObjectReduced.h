@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "sceneObject" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC    *
  * All rights reserved.                                                  *
@@ -35,8 +35,8 @@
   See also sceneObject.h . 
 */
 
-#ifndef VEGAFEM_SCENEOBJECTREDUCED_H
-#define VEGAFEM_SCENEOBJECTREDUCED_H
+#ifndef NEXDYNFEM_SCENEOBJECTREDUCED_H
+#define NEXDYNFEM_SCENEOBJECTREDUCED_H
 
 #include <cmath>
 #include <cstdio>
@@ -47,7 +47,7 @@
 #include "sceneObjectDeformable.h"
 #include "modalMatrix.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 // abstract class
 class SceneObjectReduced : public SceneObjectDeformable
@@ -96,7 +96,7 @@ inline void SceneObjectReduced::GetSingleVertexPosition(int vertex, double * x, 
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

@@ -52,8 +52,8 @@ Version: 1.0
 
 */
 
-#ifndef VEGAFEM_PERFORMANCECOUNTER_H
-#define VEGAFEM_PERFORMANCECOUNTER_H
+#ifndef NEXDYNFEM_PERFORMANCECOUNTER_H
+#define NEXDYNFEM_PERFORMANCECOUNTER_H
 
 /**************** LINUX/MAC OS X COUNTER *******************/
 
@@ -62,7 +62,7 @@ Version: 1.0
 #include <cstdlib>
 #include <sys/time.h>
 
-namespace vegafem
+namespace nexdynfem
 {
 
 class PerformanceCounter
@@ -111,7 +111,7 @@ inline double PerformanceCounter::GetElapsedTime()
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 
@@ -122,7 +122,7 @@ inline double PerformanceCounter::GetElapsedTime()
 
 #include <windows.h>
 
-namespace vegafem
+namespace nexdynfem
 {
 class PerformanceCounter
 {
@@ -162,7 +162,7 @@ inline double PerformanceCounter::GetElapsedTime()
   return ((double)(stopCount.QuadPart - startCount.QuadPart))
     / ((double)timerFrequency.QuadPart);
 }
-}//namespace vegafem
+}//namespace nexdynfem
 #endif
 #endif
 

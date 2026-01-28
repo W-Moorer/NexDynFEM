@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "integrator" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC     *
  * All rights reserved.                                                  *
@@ -35,7 +35,7 @@
 #include <cstring>
 #include "integratorBaseSparse.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 IntegratorBaseSparse::IntegratorBaseSparse(int r, double timestep, SparseMatrix * massMatrix_, ForceModel * forceModel_, int numConstrainedDOFs_, int * constrainedDOFs_, double dampingMassCoef, double dampingStiffnessCoef): IntegratorBase(r, timestep, dampingMassCoef, dampingStiffnessCoef), massMatrix(massMatrix_), forceModel(forceModel_), numConstrainedDOFs(numConstrainedDOFs_)
@@ -103,4 +103,4 @@ void IntegratorBaseSparse::ClearTangentStiffnessMatrixOffset()
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem

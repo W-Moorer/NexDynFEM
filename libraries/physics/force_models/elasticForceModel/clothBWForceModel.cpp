@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "forceModel" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC     *
  * All rights reserved.                                                  *
@@ -32,7 +32,7 @@
 
 #include "clothBWForceModel.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 ClothBWForceModel::ClothBWForceModel(ClothBW * clothBW_): clothBW(clothBW_)
@@ -69,4 +69,4 @@ void ClothBWForceModel::GetForceAndMatrix(const double * u, double * internalFor
   clothBW->ComputeForceAndMatrix(u, internalForces, tangentStiffnessMatrix);
 }
 
-}//namespace vegafem
+}//namespace nexdynfem

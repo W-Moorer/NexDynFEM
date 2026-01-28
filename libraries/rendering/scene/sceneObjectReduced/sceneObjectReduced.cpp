@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "sceneObject" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC    *
  * All rights reserved.                                                  *
@@ -37,7 +37,7 @@
 #include <cfloat>
 #include "sceneObjectReduced.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 SceneObjectReduced::SceneObjectReduced(const char * filenameOBJ, ModalMatrix * modalMatrix): SceneObjectWithRestPosition(filenameOBJ), SceneObjectDeformable(filenameOBJ) 
@@ -74,4 +74,4 @@ void SceneObjectReduced::Scaleq(double scale)
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem

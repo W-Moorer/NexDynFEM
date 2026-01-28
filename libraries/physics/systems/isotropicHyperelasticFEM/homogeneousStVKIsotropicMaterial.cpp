@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "isotropic hyperelastic FEM" library , Copyright (C) 2018 USC         *
  * All rights reserved.                                                  *
@@ -33,7 +33,7 @@
 #include <cmath>
 #include "homogeneousStVKIsotropicMaterial.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 HomogeneousStVKIsotropicMaterial::HomogeneousStVKIsotropicMaterial(double E_, double nu_, int enableCompressionResistance_, double compressionResistance_) : IsotropicMaterialWithCompressionResistance(enableCompressionResistance_), compressionResistance(compressionResistance_)
@@ -105,4 +105,4 @@ double HomogeneousStVKIsotropicMaterial::GetCompressionResistanceFactor(int elem
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem

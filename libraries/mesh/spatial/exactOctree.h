@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "mesh" library , Copyright (C) 2018 USC                               *
  * All rights reserved.                                                  *
@@ -30,8 +30,8 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_EXACT_OCTREE_H
-#define VEGAFEM_EXACT_OCTREE_H
+#ifndef NEXDYNFEM_EXACT_OCTREE_H
+#define NEXDYNFEM_EXACT_OCTREE_H
 
 // An octree implementation using exact predicates for precise geometry queries.
 // The base class is ExactOctreeBase. It has several derived classes:
@@ -50,7 +50,7 @@
 #include <functional>
 #include <cfloat>
 
-namespace vegafem
+namespace nexdynfem
 {
 
 // Base class for exact octrees
@@ -251,7 +251,7 @@ inline void ExactOctreeBase::rangeQuery(BBFilter toBB, ElementFilter toEle, std:
 
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

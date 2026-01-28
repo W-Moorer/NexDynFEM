@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "forceModel" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC     *
  * All rights reserved.                                                  *
@@ -31,17 +31,17 @@
  *************************************************************************/
 
 /*
-   Tests a Vega FEM force model, using two-point, or five-point finite differences.
+   Tests a NexDynFEM force model, using two-point, or five-point finite differences.
 */
 
-#ifndef VEGAFEM_FINITEDIFFERENCETESTER_H
-#define VEGAFEM_FINITEDIFFERENCETESTER_H
+#ifndef NEXDYNFEM_FINITEDIFFERENCETESTER_H
+#define NEXDYNFEM_FINITEDIFFERENCETESTER_H
 
 #include "forceModel.h"
 #include "sparseMatrix.h"
 #include <vector>
 
-namespace vegafem
+namespace nexdynfem
 {
 
 class FiniteDifferenceTester
@@ -86,7 +86,7 @@ protected:
 };
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
  /* FINITEDIFFERENCETESTER_H_ */

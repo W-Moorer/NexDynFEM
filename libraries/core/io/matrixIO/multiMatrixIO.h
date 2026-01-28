@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "matrixIO" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC       *
  * All rights reserved.                                                  *
@@ -34,10 +34,10 @@
   Load/save multiple binary matrices from a single file.
 */
 
-#ifndef VEGAFEM_MULTIMATRIXIO_H
-#define VEGAFEM_MULTIMATRIXIO_H
+#ifndef NEXDYNFEM_MULTIMATRIXIO_H
+#define NEXDYNFEM_MULTIMATRIXIO_H
 
-namespace vegafem
+namespace nexdynfem
 {
 class MultiMatrixIO
 {
@@ -54,6 +54,6 @@ public:
 
 protected:
 };
-}//namespace vegafem
+}//namespace nexdynfem
 #endif
 

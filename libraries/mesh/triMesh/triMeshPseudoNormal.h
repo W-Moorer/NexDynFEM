@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "mesh" library , Copyright (C) 2018 USC                               *
  * All rights reserved.                                                  *
@@ -30,13 +30,13 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_TRIMESHPSEUDONORMAL_H
-#define VEGAFEM_TRIMESHPSEUDONORMAL_H
+#ifndef NEXDYNFEM_TRIMESHPSEUDONORMAL_H
+#define NEXDYNFEM_TRIMESHPSEUDONORMAL_H
 
 #include "triMeshGeo.h"
 #include <map>
 
-namespace vegafem
+namespace nexdynfem
 {
 
 // compute pseudo-normal on a triangle mesh
@@ -65,7 +65,7 @@ protected:
 };
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

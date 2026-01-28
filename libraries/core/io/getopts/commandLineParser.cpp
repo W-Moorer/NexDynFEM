@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "getopts" library , Copyright (C) 2018 USC                            *
  * All rights reserved.                                                  *
@@ -38,7 +38,7 @@
 #include <cerrno>
 #include <cstdio>
 
-namespace vegafem
+namespace nexdynfem
 {
 using namespace std;
 
@@ -219,4 +219,4 @@ int CommandLineParser::parse(int argc, const char ** argv, int numSkipArg)
 
 CommandLineParser::Entry::Entry(const std::string & n, Type t, void * v) : name(n), type(t), value(v) {}
 
-}//namespace vegafem
+}//namespace nexdynfem

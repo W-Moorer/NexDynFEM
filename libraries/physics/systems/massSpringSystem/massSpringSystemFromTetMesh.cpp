@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "massSpringSystem" library, Copyright (C) 2007 CMU, 2009 MIT,         *
  *                                           2018 USC                    *
@@ -34,7 +34,7 @@
 #include "tetMesh.h"
 #include "massSpringSystemFromTetMesh.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 int MassSpringSystemFromTetMesh::GenerateMassSpringSystem(TetMesh * tetMesh, MassSpringSystem ** massSpringSystem, double density, double tensileStiffness, double damping, int addGravity)
@@ -63,4 +63,4 @@ int MassSpringSystemFromTetMesh::GenerateMassSpringSystem(TetMesh * tetMesh, Mas
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem

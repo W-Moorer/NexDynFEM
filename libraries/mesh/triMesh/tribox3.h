@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "mesh" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC           *
  * All rights reserved.                                                  *
@@ -40,11 +40,11 @@
 e.
 */
 
-#ifndef VEGAFEM_TRIBOX3_H
-#define VEGAFEM_TRIBOX3_H
-namespace vegafem
+#ifndef NEXDYNFEM_TRIBOX3_H
+#define NEXDYNFEM_TRIBOX3_H
+namespace nexdynfem
 {
 bool triBoxOverlap(const double boxcenter[3], const double boxhalfsize[3], const double trivert0[3], const double trivert1[3], const double trivert2[3] );
-}//namespace vegafem
+}//namespace nexdynfem
 #endif
 

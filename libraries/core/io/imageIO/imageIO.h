@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "imageIO" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC        *
  * All rights reserved.                                                  *
@@ -39,10 +39,10 @@
   In order to enable PNG, JPEG or TIFF, uncomment the corresponding line in imageFormats.h, and link against the external library.
 */
 
-#ifndef VEGAFEM_IMAGEIO_H
-#define VEGAFEM_IMAGEIO_H
+#ifndef NEXDYNFEM_IMAGEIO_H
+#define NEXDYNFEM_IMAGEIO_H
 
-namespace vegafem
+namespace nexdynfem
 {
 class ImageIO
 {
@@ -109,6 +109,6 @@ protected:
   errorType saveNONE(const char * filename);
 };
 
-}//namespace vegafem
+}//namespace nexdynfem
 #endif
 

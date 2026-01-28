@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "clothBW" library , Copyright (C) 2018 USC                            *
  * All rights reserved.                                                  *
@@ -49,7 +49,7 @@
 #include <cmath>
 #include <cassert>
 
-namespace vegafem
+namespace nexdynfem
 {
 using namespace std;
 
@@ -867,4 +867,4 @@ void ClothBW::ComputeForceAndMatrix(const double * u, double * f, SparseMatrix *
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem

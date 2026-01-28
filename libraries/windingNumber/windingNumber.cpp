@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "windingNumber" library , Copyright (C) 2018 USC                      *
  * All rights reserved.                                                  *
@@ -33,7 +33,7 @@
 #include "windingNumber.h"
 #include "macros.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 double WindingNumber::computeWindingNumber(ObjMesh * objMesh, const Vec3d & p) 
@@ -78,4 +78,4 @@ double WindingNumber::computeWindingNumber(ObjMesh * objMesh, const Vec3d & p)
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem

@@ -14,9 +14,9 @@
 /*************************************************************************
  *                                                                       *
  * We release our improvements to the wildMagic code under our standard  *
- * Vega FEM license, as follows:                                         *
+ * NexDynFEM license, as follows:                                         *
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "improvements to the wildMagic library" , Copyright (C) 2018 USC      *
  * All rights reserved.                                                  *
@@ -46,15 +46,15 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_TRIKEY_H
-#define VEGAFEM_TRIKEY_H
+#ifndef NEXDYNFEM_TRIKEY_H
+#define NEXDYNFEM_TRIKEY_H
 
 #include <algorithm>
 #include <ostream>
 #include "vec3i.h"
 #include "edgeKey.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 // unoriented triangle key based on vtx indices
@@ -426,7 +426,7 @@ inline std::ostream & operator << (std::ostream & s, const OTriKey & v)
   return s << '(' << v[0] << ' ' << v[1] << ' '  << v[2] << ')';
 }
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 
 

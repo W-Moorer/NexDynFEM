@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "generateSurfaceMesh" utility , Copyright (C) 2007 CMU, 2009 MIT,     *
  *                                               2018 USC                *
@@ -37,11 +37,11 @@
 #include <float.h>
 #include <time.h>
 
-#include <vegafem/getopts.h>
-#include <vegafem/volumetricMeshLoader.h>
-#include <vegafem/generateSurfaceMesh.h>
+#include <nexdynfem/getopts.h>
+#include <nexdynfem/volumetricMeshLoader.h>
+#include <nexdynfem/generateSurfaceMesh.h>
 
-using namespace vegafem;
+using namespace nexdynfem;
 
 /*
   Creates the surface mesh of the given volumetric mesh.

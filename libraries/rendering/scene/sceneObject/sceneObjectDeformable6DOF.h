@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "sceneObject" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC    *
  * All rights reserved.                                                  *
@@ -30,13 +30,13 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_SCENEOBJECTDEFORMABLE6DOF_H
-#define VEGAFEM_SCENEOBJECTDEFORMABLE6DOF_H
+#ifndef NEXDYNFEM_SCENEOBJECTDEFORMABLE6DOF_H
+#define NEXDYNFEM_SCENEOBJECTDEFORMABLE6DOF_H
 
 #include "sceneObject6DOF.h"
 #include "sceneObjectDeformable.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 class SceneObjectDeformable6DOF : public virtual SceneObjectDeformable, public SceneObject6DOF
@@ -62,7 +62,7 @@ protected:
 };
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

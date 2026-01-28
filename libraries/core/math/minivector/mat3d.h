@@ -34,12 +34,12 @@
 
 
 
-#ifndef VEGAFEM_MINIMAT3D_H
-#define VEGAFEM_MINIMAT3D_H
+#ifndef NEXDYNFEM_MINIMAT3D_H
+#define NEXDYNFEM_MINIMAT3D_H
 
 #include "vec3d.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 class Mat3d {
@@ -520,7 +520,7 @@ inline bool Mat3d::hasNaN() const
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

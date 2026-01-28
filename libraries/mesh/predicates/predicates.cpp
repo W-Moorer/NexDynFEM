@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "mesh" library , Copyright (C) 2018 USC                               *
  * All rights reserved.                                                  *
@@ -36,7 +36,7 @@
 #include <cstring>
 #include <algorithm>
 
-namespace vegafem
+namespace nexdynfem
 {
 using namespace std;
 
@@ -514,4 +514,4 @@ bool intersectSegSeg2d(const double sa[2], const double sb[2], const double ta[2
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem

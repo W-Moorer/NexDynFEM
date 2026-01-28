@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "graph" library , Copyright (C) 2018 USC                              *
  * All rights reserved.                                                  *
@@ -30,15 +30,15 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_GRAPH_H
-#define VEGAFEM_GRAPH_H
+#ifndef NEXDYNFEM_GRAPH_H
+#define NEXDYNFEM_GRAPH_H
 
 #include <vector>
 #include <set>
 #include <map>
 #include "sparseMatrix.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 /*
@@ -153,7 +153,7 @@ inline int Graph::GetNeighbor(int vertex, int i) const
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "constrainedDOFs" library , Copyright (C) 2007 CMU, 2009 MIT          *
  * All rights reserved.                                                  *
@@ -30,10 +30,10 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_CONSTRAINED_DOFS_H
-#define VEGAFEM_CONSTRAINED_DOFS_H
+#ifndef NEXDYNFEM_CONSTRAINED_DOFS_H
+#define NEXDYNFEM_CONSTRAINED_DOFS_H
 
-namespace vegafem
+namespace nexdynfem
 {
 /*
   Insert or remove given components from a linear array.
@@ -75,6 +75,6 @@ public:
 
 };
 
-}//namespace vegafem
+}//namespace nexdynfem
 #endif
 

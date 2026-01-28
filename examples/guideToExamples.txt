@@ -12,11 +12,11 @@ We have several folders for examples of unreduced simulations of 3D solid elasti
 
 The cloth examples are in the "cloth" folder. They demonstrate bending, and a cloth sheet suspended under gravity.
 
-The mesher examples are in the "mesher" folder. They demonstrate how to use Vega's meshing capabilities.
+The mesher examples are in the "mesher" folder. They demonstrate how to use NexDynFEM's meshing capabilities.
 
-The virtual tets examples are in the "virtualTets" folder. They demonstrate how to use Vega's virtual tets algorithm to create tet meshes to embed nearly-self-intersecting surfaces.
+The virtual tets examples are in the "virtualTets" folder. They demonstrate how to use NexDynFEM's virtual tets algorithm to create tet meshes to embed nearly-self-intersecting surfaces.
 Run script runMesher_* in virtualTets/ to create the tet mesh and interpolation file, and then run script edit_* to deform the resulting tet mesh with ARAP. 
 
-The immersion mesher examples are in the "immersionMesher" folder. They demonstrate how to use Vega's immersion algorithm to create tet meshes to embed self-intersecting surfaces.
+The immersion mesher examples are in the "immersionMesher" folder. They demonstrate how to use NexDynFEM's immersion algorithm to create tet meshes to embed self-intersecting surfaces.
 Run script runMesher_* in immersionMesher/ to create the tet mesh and interpolation file, and then run script edit_* to deform the resulting tet mesh with ARAP. 
 

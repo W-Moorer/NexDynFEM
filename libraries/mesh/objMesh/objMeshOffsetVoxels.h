@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "objMesh" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC        *
  * All rights reserved.                                                  *
@@ -30,8 +30,8 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_OBJMESHOFFSETVOXELS_H
-#define VEGAFEM_OBJMESHOFFSETVOXELS_H
+#ifndef NEXDYNFEM_OBJMESHOFFSETVOXELS_H
+#define NEXDYNFEM_OBJMESHOFFSETVOXELS_H
 
 /*
   Author: Jernej Barbic, 2003
@@ -46,7 +46,7 @@
 #include "boundingBox.h"
 #include "minivector.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 class ObjMeshOffsetVoxels
@@ -143,7 +143,7 @@ protected:
 };
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

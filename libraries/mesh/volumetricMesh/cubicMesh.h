@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "volumetricMesh" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC *
  * All rights reserved.                                                  *
@@ -55,12 +55,12 @@
 //   |/      |/       /
 //   4 - - - 5       z
 
-#ifndef VEGAFEM_CUBICMESH_H
-#define VEGAFEM_CUBICMESH_H
+#ifndef NEXDYNFEM_CUBICMESH_H
+#define NEXDYNFEM_CUBICMESH_H
 
 #include "volumetricMesh.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 // see also volumetricMesh.h for a description of the routines
 
@@ -173,7 +173,7 @@ protected:
 };
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

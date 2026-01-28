@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "finite difference tester" utility , Copyright (C) 2018 USC           *
  * All rights reserved.                                                  *
@@ -38,51 +38,51 @@
 */
 #include "vectorHelper.h""
 
-#include <vegafem/finiteDifferenceTester.h>
+#include <nexdynfem/finiteDifferenceTester.h>
 
-#include <vegafem/forceModel.h>
-#include <vegafem/configFile.h>
+#include <nexdynfem/forceModel.h>
+#include <nexdynfem/configFile.h>
 
-#include <vegafem/tetMesh.h>
-#include <vegafem/volumetricMesh.h>
-#include <vegafem/volumetricMeshLoader.h>
-#include <vegafem/generateMassMatrix.h>
+#include <nexdynfem/tetMesh.h>
+#include <nexdynfem/volumetricMesh.h>
+#include <nexdynfem/volumetricMeshLoader.h>
+#include <nexdynfem/generateMassMatrix.h>
 
-#include <vegafem/clothBWFromObjMesh.h>
-#include <vegafem/clothBWStencilForceModel.h>
+#include <nexdynfem/clothBWFromObjMesh.h>
+#include <nexdynfem/clothBWStencilForceModel.h>
 
-#include <vegafem/matrix.h>
+#include <nexdynfem/matrix.h>
 
-#include <vegafem/neoHookeanIsotropicMaterial.h>
-#include <vegafem/StVKIsotropicMaterial.h>
-#include <vegafem/MooneyRivlinIsotropicMaterial.h>
-#include <vegafem/isotropicHyperelasticFEM.h>
-#include <vegafem/isotropicHyperelasticFEMStencilForceModel.h>
+#include <nexdynfem/neoHookeanIsotropicMaterial.h>
+#include <nexdynfem/StVKIsotropicMaterial.h>
+#include <nexdynfem/MooneyRivlinIsotropicMaterial.h>
+#include <nexdynfem/isotropicHyperelasticFEM.h>
+#include <nexdynfem/isotropicHyperelasticFEMStencilForceModel.h>
 
-#include <vegafem/corotationalLinearFEM.h>
-#include <vegafem/corotationalLinearFEMStencilForceModel.h>
+#include <nexdynfem/corotationalLinearFEM.h>
+#include <nexdynfem/corotationalLinearFEMStencilForceModel.h>
 
-#include <vegafem/StVKFEM.h>
-#include <vegafem/StVKElementABCDLoader.h>
-#include <vegafem/StVKStencilForceModel.h>
+#include <nexdynfem/StVKFEM.h>
+#include <nexdynfem/StVKElementABCDLoader.h>
+#include <nexdynfem/StVKStencilForceModel.h>
 
-#include <vegafem/massSpringSystem.h>
-#include <vegafem/massSpringSystemFromObjMeshConfigFile.h>
-#include <vegafem/massSpringSystemFromTetMeshConfigFile.h>
-#include <vegafem/massSpringSystemFromCubicMeshConfigFile.h>
-#include <vegafem/massSpringStencilForceModel.h>
+#include <nexdynfem/massSpringSystem.h>
+#include <nexdynfem/massSpringSystemFromObjMeshConfigFile.h>
+#include <nexdynfem/massSpringSystemFromTetMeshConfigFile.h>
+#include <nexdynfem/massSpringSystemFromCubicMeshConfigFile.h>
+#include <nexdynfem/massSpringStencilForceModel.h>
 
-#include <vegafem/stencilForceModel.h>
-#include <vegafem/forceModelAssembler.h>
+#include <nexdynfem/stencilForceModel.h>
+#include <nexdynfem/forceModelAssembler.h>
 
-#include <vegafem/linearFEMStencilForceModel.h>
+#include <nexdynfem/linearFEMStencilForceModel.h>
 
 #include <iostream>
 #include <cassert>
 #include <numeric>
 
 using namespace std;
-using namespace vegafem;
+using namespace nexdynfem;
 
 
 #define ADD_CONFIG(v) config.addOptionOptional(#v, &v, v)

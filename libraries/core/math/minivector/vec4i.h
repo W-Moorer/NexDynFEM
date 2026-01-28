@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "minivector" library , Copyright (C) 2018 USC                         *
  * All rights reserved.                                                  *
@@ -31,8 +31,8 @@
  *************************************************************************/
 
 
-#ifndef VEGAFEM_VEC4I_H
-#define VEGAFEM_VEC4I_H
+#ifndef NEXDYNFEM_VEC4I_H
+#define NEXDYNFEM_VEC4I_H
 
 
 #include <cstdio>
@@ -40,7 +40,7 @@
 #include <ostream>
 #include <algorithm>
 
-namespace vegafem
+namespace nexdynfem
 {
 
 class Vec4i
@@ -389,7 +389,7 @@ inline bool Vec4i::intersect(const Vec4i & vec2) const
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "forceModel" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC     *
  * All rights reserved.                                                  *
@@ -36,12 +36,12 @@
 #include <cassert>
 #include <numeric>
 
-#ifdef VEGAFEM_USE_TBB
+#ifdef NEXDYNFEM_USE_TBB
 #include <tbb/tbb.h>
 #endif
 #include "range.h"
 using namespace std;
-namespace vegafem
+namespace nexdynfem
 {
 
 static double squaredEuclideanNorm(const std::vector<double> & v)
@@ -98,7 +98,7 @@ double FiniteDifferenceTester::testInternalForce(const double * u)
   analyticForce.assign(r, 0.);
   forceModel->GetInternalForce((double*)u, analyticForce.data());
   // Warning: multi-threading works only when forceModel->GetElasticEnergy is parallel-safe
-  #ifdef VEGAFEM_USE_TBB
+  #ifdef NEXDYNFEM_USE_TBB
   tbb::parallel_for(tbb::blocked_range<int>(0, r), [&](const tbb::blocked_range<int> & rng)
   {
   #else
@@ -129,7 +129,7 @@ double FiniteDifferenceTester::testInternalForce(const double * u)
       }
       localDispBuffer[j] = oldvalue;
     }
-    #ifdef VEGAFEM_USE_TBB
+    #ifdef NEXDYNFEM_USE_TBB
   }, tbb::static_partitioner());
   #endif
 
@@ -158,7 +158,7 @@ double FiniteDifferenceTester::testStiffnessMatrix(const double * u, double * re
 
   // Warning: multi-threading works only when forceModel->GetInternalForce is parallel-safe
   // Warning: multi-threading works only when forceModel->GetElasticEnergy is parallel-safe
-  #ifdef VEGAFEM_USE_TBB
+  #ifdef NEXDYNFEM_USE_TBB
   tbb::parallel_for(tbb::blocked_range<int>(0, r), [&](const tbb::blocked_range<int> & rng)
   {
   #else
@@ -217,7 +217,7 @@ double FiniteDifferenceTester::testStiffnessMatrix(const double * u, double * re
 
       localDispBuffer[j] = oldvalue;
     }
-  #ifdef VEGAFEM_USE_TBB
+  #ifdef NEXDYNFEM_USE_TBB
   }, tbb::static_partitioner());
   #endif
 
@@ -235,4 +235,4 @@ double FiniteDifferenceTester::testStiffnessMatrix(const double * u, double * re
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem

@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "exactArithmetic" library , Copyright (C) 2018 USC                    *
  * All rights reserved.                                                  *
@@ -30,12 +30,12 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_VEC3ER_H
-#define VEGAFEM_VEC3ER_H
+#ifndef NEXDYNFEM_VEC3ER_H
+#define NEXDYNFEM_VEC3ER_H
 
 #include "er.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 // vector of 3 ES
@@ -325,6 +325,6 @@ inline Vec3ER::Vec3ER(ER::UninitializedLabel) : elt {ER::UninitializedLabel(), E
 }
 #endif
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif

@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "forceModel" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC     *
  * All rights reserved.                                                  *
@@ -32,7 +32,7 @@
 
 #include "massSpringSystemForceModel.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 MassSpringSystemForceModel::MassSpringSystemForceModel(MassSpringSystem * massSpringSystem_): massSpringSystem(massSpringSystem_)
@@ -61,4 +61,4 @@ void MassSpringSystemForceModel::GetTangentStiffnessMatrix(const double * u, Spa
 } 
 
 
-}//namespace vegafem
+}//namespace nexdynfem

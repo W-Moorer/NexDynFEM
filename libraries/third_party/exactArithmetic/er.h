@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "exactArithmetic" library , Copyright (C) 2018 USC                    *
  * All rights reserved.                                                  *
@@ -30,8 +30,8 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_CGALKERNELEXACT_H
-#define VEGAFEM_CGALKERNELEXACT_H
+#ifndef NEXDYNFEM_CGALKERNELEXACT_H
+#define NEXDYNFEM_CGALKERNELEXACT_H
 
 #include <iostream>
 
@@ -45,7 +45,7 @@
 #ifdef VEGA_USE_CGAL_HEADER
 #include <CGAL/Exact_predicates_exact_constructions_kernel.h>
 
-namespace vegafem
+namespace nexdynfem
 {
 
 #ifdef VEGA_ER_INHERIT_FROM_CGAL
@@ -187,5 +187,5 @@ template <class CGAL_Kernel_RT>
 ER assignCGALToER(const CGAL_Kernel_RT & cgal);
 
 #endif
-}//namespace vegafem
+}//namespace nexdynfem
 #endif

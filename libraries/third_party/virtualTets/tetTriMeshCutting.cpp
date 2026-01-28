@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "virtualTets" library , Copyright (C) 2018 USC                        *
  * All rights reserved.                                                  *
@@ -46,12 +46,12 @@
 #include <fstream>
 #include <unordered_map>
 #include <mutex>
-#ifdef VEGAFEM_USE_TBB
+#ifdef NEXDYNFEM_USE_TBB
   #include <tbb/tbb.h>
 #endif
 
 using namespace std;
-namespace vegafem
+namespace nexdynfem
 {
 
 //static int debugInt = 0;
@@ -212,7 +212,7 @@ void TetTriMeshCutting::computeCutTriangles(const std::vector<Vec3ER> * triVtxPo
 
   cutTrisInTet.clear();
   cutTrisInTet.resize(tetMesh.numTets());
-#ifdef VEGAFEM_USE_TBB
+#ifdef NEXDYNFEM_USE_TBB
   mutex cutVtxMutex; // used to lock the access to the buffer storing the cut result
   vector<mutex> tetVtxMutex(tetMesh.numVertices()); // used to lock the access to each exact tet vtx pos
   vector<mutex> triVtxMutex(triMesh.numVertices()); // used to lock the access to each exact input tri vtx pos
@@ -251,7 +251,7 @@ void TetTriMeshCutting::computeCutTriangles(const std::vector<Vec3ER> * triVtxPo
         };
 
 
-#ifdef VEGAFEM_USE_TBB
+#ifdef NEXDYNFEM_USE_TBB
         // guard to all the traingle vtx
         // this will not cause dead locks, because we acquire the lock of each tri vtx according to
         // the order of the tri vtx
@@ -484,7 +484,7 @@ void TetTriMeshCutting::computeCutTriangles(const std::vector<Vec3ER> * triVtxPo
         // but we require input triangles are free of degeneracy
 
         {
-#ifdef VEGAFEM_USE_TBB
+#ifdef NEXDYNFEM_USE_TBB
             lock_guard<mutex> cutVtxlock(cutVtxMutex);
 #endif
           for(size_t i = 0; i < cutVertices.size(); i++)
@@ -541,7 +541,7 @@ void TetTriMeshCutting::computeCutTriangles(const std::vector<Vec3ER> * triVtxPo
 
       cutTrisInTet[tetID] = move(triGroupInTet);
     } // end each tetID
-#ifdef VEGAFEM_USE_TBB
+#ifdef NEXDYNFEM_USE_TBB
   }, tbb::auto_partitioner()); //end for locations
 #endif
 
@@ -573,4 +573,4 @@ TriMeshGeo TetTriMeshCutting::exportCutTriMesh() const
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem

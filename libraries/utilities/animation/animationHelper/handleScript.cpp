@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "animationHelper" library , Copyright (C) 2018 USC                    *
  * All rights reserved.                                                  *
@@ -37,7 +37,7 @@
 #include <sstream>
 #include <cassert>
 
-namespace vegafem
+namespace nexdynfem
 {
 using namespace std;
 
@@ -187,4 +187,4 @@ bool HandleScript::save(const char * filename)
   return true;
 }
 
-}//namespace vegafem
+}//namespace nexdynfem

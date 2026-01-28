@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "Interactive deformable object simulator" driver application,         *
  *  Copyright (C) 2007 CMU, 2009 MIT, 2018 USC                           *
@@ -75,61 +75,61 @@ using namespace std;
   #include "TargetConditionals.h"
 #endif
 
-#include <vegafem/getopts.h>
+#include <nexdynfem/getopts.h>
 #include "initGraphics.h"
-#include <vegafem/sceneObjectDeformable.h>
-#include <vegafem/performanceCounter.h>
+#include <nexdynfem/sceneObjectDeformable.h>
+#include <nexdynfem/performanceCounter.h>
 
-#include <vegafem/volumetricMeshLoader.h>
-#include <vegafem/tetMesh.h>
+#include <nexdynfem/volumetricMeshLoader.h>
+#include <nexdynfem/tetMesh.h>
 
-#include <vegafem/StVKElementABCDLoader.h>
-#include <vegafem/StVKCubeABCD.h>
-#include <vegafem/StVKTetABCD.h>
-#include <vegafem/StVKTetHighMemoryABCD.h>
-#include <vegafem/StVKFEM.h>
-#include <vegafem/StVKStencilForceModel.h>
+#include <nexdynfem/StVKElementABCDLoader.h>
+#include <nexdynfem/StVKCubeABCD.h>
+#include <nexdynfem/StVKTetABCD.h>
+#include <nexdynfem/StVKTetHighMemoryABCD.h>
+#include <nexdynfem/StVKFEM.h>
+#include <nexdynfem/StVKStencilForceModel.h>
 
-#include <vegafem/implicitBackwardEulerSparse.h>
-#include <vegafem/eulerSparse.h>
-#include <vegafem/centralDifferencesSparse.h>
+#include <nexdynfem/implicitBackwardEulerSparse.h>
+#include <nexdynfem/eulerSparse.h>
+#include <nexdynfem/centralDifferencesSparse.h>
 
-#include <vegafem/corotationalLinearFEM.h>
-#include <vegafem/corotationalLinearFEMStencilForceModel.h>
+#include <nexdynfem/corotationalLinearFEM.h>
+#include <nexdynfem/corotationalLinearFEMStencilForceModel.h>
 
-#include <vegafem/isotropicHyperelasticFEM.h>
-#include <vegafem/isotropicMaterial.h>
-#include <vegafem/StVKIsotropicMaterial.h>
-#include <vegafem/neoHookeanIsotropicMaterial.h>
-#include <vegafem/MooneyRivlinIsotropicMaterial.h>
-#include <vegafem/isotropicHyperelasticFEMStencilForceModel.h>
+#include <nexdynfem/isotropicHyperelasticFEM.h>
+#include <nexdynfem/isotropicMaterial.h>
+#include <nexdynfem/StVKIsotropicMaterial.h>
+#include <nexdynfem/neoHookeanIsotropicMaterial.h>
+#include <nexdynfem/MooneyRivlinIsotropicMaterial.h>
+#include <nexdynfem/isotropicHyperelasticFEMStencilForceModel.h>
 
-#include <vegafem/getIntegratorSolver.h>
-#include <vegafem/generateMeshGraph.h>
-#include <vegafem/generateMassMatrix.h>
+#include <nexdynfem/getIntegratorSolver.h>
+#include <nexdynfem/generateMeshGraph.h>
+#include <nexdynfem/generateMassMatrix.h>
 
-#include <vegafem/massSpringSystem.h>
-#include <vegafem/massSpringSystemFromObjMeshConfigFile.h>
-#include <vegafem/massSpringSystemFromTetMeshConfigFile.h>
-#include <vegafem/massSpringSystemFromCubicMeshConfigFile.h>
-#include <vegafem/massSpringStencilForceModel.h>
+#include <nexdynfem/massSpringSystem.h>
+#include <nexdynfem/massSpringSystemFromObjMeshConfigFile.h>
+#include <nexdynfem/massSpringSystemFromTetMeshConfigFile.h>
+#include <nexdynfem/massSpringSystemFromCubicMeshConfigFile.h>
+#include <nexdynfem/massSpringStencilForceModel.h>
 
-#include <vegafem/linearFEMStencilForceModel.h>
+#include <nexdynfem/linearFEMStencilForceModel.h>
 
-#include <vegafem/forceModelAssembler.h>
+#include <nexdynfem/forceModelAssembler.h>
 
-#include <vegafem/graph.h>
-#include <vegafem/renderSprings.h>
-#include <vegafem/configFile.h>
+#include <nexdynfem/graph.h>
+#include <nexdynfem/renderSprings.h>
+#include <nexdynfem/configFile.h>
 
-#include <vegafem/lighting.h>
-#include <vegafem/listIO.h>
-#include <vegafem/matrixIO.h>
-#include <vegafem/averagingBuffer.h>
+#include <nexdynfem/lighting.h>
+#include <nexdynfem/listIO.h>
+#include <nexdynfem/matrixIO.h>
+#include <nexdynfem/averagingBuffer.h>
 
 #include <GL/glui.h>
 
-using namespace vegafem;
+using namespace nexdynfem;
 
 // graphics 
 char windowTitleBase[4096] = "Real-time sim";

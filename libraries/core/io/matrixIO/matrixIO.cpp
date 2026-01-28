@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "matrixIO" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC       *
  * All rights reserved.                                                  *
@@ -37,7 +37,7 @@
 #include "matrixMacros.h"
 #include "matrixIO.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 // writes out the m x n matrix onto the stream, in binary format
@@ -937,4 +937,4 @@ template int ReadModesFromDisk<float>(const char * filename, int * n, int * r, f
 template int WriteModesToDisk<double>(const char * filename, int n, int r, double * frequencies, double * modes);
 template int WriteModesToDisk<float>(const char * filename, int n, int r, float * frequencies, float * modes);
 
-}//namespace vegafem
+}//namespace nexdynfem

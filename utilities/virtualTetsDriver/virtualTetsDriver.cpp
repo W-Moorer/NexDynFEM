@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "Virtual tets" driver application,                                    *
  *  Copyright (C) 2007 CMU, 2009 MIT, 2018 USC                           *
@@ -43,17 +43,17 @@
 #include <sstream>
 #include <functional>
 #include <vector>
-#include <vegafem/virtualTets.h>
-#include <vegafem/virtualTets-via-csg.h>
-#include <vegafem/commandLineParser.h>
-#include <vegafem/filterIterator.h>
-#include <vegafem/predicates.h>
-#include <vegafem/exactOctree.h>
-#include <vegafem/tetMesh.h>
-#include <vegafem/objMesh.h>
-#include <vegafem/profiler.h>
+#include <nexdynfem/virtualTets.h>
+#include <nexdynfem/virtualTets-via-csg.h>
+#include <nexdynfem/commandLineParser.h>
+#include <nexdynfem/filterIterator.h>
+#include <nexdynfem/predicates.h>
+#include <nexdynfem/exactOctree.h>
+#include <nexdynfem/tetMesh.h>
+#include <nexdynfem/objMesh.h>
+#include <nexdynfem/profiler.h>
 using namespace std;
-using namespace vegafem;
+using namespace nexdynfem;
 
 int main(int argc, char ** argv)
 {

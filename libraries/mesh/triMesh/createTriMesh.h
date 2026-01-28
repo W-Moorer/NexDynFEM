@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "mesh" library , Copyright (C) 2018 USC                               *
  * All rights reserved.                                                  *
@@ -30,12 +30,12 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_CREATETRIMESH_H
-#define VEGAFEM_CREATETRIMESH_H
+#ifndef NEXDYNFEM_CREATETRIMESH_H
+#define NEXDYNFEM_CREATETRIMESH_H
 
 #include "triMeshGeo.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 // =========================================================
@@ -63,7 +63,7 @@ TriMeshGeo createCylinderWallMesh(double radius, double height, int subdivisionA
 TriMeshGeo createCylinderMesh(double radius, double height, int subdivisionAxis, int subdivisionHeight);
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

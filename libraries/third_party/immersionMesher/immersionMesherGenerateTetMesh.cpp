@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "immersionMesher" library , Copyright (C) 2018 USC                    *
  * All rights reserved.                                                  *
@@ -42,7 +42,7 @@
 #include "windingNumberTree.h"
 #include "labelOuterTets.h"
 using namespace std;
-using namespace vegafem;
+using namespace nexdynfem;
 
 namespace
 {
@@ -67,7 +67,7 @@ PointInTet getPointInTet(const BarycentricCoordinates & bc, int pointID)
 
 }
     
-namespace vegafem
+namespace nexdynfem
 {
 void ImmersionMesher::buildCellSurfaceMeshes()
 {
@@ -1178,4 +1178,4 @@ void ImmersionMesher::generateImmersedTetMesh(vector<TetMeshGeo> & tetMeshes, ve
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem

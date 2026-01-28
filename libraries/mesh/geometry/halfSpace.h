@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "mesh" library , Copyright (C) 2018 USC                               *
  * All rights reserved.                                                  *
@@ -30,12 +30,12 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_HALFSPACE_H
-#define VEGAFEM_HALFSPACE_H
+#ifndef NEXDYNFEM_HALFSPACE_H
+#define NEXDYNFEM_HALFSPACE_H
 
 #include "vec3d.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 class HalfSpace
@@ -88,7 +88,7 @@ inline bool HalfSpace::intersect(const BoundingBox & bb) const
 
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

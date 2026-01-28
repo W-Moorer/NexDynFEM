@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "rigidBodyDynamics" library , Copyright (C) 2007 CMU                  *
  * All rights reserved.                                                  *
@@ -30,8 +30,8 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_RIGIDBODY_H
-#define VEGAFEM_RIGIDBODY_H
+#ifndef NEXDYNFEM_RIGIDBODY_H
+#define NEXDYNFEM_RIGIDBODY_H
 
 /*
 
@@ -155,7 +155,7 @@ or 4th order. Add support for impulses.
 #include <cstring>
 #include "quaternion.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 class RigidBody
@@ -490,7 +490,7 @@ inline void RigidBody::ResetBodyToRest()
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

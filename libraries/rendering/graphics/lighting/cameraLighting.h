@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "lighting" library , Copyright (C) 2018 USC                           *
  * All rights reserved.                                                  *
@@ -30,13 +30,13 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_CAMERALIGHTING_H
-#define VEGAFEM_CAMERALIGHTING_H
+#ifndef NEXDYNFEM_CAMERALIGHTING_H
+#define NEXDYNFEM_CAMERALIGHTING_H
 
 #include <cstdlib>
 #include <cstring>
 
-namespace vegafem
+namespace nexdynfem
 {
 
 class SphericalCamera;
@@ -121,7 +121,7 @@ inline bool CameraLighting::IsLightEnabled() const
   return lightEnabled;
 }
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

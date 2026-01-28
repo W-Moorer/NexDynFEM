@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "performanceCounter" library , Copyright (C) 2018 USC                 *
  * All rights reserved.                                                  *
@@ -30,15 +30,15 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_PROFILER_H
-#define VEGAFEM_PROFILER_H
+#ifndef NEXDYNFEM_PROFILER_H
+#define NEXDYNFEM_PROFILER_H
 
 #include "stopWatch.h"
 #include "averagingBuffer.h"
 #include <map>
 #include <string>
 
-namespace vegafem
+namespace nexdynfem
 {
 
 // a profiling tool that can record timings in multiple parts of the code
@@ -161,7 +161,7 @@ protected:
   std::string name;
 };
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

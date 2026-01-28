@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "volumetricMesh" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC *
  * All rights reserved.                                                  *
@@ -34,14 +34,14 @@
 #include "cubicMesh.h"
 #include "tetMesh.h"
 
-// for faster parallel loading of multimesh binary files, enable the -DVEGAFEM_USE_TBB macro line in the Makefile-header file (see also documentation)
-#ifdef VEGAFEM_USE_TBB
+// for faster parallel loading of multimesh binary files, enable the -DNEXDYNFEM_USE_TBB macro line in the Makefile-header file (see also documentation)
+#ifdef NEXDYNFEM_USE_TBB
   #include <tbb/tbb.h>
 #else
   #include "range.h"
 #endif
 
-namespace vegafem
+namespace nexdynfem
 {
 using namespace std;
 
@@ -170,7 +170,7 @@ int VolumetricMeshLoader::load(FILE * fin, int * numVolumetricMeshes, Volumetric
     offset[i] = offset[i-1] + bytesWritten[i-1];
 
   // load every volumetric mesh from memory
-#ifdef VEGAFEM_USE_TBB
+#ifdef NEXDYNFEM_USE_TBB
   tbb::parallel_for(tbb::blocked_range<int>(0, numMeshes), [&](const tbb::blocked_range<int> & rng)
   {
 #else
@@ -185,7 +185,7 @@ int VolumetricMeshLoader::load(FILE * fin, int * numVolumetricMeshes, Volumetric
         (*volumetricMeshes)[i] = load((void *)location, memoryLoad);
       }
     }
-#ifdef VEGAFEM_USE_TBB
+#ifdef NEXDYNFEM_USE_TBB
   });
 #endif
   return 0;
@@ -240,4 +240,4 @@ int VolumetricMeshLoader::save(const char * filename, int numVolumetricMeshes, V
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem

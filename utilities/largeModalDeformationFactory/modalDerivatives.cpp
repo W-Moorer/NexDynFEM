@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "Large Modal Deformation Factory",                                    *
  * a pre-processing utility for model reduction of                       *
@@ -35,19 +35,19 @@
  *                                                                       *
  *************************************************************************/
 
-#include <vegafem/sparseMatrix.h>
-#include <vegafem/generateMassMatrix.h>
-#include <vegafem/StVKStiffnessMatrix.h>
-#include <vegafem/StVKCubeABCD.h>
-#include <vegafem/StVKHessianTensor.h>
-#include <vegafem/StVKElementABCDLoader.h>
-#include <vegafem/constrainedDOFs.h>
-#include <vegafem/matrixIO.h>
-#include <vegafem/matrixPCA.h>
-#include <vegafem/computeStiffnessMatrixNullspace.h>
+#include <nexdynfem/sparseMatrix.h>
+#include <nexdynfem/generateMassMatrix.h>
+#include <nexdynfem/StVKStiffnessMatrix.h>
+#include <nexdynfem/StVKCubeABCD.h>
+#include <nexdynfem/StVKHessianTensor.h>
+#include <nexdynfem/StVKElementABCDLoader.h>
+#include <nexdynfem/constrainedDOFs.h>
+#include <nexdynfem/matrixIO.h>
+#include <nexdynfem/matrixPCA.h>
+#include <nexdynfem/computeStiffnessMatrixNullspace.h>
 #include "largeModalDeformationFactory.h"
-#include <vegafem/sparseSolverAvailability.h>
-#include <vegafem/sparseSolvers.h>
+#include <nexdynfem/sparseSolverAvailability.h>
+#include <nexdynfem/sparseSolvers.h>
 using namespace std;
 
 void MyFrame::OnLoadModalDerivatives(wxCommandEvent& event)

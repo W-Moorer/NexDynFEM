@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "Large Modal Deformation Factory",                                    *
  * a pre-processing utility for model reduction of                       *
@@ -37,7 +37,7 @@
 
 // basis from external deformation data 
 
-#include <vegafem/matrixIO.h>
+#include <nexdynfem/matrixIO.h>
 #include "largeModalDeformationFactory.h"
 
 void MyFrame::OnLoadSketchData(wxCommandEvent& event)

@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "immersionMesher" library , Copyright (C) 2018 USC                    *
  * All rights reserved.                                                  *
@@ -49,7 +49,7 @@ ostream & operator << (ostream & o, ImmOwnership os)
   return o;
 }
 
-namespace vegafem
+namespace nexdynfem
 {
 ImmersionGraphNode::ImmersionGraphNode(int cellID, int nodeID, const vector<map<int, bool>> & cellPatches) : nodeID(nodeID), cellID(cellID)
 {
@@ -167,4 +167,4 @@ bool ImmersionGraphNode::operator == (const ImmersionGraphNode & node2) const
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem

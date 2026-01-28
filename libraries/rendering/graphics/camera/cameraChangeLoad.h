@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "camera" library , Copyright (C) 2018 USC                             *
  * All rights reserved.                                                  *
@@ -30,14 +30,14 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_CAMERACHANGELOAD_H
-#define VEGAFEM_CAMERACHANGELOAD_H
+#ifndef NEXDYNFEM_CAMERACHANGELOAD_H
+#define NEXDYNFEM_CAMERACHANGELOAD_H
 
 #include "camera.h"
 #include <string>
 #include <vector>
 
-namespace vegafem
+namespace nexdynfem
 {
 
 // load a script to control camera from disk
@@ -74,7 +74,7 @@ protected:
 };
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

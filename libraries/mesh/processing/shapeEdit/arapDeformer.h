@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "shapeEdit" library , Copyright (C) 2018 USC                          *
  * All rights reserved.                                                  *
@@ -30,8 +30,8 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_ARAPDEFORMER_H
-#define VEGAFEM_ARAPDEFORMER_H
+#ifndef NEXDYNFEM_ARAPDEFORMER_H
+#define NEXDYNFEM_ARAPDEFORMER_H
 
 #include "sparseMatrix.h"
 #include "objMesh.h"
@@ -42,7 +42,7 @@
 #include "tetMesh.h"
 #include "cubicMesh.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 /*
@@ -151,7 +151,7 @@ protected:
 };
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

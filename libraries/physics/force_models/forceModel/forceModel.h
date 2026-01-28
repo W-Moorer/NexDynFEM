@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "forceModel" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC     *
  * All rights reserved.                                                  *
@@ -35,13 +35,13 @@
   Serves as a connecting class between integrators and classes to calculate internal forces and tangent stiffness matrices.
 */
 
-#ifndef VEGAFEM_FORCEMODEL_H
-#define VEGAFEM_FORCEMODEL_H
+#ifndef NEXDYNFEM_FORCEMODEL_H
+#define NEXDYNFEM_FORCEMODEL_H
 
 #include <cstdlib>
 #include "sparseMatrix.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 class ForceModel
@@ -68,7 +68,7 @@ protected:
 };
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

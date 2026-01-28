@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "elasticForceModel" library , Copyright (C) 2007 CMU, 2009 MIT,       *
  *                                                       2018 USC        *
@@ -36,12 +36,12 @@
   using dense matrices.
 */
 
-#ifndef VEGAFEM_REDUCEDSPRINGFORCEMODEL_H
-#define VEGAFEM_REDUCEDSPRINGFORCEMODEL_H
+#ifndef NEXDYNFEM_REDUCEDSPRINGFORCEMODEL_H
+#define NEXDYNFEM_REDUCEDSPRINGFORCEMODEL_H
 
 #include "reducedForceModelWithHessian.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 class ReducedSpringForceModel : public ReducedForceModelWithHessian
@@ -57,7 +57,7 @@ protected:
 };
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

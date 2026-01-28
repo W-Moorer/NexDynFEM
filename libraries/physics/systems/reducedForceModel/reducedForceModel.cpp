@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "reducedForceModel" library , Copyright (C) 2007 CMU, 2009 MIT,       *
  *                                                       2018 USC        *
@@ -35,7 +35,7 @@
 #include <cstdio>
 #include "reducedForceModel.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 void ReducedForceModel::GetForceAndMatrix(double * u, double * internalForces, double * tangentStiffnessMatrix)
@@ -104,4 +104,4 @@ void ReducedForceModel::TestStiffnessMatrix(int numTests, double qAmplitude)
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem

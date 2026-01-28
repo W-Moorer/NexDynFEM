@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "distance field" library , Copyright (C) 2007 CMU, 2018 USC           *
  * All rights reserved.                                                  *
@@ -41,7 +41,7 @@
 #include "closestPointField.h"
 #include "trilinearInterpolation.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 using namespace std;
 
@@ -54,7 +54,7 @@ ClosestPointField::~ClosestPointField()
 {
   free(closestPointData);
 }
-}//namespace vegafem
+}//namespace nexdynfem
 // the routines for signed/unsigned closest point field computation
 #define COMPUTE_CLOSEST_POINT
   #define COMPUTE_SIGNED_FIELD
@@ -62,7 +62,7 @@ ClosestPointField::~ClosestPointField()
   #undef COMPUTE_SIGNED_FIELD
     #include "computeField.cpp"
 #undef COMPUTE_CLOSEST_POINT
-namespace vegafem
+namespace nexdynfem
 {
 void ClosestPointField::set(int resolutionX, int resolutionY, int resolutionZ, Vec3d bmin_, Vec3d bmax_, float * distanceData, float * closestPointData)
 {
@@ -305,4 +305,4 @@ bool ClosestPointField::sanityCheck()
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem

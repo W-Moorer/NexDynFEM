@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "openGLHelper" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC   *
  * All rights reserved.                                                  *
@@ -33,7 +33,7 @@
 #include "printBitmap.h"
 #include "openGL-headers.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 void print_bitmap_string(float x, float y, float z, const char * s)
@@ -57,4 +57,4 @@ void print_bitmap_integer(float x,float y, float z, int i)
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem

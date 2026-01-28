@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "mesher" library , Copyright (C) 2018 USC                             *
  * All rights reserved.                                                  *
@@ -39,8 +39,8 @@
   Proceedings of the 14th International Meshing Roundtable 2005, pp 203-219
 */
 
-#ifndef VEGAFEM_ISOSURFACEMESHER_H
-#define VEGAFEM_ISOSURFACEMESHER_H
+#ifndef NEXDYNFEM_ISOSURFACEMESHER_H
+#define NEXDYNFEM_ISOSURFACEMESHER_H
 
 #include <ctime>
 #include <vector>
@@ -60,7 +60,7 @@
 #include "exactOctree.h"
 #endif
 
-namespace vegafem
+namespace nexdynfem
 {
 class IsosurfaceMesher
 {
@@ -206,7 +206,7 @@ protected:
   int globalLoopIndex = 0;
 };
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

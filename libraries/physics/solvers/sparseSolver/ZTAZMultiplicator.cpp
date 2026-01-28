@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  *  Copyright (C) 2007 CMU, 2009 MIT, 2018 USC                           *
  *                                                                       *
@@ -37,7 +37,7 @@
 #include "ZTAZMultiplicator.h"
 #include "performanceCounter.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 ZTAZMultiplicator::ZTAZMultiplicator(SparseMatrix * A_, SparseMatrix * P_, Matrix<double> * invCp_, Matrix<double> * Cn_): A(A_), P(P_), invCp(invCp_), Cn(Cn_)
@@ -85,4 +85,4 @@ void ZTAZMultiplicator::Multiply(const double * x, double * output)
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem

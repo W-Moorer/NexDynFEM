@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "mesh" library , Copyright (C) 2018 USC                               *
  * All rights reserved.                                                  *
@@ -30,8 +30,8 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_TETMESHGEO_H
-#define VEGAFEM_TETMESHGEO_H
+#ifndef NEXDYNFEM_TETMESHGEO_H
+#define NEXDYNFEM_TETMESHGEO_H
 
 #include "minivector.h"
 #include "boundingBox.h"
@@ -42,7 +42,7 @@
 #include <map>
 #include <cmath>
 
-namespace vegafem
+namespace nexdynfem
 {
 
 // class to reference an external triangle mesh
@@ -203,7 +203,7 @@ TetMeshGeo getSubTetMeshWithSameVertices(const TetMeshRef & tetMesh, const TetID
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

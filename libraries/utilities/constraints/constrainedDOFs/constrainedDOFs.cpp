@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "constrainedDOFs" library , Copyright (C) 2007 CMU, 2009 MIT          *
  * All rights reserved.                                                  *
@@ -35,7 +35,7 @@
 #include <cstdlib>
 #include <cassert>
 
-namespace vegafem
+namespace nexdynfem
 {
 
 void ConstrainedDOFs::InsertDOFs(int mFull, const double * xConstrained, double * x, int numFixedRows, const int * fixedRows, int oneIndexed)
@@ -201,4 +201,4 @@ bool ConstrainedDOFs::CheckValidSortedDOFs(int mFull, int numDOFs, const int * D
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem

@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "elasticForceModel" library , Copyright (C) 2007 CMU, 2009 MIT,       *
  *                                                       2018 USC        *
@@ -35,13 +35,13 @@
   Reduced linear StVK force model.
 */
 
-#ifndef VEGAFEM_REDUCEDLINEARSTVKFORCEMODEL_H
-#define VEGAFEM_REDUCEDLINEARSTVKFORCEMODEL_H
+#ifndef NEXDYNFEM_REDUCEDLINEARSTVKFORCEMODEL_H
+#define NEXDYNFEM_REDUCEDLINEARSTVKFORCEMODEL_H
 
 #include "reducedForceModel.h"
 #include "StVKReducedStiffnessMatrix.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 class ReducedLinearStVKForceModel : public ReducedForceModel
@@ -59,7 +59,7 @@ protected:
 };
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

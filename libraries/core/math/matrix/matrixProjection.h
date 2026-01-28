@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "matrix" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC         *
  * All rights reserved.                                                  *
@@ -30,8 +30,8 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_MATRIXPROJECTION_H
-#define VEGAFEM_MATRIXPROJECTION_H
+#ifndef NEXDYNFEM_MATRIXPROJECTION_H
+#define NEXDYNFEM_MATRIXPROJECTION_H
 
 /*
   These routines allow you to multiply a matrix with a vector,
@@ -40,7 +40,7 @@
 
   See also matrixIO.h.
 */
-namespace vegafem
+namespace nexdynfem
 {
 
 // construct vector f, using the equation f = U q
@@ -69,6 +69,6 @@ void ProjectVector(int n, int r, real * U, real * q, real * f);
 // and f_buffer[j] specifies the force component at i_buffer[j]
 template <class real>
 void ProjectSparseVector(int n, int r, real * U, real * q, real * f_buffer, int * i_buffer, int k);
-}//namespace vegafem
+}//namespace nexdynfem
 #endif
 

@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "matrixIO" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC       *
  * All rights reserved.                                                  *
@@ -34,8 +34,8 @@
   Commonly used macros in the matrix library.
 */
 
-#ifndef VEGAFEM_MATRIXMACROS_H
-#define VEGAFEM_MATRIXMACROS_H
+#ifndef NEXDYNFEM_MATRIXMACROS_H
+#define NEXDYNFEM_MATRIXMACROS_H
 
 /*
    Returns the array offset index of element located in row i and column j (both 0-indexed). The matrix has "numRows" rows, and is stored in LAPACK-style column-major order.

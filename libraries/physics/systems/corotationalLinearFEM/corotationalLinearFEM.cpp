@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "corotational linear FEM" library , Copyright (C) 2018 USC            *
  * All rights reserved.                                                  *
@@ -38,7 +38,7 @@
 #include "volumetricMeshOrthotropicMaterial.h"
 #include "cubicMesh.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 #include <cstring>
@@ -1212,4 +1212,4 @@ void CorotationalLinearFEM::inverse4x4(double * A, double * AInv)
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem

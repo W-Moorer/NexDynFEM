@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "basicAlgorithms" library , Copyright (C) 2018 USC                    *
  * All rights reserved.                                                  *
@@ -30,8 +30,8 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_ALGORITHM_H
-#define VEGAFEM_ALGORITHM_H
+#ifndef NEXDYNFEM_ALGORITHM_H
+#define NEXDYNFEM_ALGORITHM_H
 
 #include "range.h"
 
@@ -41,7 +41,7 @@
 #include <vector>
 #include <cmath>
 
-namespace vegafem
+namespace nexdynfem
 {
 template<class Container>
 int sizei(const Container & c) { return (int)c.size(); }
@@ -228,7 +228,7 @@ ForwardIt reduceDuplicates(ForwardIt first, ForwardIt last, BinaryReduce reduce)
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

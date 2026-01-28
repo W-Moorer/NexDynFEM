@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "animationHelper" library , Copyright (C) 2018 USC                    *
  * All rights reserved.                                                  *
@@ -34,7 +34,7 @@
 #include "openGLHelper.h"
 #include <iostream>
 
-namespace vegafem
+namespace nexdynfem
 {
 using namespace std;
 
@@ -123,4 +123,4 @@ void HandleControl::renderHandle(SphericalCamera * camera, const Vec3d & handleP
   handleRender.render(handlePosition);
 }
 
-}//namespace vegafem
+}//namespace nexdynfem

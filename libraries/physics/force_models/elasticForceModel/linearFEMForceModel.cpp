@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "forceModel" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC     *
  * All rights reserved.                                                  *
@@ -33,7 +33,7 @@
 #include "linearFEMForceModel.h"
 #include "StVKStiffnessMatrix.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 LinearFEMForceModel::LinearFEMForceModel(StVKInternalForces * stVKInternalForces) 
@@ -74,4 +74,4 @@ void LinearFEMForceModel::GetTangentStiffnessMatrix(const double * u, SparseMatr
 } 
 
 
-}//namespace vegafem
+}//namespace nexdynfem

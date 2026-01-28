@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "modalMatrix" library , Copyright (C) 2007 CMU                        *
  * All rights reserved.                                                  *
@@ -30,12 +30,12 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_MODALMATRIX_H
-#define VEGAFEM_MODALMATRIX_H
+#ifndef NEXDYNFEM_MODALMATRIX_H
+#define NEXDYNFEM_MODALMATRIX_H
 
 #include "matrixMacros.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 #define MODAL_MATRIX_INTERNAL_COPY 0
@@ -132,7 +132,7 @@ inline void ModalMatrix::AddAssembleSingleVertex(int vertex, double * q, double 
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

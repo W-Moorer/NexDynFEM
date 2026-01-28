@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "forceModel" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC     *
  * All rights reserved.                                                  *
@@ -34,13 +34,13 @@
   Force model for the Corotational linear FEM material.
 */
 
-#ifndef VEGAFEM_COROTATIONALLINEARFEMFORCEMODEL_H
-#define VEGAFEM_COROTATIONALLINEARFEMFORCEMODEL_H
+#ifndef NEXDYNFEM_COROTATIONALLINEARFEMFORCEMODEL_H
+#define NEXDYNFEM_COROTATIONALLINEARFEMFORCEMODEL_H
 
 #include "corotationalLinearFEM.h"
 #include "forceModel.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 class CorotationalLinearFEMForceModel : public ForceModel
@@ -66,7 +66,7 @@ protected:
 };
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

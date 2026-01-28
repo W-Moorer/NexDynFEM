@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "forceModel" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC     *
  * All rights reserved.                                                  *
@@ -36,13 +36,13 @@
   (but this choice of StVK vs some other model does not matter; due to linearity).
 */
 
-#ifndef VEGAFEM_LINEARFEMFORCEMODEL_H
-#define VEGAFEM_LINEARFEMFORCEMODEL_H
+#ifndef NEXDYNFEM_LINEARFEMFORCEMODEL_H
+#define NEXDYNFEM_LINEARFEMFORCEMODEL_H
 
 #include "StVKInternalForces.h"
 #include "forceModel.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 class LinearFEMForceModel : public ForceModel
@@ -61,7 +61,7 @@ protected:
 };
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

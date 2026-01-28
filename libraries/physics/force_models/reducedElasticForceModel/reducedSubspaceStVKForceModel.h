@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "elasticForceModel" library , Copyright (C) 2007 CMU, 2009 MIT,       *
  *                                                       2018 USC        *
@@ -39,8 +39,8 @@
   fq = U^T f(U*q)
 */
 
-#ifndef VEGAFEM_REDUCEDSUBSPACESTVKFORCEMODEL_H
-#define VEGAFEM_REDUCEDSUBSPACESTVKFORCEMODEL_H
+#ifndef NEXDYNFEM_REDUCEDSUBSPACESTVKFORCEMODEL_H
+#define NEXDYNFEM_REDUCEDSUBSPACESTVKFORCEMODEL_H
 
 #include <cmath>
 #include <cstdio>
@@ -54,7 +54,7 @@
 #include "modalMatrix.h"
 #include "sparseMatrix.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 class ReducedSubspaceStVKForceModel : public ReducedForceModel
@@ -87,7 +87,7 @@ protected:
   double * bufferMatrix; 
 };
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

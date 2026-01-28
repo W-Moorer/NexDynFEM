@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "objMeshGPUDeformer" library , Copyright (C) 2007 CMU, 2009 MIT,      *
  *                                                        2018 USC       *
@@ -45,7 +45,7 @@
   GLAPI GLenum APIENTRY glCheckFramebufferStatusEXT (GLenum);
 #endif
 
-namespace vegafem
+namespace nexdynfem
 {
 
 ObjMeshGPUDeformer_coarseToFine_fbo::~ObjMeshGPUDeformer_coarseToFine_fbo() {}
@@ -162,4 +162,4 @@ void ObjMeshGPUDeformer_coarseToFine_fbo::SetDerivedData(void * data)
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem

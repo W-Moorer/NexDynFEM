@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "sparseSolver" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC   *
  * All rights reserved.                                                  *
@@ -34,14 +34,14 @@
   Helper class for the ARPACK solver.
 */
 
-#ifndef VEGAFEM_INVZTAZSOLVER_H
-#define VEGAFEM_INVZTAZSOLVER_H
+#ifndef NEXDYNFEM_INVZTAZSOLVER_H
+#define NEXDYNFEM_INVZTAZSOLVER_H
 
 #include "ZTAZMultiplicator.h"
 #include "CGSolver.h"
 #include "PardisoSolver.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 /*
   Given a vector rhs, compute (Z^T A Z)^{-1} rhs
@@ -69,7 +69,7 @@ protected:
 };
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

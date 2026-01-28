@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "basicAlgorithms" library , Copyright (C) 2018 USC                    *
  * All rights reserved.                                                  *
@@ -36,7 +36,7 @@
 
 #include "uniqueIntegerID.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 using namespace std;
 
@@ -116,4 +116,4 @@ void UniqueIntegerID::Clear(unsigned int startID)
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem

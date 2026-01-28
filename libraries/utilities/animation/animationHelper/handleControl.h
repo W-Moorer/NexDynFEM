@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "animationHelper" library , Copyright (C) 2018 USC                    *
  * All rights reserved.                                                  *
@@ -30,8 +30,8 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_HANDLECONTROL_H
-#define VEGAFEM_HANDLECONTROL_H
+#ifndef NEXDYNFEM_HANDLECONTROL_H
+#define NEXDYNFEM_HANDLECONTROL_H
 
 #include "handleRender.h"
 #include "minivector.h"
@@ -39,7 +39,7 @@
 
 #include <functional>
 
-namespace vegafem
+namespace nexdynfem
 {
 class HandleControl
 {
@@ -76,7 +76,7 @@ protected:
 
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

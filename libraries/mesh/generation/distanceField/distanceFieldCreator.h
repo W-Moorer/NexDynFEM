@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "distance field" library , Copyright (C) 2007 CMU, 2018 USC           *
  * All rights reserved.                                                  *
@@ -35,8 +35,8 @@
   The specific algorithm is controlled using "SignedFieldCreationMode" (below).
 */
 
-#ifndef VEGAFEM_DISTANCEFIELD_CREATOR_H
-#define VEGAFEM_DISTANCEFIELD_CREATOR_H
+#ifndef NEXDYNFEM_DISTANCEFIELD_CREATOR_H
+#define NEXDYNFEM_DISTANCEFIELD_CREATOR_H
 
 #include <vector>
 #include "distanceField.h"
@@ -44,7 +44,7 @@
 #include "closestPointField.h"
 #include "objMesh.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 class DistanceFieldCreator
@@ -92,7 +92,7 @@ protected:
 };
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

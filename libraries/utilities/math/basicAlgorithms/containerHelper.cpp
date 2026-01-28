@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "basicAlgorithms" library , Copyright (C) 2018 USC                    *
  * All rights reserved.                                                  *
@@ -32,7 +32,7 @@
 
 #include "containerHelper.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 using namespace std;
 
@@ -78,4 +78,4 @@ template bool loadFromAscii<int>(std::vector<int> & v, std::istream & in);
 template bool loadFromAscii<double>(std::vector<double> & v, std::istream & in);
 
 
-}//namespace vegafem
+}//namespace nexdynfem

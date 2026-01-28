@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "objMesh" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC        *
  * All rights reserved.                                                  *
@@ -30,8 +30,8 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_OBJMESHGRAPH_H
-#define VEGAFEM_OBJMESHGRAPH_H
+#ifndef NEXDYNFEM_OBJMESHGRAPH_H
+#define NEXDYNFEM_OBJMESHGRAPH_H
 
 /*
    Jernej Barbic, CMU, MIT, USC, 2007-2012
@@ -47,7 +47,7 @@
 #include "graph.h"
 #include "objMesh.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 class ObjMeshGraph : public Graph
@@ -105,7 +105,7 @@ inline int ObjMeshGraph::GetFaceID(int face)
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

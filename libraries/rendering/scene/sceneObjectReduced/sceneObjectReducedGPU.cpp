@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "sceneObject" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC    *
  * All rights reserved.                                                  *
@@ -37,7 +37,7 @@
 #include <cfloat>
 #include "sceneObjectReducedGPU.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 SceneObjectReducedGPU::SceneObjectReducedGPU(const char * filenameOBJ, 
@@ -198,4 +198,4 @@ int SceneObjectReducedGPU::GetClosestVertex(Vec3d & queryPos, double * distance,
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem

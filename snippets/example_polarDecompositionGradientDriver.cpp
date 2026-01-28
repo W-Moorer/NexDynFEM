@@ -59,7 +59,7 @@
 #include "polarDecomposition.h"
 #include "polarDecompositionGradient.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 #include <cstdlib>
@@ -127,4 +127,4 @@ int main()
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem

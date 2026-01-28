@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "Stencil Force Model" library , Copyright (C) 2018 USC                *
  * All rights reserved.                                                  *
@@ -31,13 +31,13 @@
  *************************************************************************/
 
 
-#ifndef VEGAFEM_CLOTHBW_STENCIL_FORCEMODEL_H
-#define VEGAFEM_CLOTHBW_STENCIL_FORCEMODEL_H
+#ifndef NEXDYNFEM_CLOTHBW_STENCIL_FORCEMODEL_H
+#define NEXDYNFEM_CLOTHBW_STENCIL_FORCEMODEL_H
 
 #include "clothBW.h"
 #include "stencilForceModel.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 // Stencils for cloth simulation. There are two different stencils here.
@@ -61,7 +61,7 @@ protected:
 };
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

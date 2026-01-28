@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "distance field" library , Copyright (C) 2007 CMU, 2018 USC           *
  * All rights reserved.                                                  *
@@ -34,8 +34,8 @@
   Narrowband distance field computation.
 */
 
-#ifndef VEGAFEM_DISTANCEFIELDNARROWBAND_H
-#define VEGAFEM_DISTANCEFIELDNARROWBAND_H
+#ifndef NEXDYNFEM_DISTANCEFIELDNARROWBAND_H
+#define NEXDYNFEM_DISTANCEFIELDNARROWBAND_H
 
 #include "objMesh.h"
 #include "triple.h"
@@ -44,7 +44,7 @@
 #include <map>
 #include <cfloat>
 
-namespace vegafem
+namespace nexdynfem
 {
 
 class DistanceFieldNarrowBand : public DistanceFieldBase
@@ -154,7 +154,7 @@ inline void DistanceFieldNarrowBand::setDistance(int i, int j, int k, float valu
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

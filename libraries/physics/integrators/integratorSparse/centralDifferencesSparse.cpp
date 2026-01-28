@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "integrator" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC     *
  * All rights reserved.                                                  *
@@ -39,7 +39,7 @@
 #include "constrainedDOFs.h"
 #include "centralDifferencesSparse.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 CentralDifferencesSparse::CentralDifferencesSparse(int numDOFs, double timestep, SparseMatrix * massMatrix_, ForceModel * forceModel_, int numConstrainedDOFs, int * constrainedDOFs, double dampingMassCoef, double dampingStiffnessCoef, int tangentialDampingMode_, int numSolverThreads_): IntegratorBaseSparse(numDOFs, timestep, massMatrix_, forceModel_, numConstrainedDOFs, constrainedDOFs, dampingMassCoef, dampingStiffnessCoef), tangentialDampingMode(tangentialDampingMode_), numSolverThreads(numSolverThreads_), timestepIndex(0)
@@ -263,4 +263,4 @@ void CentralDifferencesSparse::ResetToRest()
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem

@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "distance field" library , Copyright (C) 2007 CMU, 2018 USC           *
  * All rights reserved.                                                  *
@@ -88,7 +88,7 @@
 
 using namespace std;
 
-namespace vegafem
+namespace nexdynfem
 {
 //#define GENERATE_DEBUG_DATA
 
@@ -137,7 +137,7 @@ void DistanceField::enableVoronoiDiagramComputation(bool computeVoronoiDiagram)
 {
   this->computeVoronoiDiagram = computeVoronoiDiagram;
 }
-}//namespace vegafem
+}//namespace nexdynfem
 // the routines for signed and unsigned distance field computation
 #define COMPUTE_SIGNED_FIELD
   #define COMPUTE_FLOOD_FIELD
@@ -146,7 +146,7 @@ void DistanceField::enableVoronoiDiagramComputation(bool computeVoronoiDiagram)
     #include "computeField.cpp"
 #undef COMPUTE_SIGNED_FIELD
   #include "computeField.cpp"
-namespace vegafem
+namespace nexdynfem
 {
 int DistanceField::load(const std::string& filename)
 {
@@ -1064,4 +1064,4 @@ void DistanceField::offsetDistanceField(double offset)
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem

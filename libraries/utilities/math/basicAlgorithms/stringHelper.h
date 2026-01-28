@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "basicAlgorithms" library , Copyright (C) 2018 USC                    *
  * All rights reserved.                                                  *
@@ -30,12 +30,12 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_STRINGHELPER_H
-#define VEGAFEM_STRINGHELPER_H
+#ifndef NEXDYNFEM_STRINGHELPER_H
+#define NEXDYNFEM_STRINGHELPER_H
 
 #include <string>
 
-namespace vegafem
+namespace nexdynfem
 {
 
 // check with str ends with substr
@@ -64,7 +64,7 @@ void upperCase(char * s);
 void upperCase(std::string & s);
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

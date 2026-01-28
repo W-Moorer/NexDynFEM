@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "laplacianMatrix" library , Copyright (C) 2018 USC                    *
  * All rights reserved.                                                  *
@@ -37,7 +37,7 @@ using namespace std;
 #include "LagrangeMultiplierSolver.h"
 #include "generateGradientMatrix.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 // standard Laplace matrix on the tets
 // dimension is T x T, T is #tets
@@ -238,4 +238,4 @@ void LaplacianMatrix::ExtrapolateScalarField(const SparseMatrix * L, int numSele
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem

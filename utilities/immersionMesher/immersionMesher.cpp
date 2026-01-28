@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "Immersion mesher" driver application,                                *
  *  Copyright (C) 2007 CMU, 2009 MIT, 2018 USC                           *
@@ -38,14 +38,14 @@
   It calls routines from the immersionMeshing library.
 */
 
-#include <vegafem/objMesh.h>
-#include <vegafem/immersionMesher.h>
-#include <vegafem/performanceCounter.h>
-#include <vegafem/tetMeshGeo.h>
-#include <vegafem/basicAlgorithms.h>
-#include <vegafem/initPredicates.h>
-#include <vegafem/stringHelper.h>
-#include <vegafem/commandLineParser.h>
+#include <nexdynfem/objMesh.h>
+#include <nexdynfem/immersionMesher.h>
+#include <nexdynfem/performanceCounter.h>
+#include <nexdynfem/tetMeshGeo.h>
+#include <nexdynfem/basicAlgorithms.h>
+#include <nexdynfem/initPredicates.h>
+#include <nexdynfem/stringHelper.h>
+#include <nexdynfem/commandLineParser.h>
 #include <set>
 #include <cstdlib>
 #include <cstdio>
@@ -63,7 +63,7 @@
 #endif
 
 using namespace std;
-using namespace vegafem;
+using namespace nexdynfem;
 
 #define PRINT_SWITCH(sw) printf(#sw " is %s\n", (sw) ? "ON" : "OFF")
 #define PRINT_VALUE(value) cout << #value << " is now " << value << endl

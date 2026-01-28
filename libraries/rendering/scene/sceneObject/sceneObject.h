@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "sceneObject" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC    *
  * All rights reserved.                                                  *
@@ -35,8 +35,8 @@
   This library depends on the "objMesh" library. See also objMesh.h.
 */
 
-#ifndef VEGAFEM_SCENEOBJECT_H
-#define VEGAFEM_SCENEOBJECT_H
+#ifndef NEXDYNFEM_SCENEOBJECT_H
+#define NEXDYNFEM_SCENEOBJECT_H
 
 #include "openGL-headers.h"
 
@@ -44,7 +44,7 @@
 #include "objMeshRender.h"
 #include "minivector.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 class SceneObject
 {
@@ -188,7 +188,7 @@ protected:
 };
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

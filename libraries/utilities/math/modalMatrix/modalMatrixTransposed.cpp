@@ -37,7 +37,7 @@
 #endif
 #include "modalMatrixTransposed.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 template<bool C>
 class _cblas_xgemv {};
@@ -465,4 +465,4 @@ template void ModalMatrixTransposed<float>::AssembleVector(float * q, float * u)
 template void ModalMatrixTransposed<double>::AddAssembleVector(double * q, double * u);
 template void ModalMatrixTransposed<float>::AddAssembleVector(float * q, float * u);
 
-}//namespace vegafem
+}//namespace nexdynfem

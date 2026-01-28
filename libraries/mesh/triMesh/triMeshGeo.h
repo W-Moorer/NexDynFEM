@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "mesh" library , Copyright (C) 2018 USC                               *
  * All rights reserved.                                                  *
@@ -30,8 +30,8 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_TRIMESHGEO_H
-#define VEGAFEM_TRIMESHGEO_H
+#ifndef NEXDYNFEM_TRIMESHGEO_H
+#define NEXDYNFEM_TRIMESHGEO_H
 
 #include "vec3d.h"
 #include "vec3i.h"
@@ -41,7 +41,7 @@
 #include <algorithm>
 #include <map>
 
-namespace vegafem
+namespace nexdynfem
 {
 
 // a triangle struct to hold triangle index, its vertex indices and positions
@@ -379,7 +379,7 @@ TriMeshGeo getSubTriMesh(const TriMeshRef & mesh, const TriangleIDContainer & su
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

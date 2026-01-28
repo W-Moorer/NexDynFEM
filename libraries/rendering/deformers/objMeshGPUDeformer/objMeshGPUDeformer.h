@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "objMeshGPUDeformer" library , Copyright (C) 2007 CMU, 2009 MIT,      *
  *                                                        2018 USC       *
@@ -31,8 +31,8 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_OBJMESHGPUDEFORMER__H
-#define VEGAFEM_OBJMESHGPUDEFORMER__H
+#ifndef NEXDYNFEM_OBJMESHGPUDEFORMER__H
+#define NEXDYNFEM_OBJMESHGPUDEFORMER__H
 
 #if defined(_WIN32) || defined(WIN32)
   #include <windows.h>
@@ -56,7 +56,7 @@
 
 #define OBJMESHGPUDEFORMER_USING_VBOS
 
-namespace vegafem
+namespace nexdynfem
 {
 // abstract virtual class, do not initialize directly
 class ObjMeshGPUDeformer
@@ -191,7 +191,7 @@ protected:
   static CGparameter texPass2Param;
 };
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

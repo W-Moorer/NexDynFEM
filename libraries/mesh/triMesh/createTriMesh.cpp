@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "mesh" library , Copyright (C) 2018 USC                               *
  * All rights reserved.                                                  *
@@ -42,7 +42,7 @@
 #include <functional>
 #include <map>
 
-namespace vegafem
+namespace nexdynfem
 {
 using namespace std;
 
@@ -153,4 +153,4 @@ TriMeshGeo createCylinderMesh(double radius, double height, int subdivisionAxis,
   return mesh;
 }
 
-}//namespace vegafem
+}//namespace nexdynfem

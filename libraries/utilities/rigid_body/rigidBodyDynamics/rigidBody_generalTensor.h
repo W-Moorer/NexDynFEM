@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "rigidBodyDynamics" library , Copyright (C) 2007 CMU                  *
  * All rights reserved.                                                  *
@@ -30,8 +30,8 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_RIGIDBODY_GENERAL_TENSOR_H
-#define VEGAFEM_RIGIDBODY_GENERAL_TENSOR_H
+#ifndef NEXDYNFEM_RIGIDBODY_GENERAL_TENSOR_H
+#define NEXDYNFEM_RIGIDBODY_GENERAL_TENSOR_H
 
 /*
   Classes 'RigidBody' and 'RigidBody_GeneralTensor' 
@@ -48,7 +48,7 @@
 
 #include "rigidBody.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 class RigidBody_GeneralTensor : public RigidBody
@@ -83,7 +83,7 @@ protected:
 };
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

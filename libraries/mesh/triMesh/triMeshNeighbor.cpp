@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "mesh" library , Copyright (C) 2018 USC                               *
  * All rights reserved.                                                  *
@@ -38,7 +38,7 @@
 #include <set>
 #include <iostream>
 using namespace std;
-using namespace vegafem;
+using namespace nexdynfem;
 namespace
 {
 
@@ -121,7 +121,7 @@ vector<pair<int, OEdgeKey>> findBoundaryTriangles(const std::vector<Vec3i> & tri
 } // end anonymous namespace
 
 
-namespace vegafem
+namespace nexdynfem
 {
 TriangleNeighbor::TriangleNeighbor(const vector<Vec3i> & triangles) : numTriangles(triangles.size()),
     triNbrs(triangles.size(), Vec3i(-1))
@@ -670,4 +670,4 @@ vector<OEdgeKey> getExteriorEdges(int numTriangles, const Vec3i * triangles)
   return ret;
 }
 
-}//namespace vegafem
+}//namespace nexdynfem

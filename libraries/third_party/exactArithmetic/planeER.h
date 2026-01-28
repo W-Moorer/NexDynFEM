@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "exactArithmetic" library , Copyright (C) 2018 USC                    *
  * All rights reserved.                                                  *
@@ -30,12 +30,12 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_PLANEER_H
-#define VEGAFEM_PLANEER_H
+#ifndef NEXDYNFEM_PLANEER_H
+#define NEXDYNFEM_PLANEER_H
 
 #include "vec3ER.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 struct FastPlaneER
@@ -48,7 +48,7 @@ struct FastPlaneER
   ER d;
 };
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

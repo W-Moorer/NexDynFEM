@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "mesh" library , Copyright (C) 2018 USC                               *
  * All rights reserved.                                                  *
@@ -30,14 +30,14 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_LABELOUTERTETS_H
-#define VEGAFEM_LABELOUTERTETS_H
+#ifndef NEXDYNFEM_LABELOUTERTETS_H
+#define NEXDYNFEM_LABELOUTERTETS_H
 
 #include "tetMeshGeo.h"
 #include <functional>
 #include <vector>
 
-namespace vegafem
+namespace nexdynfem
 {
 
 // use flood-fill to remove tets which considered outside when embedding a closed surface.
@@ -48,7 +48,7 @@ std::vector<bool> labelOuterTets(const TetMeshRef & tetMesh, const TetNeighbor &
     std::function<bool(int tetID)> isTetBoundary, std::function<bool(int tetID)> isTetOuter);
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

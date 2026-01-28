@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "elasticForceModel" library , Copyright (C) 2007 CMU, 2009 MIT,       *
  *                                                       2018 USC        *
@@ -38,8 +38,8 @@
   fq = U^T f(U*q)
 */
 
-#ifndef VEGAFEM_REDUCEDMASSSPRINGSYSTEMFORCEMODEL_H
-#define VEGAFEM_REDUCEDMASSSPRINGSYSTEMFORCEMODEL_H
+#ifndef NEXDYNFEM_REDUCEDMASSSPRINGSYSTEMFORCEMODEL_H
+#define NEXDYNFEM_REDUCEDMASSSPRINGSYSTEMFORCEMODEL_H
 
 #include <cstdlib>
 #include "modalMatrix.h"
@@ -47,7 +47,7 @@
 #include "massSpringSystem.h"
 #include "reducedForceModel.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 class ReducedMassSpringSystemForceModel : public virtual ReducedForceModel
@@ -84,7 +84,7 @@ protected:
   #endif
 };
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

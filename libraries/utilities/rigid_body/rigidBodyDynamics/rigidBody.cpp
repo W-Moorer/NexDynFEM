@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "rigidBodyDynamics" library , Copyright (C) 2007 CMU                  *
  * All rights reserved.                                                  *
@@ -32,7 +32,7 @@
 
 #include "rigidBody.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 RigidBody::RigidBody(double mass, double inertiaTensorAtRestX, double inertiaTensorAtRestY, double inertiaTensorAtRestZ)
@@ -236,4 +236,4 @@ void RigidBody::SetRotationalDamping(double rotationalDampingCoef)
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem

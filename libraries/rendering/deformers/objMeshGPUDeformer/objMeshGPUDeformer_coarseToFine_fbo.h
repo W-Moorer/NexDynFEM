@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "objMeshGPUDeformer" library , Copyright (C) 2007 CMU, 2009 MIT,      *
  *                                                        2018 USC       *
@@ -31,12 +31,12 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_OBJMESHGPUDEFORMER_COARSETOFINE_FBO_H
-#define VEGAFEM_OBJMESHGPUDEFORMER_COARSETOFINE_FBO_H
+#ifndef NEXDYNFEM_OBJMESHGPUDEFORMER_COARSETOFINE_FBO_H
+#define NEXDYNFEM_OBJMESHGPUDEFORMER_COARSETOFINE_FBO_H
 
 #include "objMeshGPUDeformer_coarseToFine.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 class ObjMeshGPUDeformer_coarseToFine_fbo : public ObjMeshGPUDeformer_coarseToFine
@@ -63,7 +63,7 @@ protected:
 };
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

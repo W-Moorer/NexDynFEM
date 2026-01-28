@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "openGLHelper" library , Copyright (C) 2018 USC                       *
  * All rights reserved.                                                  *
@@ -30,12 +30,12 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_FOG_H
-#define VEGAFEM_FOG_H
+#ifndef NEXDYNFEM_FOG_H
+#define NEXDYNFEM_FOG_H
 
 #include "openGL-headers.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 // a simple struct for rendering fog using openGL
@@ -65,7 +65,7 @@ inline void Fog::setParameters() const
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

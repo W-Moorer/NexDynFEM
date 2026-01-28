@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "basicAlgorithms" library , Copyright (C) 2018 USC                    *
  * All rights reserved.                                                  *
@@ -30,13 +30,13 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_UNIQUERECENTQUEUE_H
-#define VEGAFEM_UNIQUERECENTQUEUE_H
+#ifndef NEXDYNFEM_UNIQUERECENTQUEUE_H
+#define NEXDYNFEM_UNIQUERECENTQUEUE_H
 
 #include "range.h"
 #include <list>
 
-namespace vegafem
+namespace nexdynfem
 {
 
 template<class T>
@@ -107,7 +107,7 @@ Range<typename std::list<T>::const_iterator> UniqueRecentQueue<T>::last(int numE
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
  /* UNIQUERECENTQUEUE_H_ */

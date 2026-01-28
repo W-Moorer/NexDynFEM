@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "volumetricMesh" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC *
  * All rights reserved.                                                  *
@@ -30,8 +30,8 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_VOLUMETRICMESH_H
-#define VEGAFEM_VOLUMETRICMESH_H
+#ifndef NEXDYNFEM_VOLUMETRICMESH_H
+#define NEXDYNFEM_VOLUMETRICMESH_H
 
 /*
   This abstract class can store a generic volumetric 3D mesh. 
@@ -60,7 +60,7 @@
 #include "minivector.h"
 #include "boundingBox.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 class VolumetricMesh
@@ -425,7 +425,7 @@ inline void VolumetricMesh::Region::setMaterialIndex(int index) { materialIndex 
 inline void VolumetricMesh::Region::setSetIndex(int index) { setIndex = index; }
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

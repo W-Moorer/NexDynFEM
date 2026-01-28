@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "objMeshGPUDeformer" library , Copyright (C) 2007 CMU, 2009 MIT,      *
  *                                                        2018 USC       *
@@ -33,8 +33,8 @@
 
 // this class works under Windows only
 
-#ifndef VEGAFEM_OBJMESHGPUDEFORMER_UUQ_PBUFFER_H
-#define VEGAFEM_OBJMESHGPUDEFORMER_UUQ_PBUFFER_H
+#ifndef NEXDYNFEM_OBJMESHGPUDEFORMER_UUQ_PBUFFER_H
+#define NEXDYNFEM_OBJMESHGPUDEFORMER_UUQ_PBUFFER_H
 
 #if defined(_WIN32) || defined(WIN32)
 
@@ -47,7 +47,7 @@
 #include "objMeshGPUDeformer_uUq.h"
 #include <GL/wglext.h>
 
-namespace vegafem
+namespace nexdynfem
 {
 
 class ObjMeshGPUDeformer_uUq_pbuffer : public ObjMeshGPUDeformer_uUq
@@ -102,7 +102,7 @@ protected:
 };
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "Large Modal Deformation Factory",                                    *
  * a pre-processing utility for model reduction of                       *
@@ -38,7 +38,7 @@
 // matrix conversion routines
 
 #include "largeModalDeformationFactory.h"
-#include <vegafem/matrixIO.h>
+#include <nexdynfem/matrixIO.h>
 
 /* XPM */
 static const char *folder_open_xpm[] = {

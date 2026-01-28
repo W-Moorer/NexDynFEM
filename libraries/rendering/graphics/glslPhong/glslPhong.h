@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "glslPhong" library , Copyright (C) 2018 USC                          *
  * All rights reserved.                                                  *
@@ -36,12 +36,12 @@
 */
 
 
-#ifndef VEGAFEM_GLSLPHONG_H
-#define VEGAFEM_GLSLPHONG_H
+#ifndef NEXDYNFEM_GLSLPHONG_H
+#define NEXDYNFEM_GLSLPHONG_H
 
 #include "openGL-headers.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 class GLSLPhong
@@ -76,7 +76,7 @@ protected:
 };
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

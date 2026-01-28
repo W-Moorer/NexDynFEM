@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "interpolationCoordinates" library , Copyright (C) 2018 USC           *
  * All rights reserved.                                                  *
@@ -44,7 +44,7 @@
 #include <climits>
 using namespace std;
 
-namespace vegafem
+namespace nexdynfem
 {
 BarycentricCoordinates::BarycentricCoordinates(int numLocations_, int numElementVertices_, const int* indices_, const double* weights_,
   const int * elementIndices_)
@@ -299,4 +299,4 @@ BarycentricCoordinates::BarycentricCoordinates(const std::string & filename)
   assert((int)weights.size() == numLocations * numElementVertices);
 }
 
-}//namespace vegafem
+}//namespace nexdynfem

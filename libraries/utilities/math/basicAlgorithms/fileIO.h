@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "basicAlgorithms" library , Copyright (C) 2018 USC                    *
  * All rights reserved.                                                  *
@@ -30,14 +30,14 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_FILEIO_H
-#define VEGAFEM_FILEIO_H
+#ifndef NEXDYNFEM_FILEIO_H
+#define NEXDYNFEM_FILEIO_H
 
 #include <fstream>
 #include <functional>
 #include <string>
 
-namespace vegafem
+namespace nexdynfem
 {
 
 // read each line from fin
@@ -50,7 +50,7 @@ int readEachLine(std::istream & fin, std::function<int(std::string & line)> proc
 
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

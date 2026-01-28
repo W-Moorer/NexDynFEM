@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "distance field" library , Copyright (C) 2007 CMU, 2018 USC           *
  * All rights reserved.                                                  *
@@ -35,12 +35,12 @@
   except it also stores the nearest point, not just the distance to it.
 */
 
-#ifndef VEGAFEM_CLOSEST_POINT_FIELD_H
-#define VEGAFEM_CLOSEST_POINT_FIELD_H
+#ifndef NEXDYNFEM_CLOSEST_POINT_FIELD_H
+#define NEXDYNFEM_CLOSEST_POINT_FIELD_H
 
 #include "distanceField.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 class ClosestPointField : public DistanceField
@@ -76,7 +76,7 @@ protected:
 };
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

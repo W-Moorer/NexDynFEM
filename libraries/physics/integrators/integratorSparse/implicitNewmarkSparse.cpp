@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "integrator" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC     *
  * All rights reserved.                                                  *
@@ -38,7 +38,7 @@
 #include "constrainedDOFs.h"
 #include "implicitNewmarkSparse.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 ImplicitNewmarkSparse::ImplicitNewmarkSparse(int r, double timestep, SparseMatrix * massMatrix_, ForceModel * forceModel_, int numConstrainedDOFs_, int * constrainedDOFs_, double dampingMassCoef, double dampingStiffnessCoef, int maxIterations, double epsilon, double NewmarkBeta, double NewmarkGamma, int numSolverThreads_): IntegratorBaseSparse(r, timestep, massMatrix_, forceModel_, numConstrainedDOFs_, constrainedDOFs_, dampingMassCoef, dampingStiffnessCoef), numSolverThreads(numSolverThreads_)
@@ -422,4 +422,4 @@ void ImplicitNewmarkSparse::SetTangentStiffnessMatrixOffset(SparseMatrix * tange
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem

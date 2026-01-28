@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "reducedForceModel" library , Copyright (C) 2007 CMU, 2009 MIT,       *
  *                                                       2018 USC        *
@@ -36,7 +36,7 @@
 #include "lapack-headers.h"
 #include "matrixMacros.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 ReducedForceModelWithHessian::ReducedForceModelWithHessian()
@@ -133,4 +133,4 @@ void ReducedForceModelWithHessian::TestHessian(int numTests, double qAmplitude)
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem

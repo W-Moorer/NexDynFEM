@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "Large Modal Deformation Factory",                                    *
  * a pre-processing utility for model reduction of                       *
@@ -37,12 +37,12 @@
 
 // cubic polynomial computation
 
-#include <vegafem/StVKReducedInternalForces.h>
-#include <vegafem/StVKCubeABCD.h>
-#include <vegafem/matrixIO.h>
-#include <vegafem/StVKElementABCDLoader.h>
+#include <nexdynfem/StVKReducedInternalForces.h>
+#include <nexdynfem/StVKCubeABCD.h>
+#include <nexdynfem/matrixIO.h>
+#include <nexdynfem/StVKElementABCDLoader.h>
 #include "largeModalDeformationFactory.h"
-#ifdef VEGAFEM_USE_TBB
+#ifdef NEXDYNFEM_USE_TBB
   #include <tbb/tbb.h>
 #endif
 
@@ -203,7 +203,7 @@ void * MyFrame::CubicPolynomialsWorker(int * code, StVKReducedInternalForces ** 
 {
   // compute cubic polynomials
   StVKElementABCD * precomputedABCDIntegrals = StVKElementABCDLoader::load(precomputationState.simulationMesh);
-#ifdef VEGAFEM_USE_TBB
+#ifdef NEXDYNFEM_USE_TBB
   tbb::task_arena init(uiState.numComputationThreads);
   // tbb::task_arena arena(uiState.numComputationThreads);
   // arena.execute([&]
@@ -213,7 +213,7 @@ void * MyFrame::CubicPolynomialsWorker(int * code, StVKReducedInternalForces ** 
       precomputationState.rNonLin,
       precomputationState.nonLinearModalMatrix->GetMatrix(),
       precomputationState.simulationMesh, precomputedABCDIntegrals); 
-#ifdef VEGAFEM_USE_TBB
+#ifdef NEXDYNFEM_USE_TBB
   // });
 #endif
   delete(precomputedABCDIntegrals);

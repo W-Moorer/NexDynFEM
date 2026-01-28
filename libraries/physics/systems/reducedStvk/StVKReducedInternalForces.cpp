@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "reducedStvk" library , Copyright (C) 2007 CMU, 2009 MIT              *
  * All rights reserved.                                                  *
@@ -39,12 +39,12 @@
 #if defined(_WIN32) || defined(WIN32) || defined(linux) || defined(__linux__)
   #include "mkl_service.h"
 #endif
-#ifdef VEGAFEM_USE_TBB
+#ifdef NEXDYNFEM_USE_TBB
   #include <tbb/tbb.h>
 #endif
 using namespace std;
 
-namespace vegafem
+namespace nexdynfem
 {
 StVKReducedInternalForces::StVKReducedInternalForces(int r, double * U, VolumetricMesh * volumetricMesh, StVKElementABCD * precomputedABCDIntegrals, bool addGravity_, double g_, int verbose_): precomputedIntegrals(precomputedABCDIntegrals), unitReducedGravityForce(NULL), reducedGravityForce(NULL), addGravity(addGravity_), g(g_), useSingleThread(0), shallowCopy(0), verbose(verbose_)
 {
@@ -68,7 +68,7 @@ StVKReducedInternalForces::StVKReducedInternalForces(int r, double * U, Volumetr
 
   InitComputation(r, U, volumetricMesh);
 
-  #ifdef VEGAFEM_USE_TBB
+  #ifdef NEXDYNFEM_USE_TBB
     tbb::enumerable_thread_specific<vector<double>> threadLocalData(r * (linearSize + quadraticSize + cubicSize), 0.0);
     tbb::parallel_for(tbb::blocked_range<int>(0, volumetricMesh->getNumElements()), [&](const tbb::blocked_range<int> & rng)
     {
@@ -1441,4 +1441,4 @@ int StVKReducedInternalForces::SaveEmptyCub(FILE * fout)
   */
 
 
-}//namespace vegafem
+}//namespace nexdynfem

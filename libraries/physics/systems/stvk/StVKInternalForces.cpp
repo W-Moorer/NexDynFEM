@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "StVK" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC           *
  * All rights reserved.                                                  *
@@ -33,7 +33,7 @@
 #include "StVKInternalForces.h"
 #include "volumetricMeshENuMaterial.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 StVKInternalForces::StVKInternalForces(VolumetricMesh * volumetricMesh_, StVKElementABCD * precomputedABCDIntegrals_, bool addGravity_, double g_): volumetricMesh(volumetricMesh_), precomputedIntegrals(precomputedABCDIntegrals_), gravityForce(NULL), addGravity(addGravity_), g(g_) 
@@ -346,4 +346,4 @@ void StVKInternalForces::ResetVector(double * vec)
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem

@@ -32,13 +32,13 @@
   (summation, normalization, dot product, etc.).
 */
 
-#ifndef VEGAFEM_MINIVEC2D_H
-#define VEGAFEM_MINIVEC2D_H
+#ifndef NEXDYNFEM_MINIVEC2D_H
+#define NEXDYNFEM_MINIVEC2D_H
 
 #include <cmath>
 #include <ostream>
 
-namespace vegafem
+namespace nexdynfem
 {
 
 class Vec2d {
@@ -239,7 +239,7 @@ inline std::ostream &operator << (std::ostream &s, const Vec2d &v)
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

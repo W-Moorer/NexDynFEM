@@ -12,7 +12,7 @@
 
 #include "er.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 #ifdef VEGA_USE_CGAL_HEADER
@@ -36,4 +36,4 @@ double ER_toDouble(const ER & er)
 
 #endif
 
-}//namespace vegafem
+}//namespace nexdynfem

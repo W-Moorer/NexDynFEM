@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "objMesh" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC        *
  * All rights reserved.                                                  *
@@ -47,7 +47,7 @@
 #include <iomanip>
 #include <cstring>
 
-namespace vegafem
+namespace nexdynfem
 {
 using namespace std;
 
@@ -1448,4 +1448,4 @@ void ObjMeshOffsetVoxels::generateNormalCorrectionMatrix(const string filenameCo
   free(voxelModalMatrix);
 }
 
-}//namespace vegafem
+}//namespace nexdynfem

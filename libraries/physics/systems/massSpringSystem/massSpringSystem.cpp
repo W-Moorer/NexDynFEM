@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "massSpringSystem" library, Copyright (C) 2007 CMU, 2009 MIT,         *
  *                                           2018 USC                    *
@@ -40,7 +40,7 @@
 #include "macros.h"
 #include "massSpringSystem.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 using namespace std;
 
@@ -908,4 +908,4 @@ void MassSpringSystem::CreateObjMesh(const char * filename, double * u)
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem

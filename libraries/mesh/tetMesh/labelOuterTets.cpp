@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "mesh" library , Copyright (C) 2018 USC                               *
  * All rights reserved.                                                  *
@@ -33,7 +33,7 @@
 #include "labelOuterTets.h"
 #include <cassert>
 
-namespace vegafem
+namespace nexdynfem
 {
 using namespace std;
 
@@ -144,4 +144,4 @@ vector<bool> labelOuterTets(const TetMeshRef & tetMesh, const TetNeighbor & tetN
   return ret;
 }
 
-}//namespace vegafem
+}//namespace nexdynfem

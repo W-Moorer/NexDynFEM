@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "distance field" library , Copyright (C) 2007 CMU, 2018 USC           *
  * All rights reserved.                                                  *
@@ -48,7 +48,7 @@
 #include "trilinearInterpolation.h"
 #include "vegalong.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 using namespace std;
 
@@ -73,7 +73,7 @@ DistanceFieldNarrowBand::~DistanceFieldNarrowBand()
 {
   free(gridPointStatus);
 }
-}//namespace vegafem
+}//namespace nexdynfem
 
 // the routines for signed and unsigned distance field computation
 #define COMPUTE_SIGNED_FIELD_NARROWBAND
@@ -84,7 +84,7 @@ DistanceFieldNarrowBand::~DistanceFieldNarrowBand()
 #undef COMPUTE_SIGNED_FIELD_NARROWBAND
   #include "computeFieldNarrowBand.cpp"
 
-namespace vegafem
+namespace nexdynfem
 {
 int DistanceFieldNarrowBand::load(const std::string& filename)
 {
@@ -724,4 +724,4 @@ void DistanceFieldNarrowBand::offsetDistanceField(double offset)
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem

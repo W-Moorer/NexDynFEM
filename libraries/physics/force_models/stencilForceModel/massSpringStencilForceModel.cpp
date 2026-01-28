@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "Stencil Force Model" library , Copyright (C) 2018 USC                *
  * All rights reserved.                                                  *
@@ -33,7 +33,7 @@
 #include "massSpringStencilForceModel.h"
 #include <cassert>
 
-namespace vegafem
+namespace nexdynfem
 {
 
 using namespace std;
@@ -60,4 +60,4 @@ const int * MassSpringStencilForceModel::GetStencilVertexIndices(int stencilType
   return massSpringSystem->GetEdges() + stencilId * 2;
 }
 
-}//namespace vegafem
+}//namespace nexdynfem

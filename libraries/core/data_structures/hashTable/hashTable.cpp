@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "hashTable" library , Copyright (C) 2007 CMU                          *
  * All rights reserved.                                                  *
@@ -35,7 +35,7 @@
 #include <cmath>
 #include <set>
 
-namespace vegafem
+namespace nexdynfem
 {
 using namespace std;
 
@@ -171,4 +171,4 @@ template class HashTable<set<int>>;
 template class HashTable<unsigned int>;
 template class HashTable<int>;
 
-}//namespace vegafem
+}//namespace nexdynfem

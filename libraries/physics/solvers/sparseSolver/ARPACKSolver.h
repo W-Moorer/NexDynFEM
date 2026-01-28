@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  *  Copyright (C) 2007 CMU, 2009 MIT, 2018 USC                           *
  *                                                                       *
@@ -42,12 +42,12 @@
   ACM Transactions on Graphics 35(4) (SIGGRAPH 2016), Anaheim, CA, USA
 */
 
-#ifndef VEGAFEM_ARPACKSOLVER_H
-#define VEGAFEM_ARPACKSOLVER_H
+#ifndef NEXDYNFEM_ARPACKSOLVER_H
+#define NEXDYNFEM_ARPACKSOLVER_H
 
 #include "sparseMatrix.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 class ARPACKSolver
@@ -89,7 +89,7 @@ protected:
 };
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

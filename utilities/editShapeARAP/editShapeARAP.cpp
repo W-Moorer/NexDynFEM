@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "Edit shape with ARAP" driver application,                            *
  *  Copyright (C) 2007 CMU, 2009 MIT, 2018 USC                           *
@@ -37,39 +37,39 @@
    Allows the user to interactively deform a 3d model using the ARAP energy.
 */ 
 
-#include <vegafem/getopts.h>
-#include <vegafem/sceneObjectDeformable.h>
-#include <vegafem/objMesh.h>
-#include <vegafem/performanceCounter.h>
-#include <vegafem/configFile.h>
-#include <vegafem/volumetricMeshLoader.h>
-#include <vegafem/lighting.h>
-#include <vegafem/listIO.h>
-#include <vegafem/openGLHelper.h>
-#include <vegafem/matrix.h>
-#include <vegafem/arapDeformer.h>
-#include <vegafem/constrainedDOFs.h>
-#include <vegafem/matrixIO.h>
+#include <nexdynfem/getopts.h>
+#include <nexdynfem/sceneObjectDeformable.h>
+#include <nexdynfem/objMesh.h>
+#include <nexdynfem/performanceCounter.h>
+#include <nexdynfem/configFile.h>
+#include <nexdynfem/volumetricMeshLoader.h>
+#include <nexdynfem/lighting.h>
+#include <nexdynfem/listIO.h>
+#include <nexdynfem/openGLHelper.h>
+#include <nexdynfem/matrix.h>
+#include <nexdynfem/arapDeformer.h>
+#include <nexdynfem/constrainedDOFs.h>
+#include <nexdynfem/matrixIO.h>
 #ifdef USE_GLSL
-  #include <vegafem/glslPhong.h>
+  #include <nexdynfem/glslPhong.h>
 #endif
-#include <vegafem/saveScreenShot.h>
-#include <vegafem/camera.h>
-#include <vegafem/matrix.h>
-#include <vegafem/handleControl.h>
-#include <vegafem/tetMesh.h>
-#include <vegafem/generateSurfaceMesh.h>
-#include <vegafem/handleRender.h>
-#include <vegafem/sceneGroundPlane.h>
-#include <vegafem/averagingBuffer.h>
-#include <vegafem/barycentricCoordinates.h>
-#include <vegafem/generateTetMeshFromCubicMesh.h>
-#include <vegafem/simulationRecorder.h>
-#include <vegafem/stringHelper.h>
-#include <vegafem/cameraLighting.h>
-#include <vegafem/inputDevice.h>
-#include <vegafem/cameraChangeLoad.h>
-using namespace vegafem;
+#include <nexdynfem/saveScreenShot.h>
+#include <nexdynfem/camera.h>
+#include <nexdynfem/matrix.h>
+#include <nexdynfem/handleControl.h>
+#include <nexdynfem/tetMesh.h>
+#include <nexdynfem/generateSurfaceMesh.h>
+#include <nexdynfem/handleRender.h>
+#include <nexdynfem/sceneGroundPlane.h>
+#include <nexdynfem/averagingBuffer.h>
+#include <nexdynfem/barycentricCoordinates.h>
+#include <nexdynfem/generateTetMeshFromCubicMesh.h>
+#include <nexdynfem/simulationRecorder.h>
+#include <nexdynfem/stringHelper.h>
+#include <nexdynfem/cameraLighting.h>
+#include <nexdynfem/inputDevice.h>
+#include <nexdynfem/cameraChangeLoad.h>
+using namespace nexdynfem;
 
 #include <GL/glui.h>
 #include <cstdlib>

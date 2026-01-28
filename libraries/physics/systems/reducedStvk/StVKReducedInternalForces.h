@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "reducedStvk" library , Copyright (C) 2007 CMU, 2009 MIT              *
  * All rights reserved.                                                  *
@@ -45,12 +45,12 @@
   See also StVKInternalForces.h .
 */
 
-#ifndef VEGAFEM_STVKREDUCEDINTERNALFORCES_H
-#define VEGAFEM_STVKREDUCEDINTERNALFORCES_H
+#ifndef NEXDYNFEM_STVKREDUCEDINTERNALFORCES_H
+#define NEXDYNFEM_STVKREDUCEDINTERNALFORCES_H
 
 #include "StVKInternalForces.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 class StVKReducedInternalForces
@@ -256,7 +256,7 @@ inline int StVKReducedInternalForces::cubicCoefPos(int index, int i, int j, int 
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

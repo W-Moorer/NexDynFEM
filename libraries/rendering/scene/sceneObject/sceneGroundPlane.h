@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "sceneObject" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC    *
  * All rights reserved.                                                  *
@@ -30,13 +30,13 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_SCENEGROUNDPLANE_H
-#define VEGAFEM_SCENEGROUNDPLANE_H
+#ifndef NEXDYNFEM_SCENEGROUNDPLANE_H
+#define NEXDYNFEM_SCENEGROUNDPLANE_H
 
 #include <cstddef>
 #include "sceneObject.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 // render ground plane and shadow for SceneObject
@@ -75,7 +75,7 @@ protected:
 
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

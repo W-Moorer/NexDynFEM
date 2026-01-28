@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "elasticForceModel" library , Copyright (C) 2007 CMU, 2009 MIT,       *
  *                                                       2018 USC        *
@@ -36,8 +36,8 @@
     f = K * u
 */
 
-#ifndef VEGAFEM_REDUCEDLINEARFORCEMODEL_H
-#define VEGAFEM_REDUCEDLINEARFORCEMODEL_H
+#ifndef NEXDYNFEM_REDUCEDLINEARFORCEMODEL_H
+#define NEXDYNFEM_REDUCEDLINEARFORCEMODEL_H
 
 #include <cmath>
 #include <cstdio>
@@ -47,7 +47,7 @@
 
 #include "reducedForceModel.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 class ReducedLinearForceModel : public ReducedForceModel
 {
@@ -63,7 +63,7 @@ protected:
   double * stiffnessMatrix; 
 };
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

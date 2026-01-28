@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "basicAlgorithms" library , Copyright (C) 2018 USC                    *
  * All rights reserved.                                                  *
@@ -34,12 +34,12 @@
    Generates unique integer IDs. Makes it possible to release IDs.
 */
 
-#ifndef VEGAFEM_UNIQUEINTEGERID
-#define VEGAFEM_UNIQUEINTEGERID
+#ifndef NEXDYNFEM_UNIQUEINTEGERID
+#define NEXDYNFEM_UNIQUEINTEGERID
 
 #include <set>
 
-namespace vegafem
+namespace nexdynfem
 {
 
 class UniqueIntegerID
@@ -67,7 +67,7 @@ protected:
 };
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

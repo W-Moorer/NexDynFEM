@@ -31,15 +31,15 @@
   (summation, normalization, dot product, cross product, etc.).
 */
 
-#ifndef VEGAFEM_MINIVEC4D_H
-#define VEGAFEM_MINIVEC4D_H
+#ifndef NEXDYNFEM_MINIVEC4D_H
+#define NEXDYNFEM_MINIVEC4D_H
 
 #include <cstdio>
 #include <cmath>
 #include <ostream>
 #include <cstring>
 
-namespace vegafem
+namespace nexdynfem
 {
 
 class Vec4d
@@ -308,7 +308,7 @@ inline bool Vec4d::hasNaN() const
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

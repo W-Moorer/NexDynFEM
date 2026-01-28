@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "exactArithmetic" library , Copyright (C) 2018 USC                    *
  * All rights reserved.                                                  *
@@ -49,7 +49,7 @@ namespace
   }
 }
 
-namespace vegafem
+namespace nexdynfem
 {
 ER::ER(double s)
 {
@@ -220,7 +220,7 @@ ER assignCGALToER(const CGAL_Kernel_RT & cgal)
 
 template ER assignCGALToER<K::RT>(const K::RT & cgal);
 
-}//namespace vegafem
+}//namespace nexdynfem
 #endif
 
 

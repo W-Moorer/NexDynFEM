@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "Reduced deformable dynamics" real-time driver application.           *
  * Uses model reduction to rapidly simulate deformable objects           *
@@ -65,21 +65,21 @@ using namespace std;
 #endif
 
 #include "initGraphics.h"
-#include <vegafem/sceneObjectReducedCPU.h>
+#include <nexdynfem/sceneObjectReducedCPU.h>
 #ifdef USE_CG
-  #include <vegafem/sceneObjectReducedGPU.h>
+  #include <nexdynfem/sceneObjectReducedGPU.h>
 #endif
-#include <vegafem/performanceCounter.h>
-#include <vegafem/implicitNewmarkDense.h>
-#include <vegafem/implicitBackwardEulerDense.h>
-#include <vegafem/modalMatrix.h>
-#include <vegafem/reducedStVKForceModel.h>
-#include <vegafem/reducedLinearStVKForceModel.h>
-#include <vegafem/configFile.h>
+#include <nexdynfem/performanceCounter.h>
+#include <nexdynfem/implicitNewmarkDense.h>
+#include <nexdynfem/implicitBackwardEulerDense.h>
+#include <nexdynfem/modalMatrix.h>
+#include <nexdynfem/reducedStVKForceModel.h>
+#include <nexdynfem/reducedLinearStVKForceModel.h>
+#include <nexdynfem/configFile.h>
 #include <GL/glui.h>
-#include <vegafem/lighting.h>
-#include <vegafem/matrixIO.h>
-using namespace vegafem;
+#include <nexdynfem/lighting.h>
+#include <nexdynfem/matrixIO.h>
+using namespace nexdynfem;
 
 char windowTitleBase[4096] = "Reduced StVK Demo";
 void displayFunction(void);

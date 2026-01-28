@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "distance field" library , Copyright (C) 2007 CMU, 2018 USC           *
  * All rights reserved.                                                  *
@@ -57,13 +57,13 @@ using namespace std;
 #include "performanceCounter.h"
 #include "triple.h"
 
-#ifdef VEGAFEM_USE_TBB
+#ifdef NEXDYNFEM_USE_TBB
   #include <tbb/tbb.h>
 #else
   #include "range.h"
 #endif
 
-namespace vegafem
+namespace nexdynfem
 {
 static const unsigned char edge_vertices[12][2] =
 {
@@ -187,11 +187,11 @@ static const unsigned char edge_vertex[3][14] =
   { 1, 2, 0, 3, 4, 7, 5, 6, 1, 2, 0, 3, 4, 7 },  // Y direction
   { 0, 4, 3, 7, 2, 6, 1, 5, 0, 4, 3, 7, 2, 6 }   // Z direction
 };
-}//namespace vegafem
+}//namespace nexdynfem
 #ifdef USE_STATIC_TABLE
   #include "marchingCubesTable.h"
 #else
-namespace vegafem
+namespace nexdynfem
 {
   static char cubeSymmetryEdges[25][13]; // determined algorithmically from cubeSymmetryVertices
 
@@ -293,9 +293,9 @@ namespace vegafem
 
   // Whether the look up tables have been loaded. Only need to be loaded once. 
   static bool tableLoaded = false;
-}//namespace vegafem
+}//namespace nexdynfem
 #endif
-namespace vegafem
+namespace nexdynfem
 {
 MarchingCubes::MarchingCubes(const DistanceFieldBase * field, float iv) : distanceFieldBase(field), isoValue(iv)
 {
@@ -395,7 +395,7 @@ ObjMesh * MarchingCubes::compute()
   vector<int> allTriangles;
   unordered_map<int64_t, int> edgeInterID2AllMeshVtxID;
 
-#ifdef VEGAFEM_USE_TBB
+#ifdef NEXDYNFEM_USE_TBB
   struct ThreadLocalData
   {
     vector<Vec3d> vertices;
@@ -566,7 +566,7 @@ ObjMesh * MarchingCubes::compute()
             meshTriangles.push_back(v3);
           }
         } // end for (distance loop)
-#ifdef VEGAFEM_USE_TBB
+#ifdef NEXDYNFEM_USE_TBB
   }); //end for locations
 
 //  pc.StopCounter();
@@ -1372,4 +1372,4 @@ ObjMesh * MarchingCubes::compute(const DistanceFieldBase * distanceFieldBase, fl
   }
 #endif
 
-}//namespace vegafem
+}//namespace nexdynfem

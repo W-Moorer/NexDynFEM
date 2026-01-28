@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "generateMassMatrix" utility , Copyright (C) 2007 CMU, 2009 MIT,      *
  *                                              2018 USC                 *
@@ -40,9 +40,9 @@
 #include <string.h>
 #include <ctype.h>
 #include <math.h>
-#include <vegafem/generateMassMatrix.h>
-#include <vegafem/volumetricMeshLoader.h>
-using namespace vegafem;
+#include <nexdynfem/generateMassMatrix.h>
+#include <nexdynfem/volumetricMeshLoader.h>
+using namespace nexdynfem;
 
 int main(int argc, char ** argv)
 {

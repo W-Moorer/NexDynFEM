@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "Large Modal Deformation Factory",                                    *
  * a pre-processing utility for model reduction of                       *
@@ -40,7 +40,7 @@
 #include "minivector.h"
 #include "computeStiffnessMatrixNullspace.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 void ComputeStiffnessMatrixNullspace::ComputeNullspace(int n, const double * vertexPos, double * basis, int includeRotationalNullspace, int generateOrthogonalBasis)
@@ -126,4 +126,4 @@ void ComputeStiffnessMatrixNullspace::RemoveNullspaceComponent(int n, int nullsp
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem

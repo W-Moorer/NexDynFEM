@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "reducedStVK" library , Copyright (C) 2007 CMU, 2009 MIT              *
  * All rights reserved.                                                  *
@@ -30,12 +30,12 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_STVKREDUCEDHESSIANTENSOR_H
-#define VEGAFEM_STVKREDUCEDHESSIANTENSOR_H
+#ifndef NEXDYNFEM_STVKREDUCEDHESSIANTENSOR_H
+#define NEXDYNFEM_STVKREDUCEDHESSIANTENSOR_H
 
 #include "StVKReducedStiffnessMatrix.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 /*
@@ -167,7 +167,7 @@ inline int StVKReducedHessianTensor::tensorPosition(int i, int j, int k)
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

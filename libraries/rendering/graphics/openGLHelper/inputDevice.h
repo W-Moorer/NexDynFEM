@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "openGLHelper" library , Copyright (C) 2018 USC                       *
  * All rights reserved.                                                  *
@@ -30,10 +30,10 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_INPUTDEVICE_H
-#define VEGAFEM_INPUTDEVICE_H
+#ifndef NEXDYNFEM_INPUTDEVICE_H
+#define NEXDYNFEM_INPUTDEVICE_H
 
-namespace vegafem
+namespace nexdynfem
 {
 	// GLUT keyboard & mouse control
 	class InputDevice
@@ -67,6 +67,6 @@ namespace vegafem
 		bool shift, alt, ctrl;
 	};
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif

@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "mesh" library , Copyright (C) 2018 USC                               *
  * All rights reserved.                                                  *
@@ -32,8 +32,8 @@
 
 #include "tetrahedron.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 
-}//namespace vegafem
+}//namespace nexdynfem

@@ -14,9 +14,9 @@
 /*************************************************************************
  *                                                                       *
  * We release our improvements to the wildMagic code under our standard  *
- * Vega FEM license, as follows:                                         *
+ * NexDynFEM license, as follows:                                         *
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "improvements to the wildMagic library" , Copyright (C) 2018 USC      *
  * All rights reserved.                                                  *
@@ -48,7 +48,7 @@
 
 #include "tetKey.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 const int OTetKey::tetFaceIndex[4][3] =  { { 1, 2, 3 }, { 0, 3, 2 }, { 0, 1, 3 }, { 0, 2, 1 } };
@@ -90,4 +90,4 @@ void OTetKey::permute(int v0, int v1, int v2, int v3, int & r0, int & r1, int & 
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem

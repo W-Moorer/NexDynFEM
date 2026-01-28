@@ -14,8 +14,8 @@
 //
 // and make it the only file that ever defines GLH_EXT_SINGLE_FILE.
 
-#ifndef VEGAFEM_GLH_EXTENSIONS
-#define VEGAFEM_GLH_EXTENSIONS
+#ifndef NEXDYNFEM_GLH_EXTENSIONS
+#define NEXDYNFEM_GLH_EXTENSIONS
 
 #ifdef WIN32
 

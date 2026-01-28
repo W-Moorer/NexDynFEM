@@ -66,13 +66,13 @@
   See also example.lighting for an example of a lighting configuration file.
 */
 
-#ifndef VEGAFEM_LIGHTING_H
-#define VEGAFEM_LIGHTING_H
+#ifndef NEXDYNFEM_LIGHTING_H
+#define NEXDYNFEM_LIGHTING_H
 
 #include <cstdlib>
 #include <cstring>
 
-namespace vegafem
+namespace nexdynfem
 {
 
 class ConfigFile;
@@ -179,7 +179,7 @@ inline bool Lighting::IsLightEnabled(int lightID) const
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

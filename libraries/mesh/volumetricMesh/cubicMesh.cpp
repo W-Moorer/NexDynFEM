@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "volumetricMesh" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC *
  * All rights reserved.                                                  *
@@ -45,7 +45,7 @@
 
 using namespace std;
 
-namespace vegafem
+namespace nexdynfem
 {
 const VolumetricMesh::elementType CubicMesh::elementType_ = CUBIC;
 
@@ -780,4 +780,4 @@ void CubicMesh::setParallelepipedMode(int parallelepipedMode_)
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem

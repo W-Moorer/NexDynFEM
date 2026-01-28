@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "forceModel" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC     *
  * All rights reserved.                                                  *
@@ -32,7 +32,7 @@
 
 #include "corotationalLinearFEMForceModel.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 CorotationalLinearFEMForceModel::CorotationalLinearFEMForceModel(CorotationalLinearFEM * corotationalLinearFEM_, int warp_): corotationalLinearFEM(corotationalLinearFEM_), warp(warp_)
@@ -70,4 +70,4 @@ void CorotationalLinearFEMForceModel::GetForceAndMatrix(const double * u, double
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem

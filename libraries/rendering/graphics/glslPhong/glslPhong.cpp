@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "glslPhong" library , Copyright (C) 2018 USC                          *
  * All rights reserved.                                                  *
@@ -53,7 +53,7 @@
 
 #include "glslPhong.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 char GLSLPhong::vertexShaderStringAll [] = "varying vec3 normal, eyeVec;\n"
 "#define MAX_LIGHTS 8\n"
@@ -322,4 +322,4 @@ void GLSLPhong::Disable()
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem

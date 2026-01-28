@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "mesh" library , Copyright (C) 2018 USC                               *
  * All rights reserved.                                                  *
@@ -49,7 +49,7 @@
 #include <numeric>
 using namespace std;
 
-namespace vegafem
+namespace nexdynfem
 {
 /////////////////////////////////////////////////////////////////
 //                   TriMeshRef functions
@@ -768,4 +768,4 @@ int TriMeshRef::computeEulerCharacteristicAssumingClosedManifold() const
   return numVertices() - numTriangles() / 2;
 }
 
-}//namespace vegafem
+}//namespace nexdynfem

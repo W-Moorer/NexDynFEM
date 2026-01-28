@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "objMesh" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC        *
  * All rights reserved.                                                  *
@@ -36,11 +36,11 @@
 #include "octree.h"
 #include "triangle.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 template class Octree<TriangleBasic>;
 template class Octree<TriangleWithCollisionInfo>;
 template class Octree<TriangleWithCollisionInfoAndPseudoNormals>;
 
-}//namespace vegafem
+}//namespace nexdynfem

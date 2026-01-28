@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "StVK" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC           *
  * All rights reserved.                                                  *
@@ -33,7 +33,7 @@
 #include "StVKCubeABCD.h"
 #include "cubicMeshIntegrals.cpp"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 StVKCubeABCD::StVKCubeABCD(double cubeSize)
@@ -82,4 +82,4 @@ StVKCubeABCD::StVKCubeABCD(double cubeSize)
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem

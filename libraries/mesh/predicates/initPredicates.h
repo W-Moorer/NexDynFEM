@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "mesh" library , Copyright (C) 2018 USC                               *
  * All rights reserved.                                                  *
@@ -30,12 +30,12 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_INITPREDICATES_H
-#define VEGAFEM_INITPREDICATES_H
+#ifndef NEXDYNFEM_INITPREDICATES_H
+#define NEXDYNFEM_INITPREDICATES_H
 
-namespace vegafem
+namespace nexdynfem
 {
 // Initialize the variables used for exact arithmetic.
 void initPredicates();
-}//namespace vegafem
+}//namespace nexdynfem
 #endif

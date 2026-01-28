@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "isosurfaceMesher" utility , Copyright (C) 2018 USC                   *
  * All rights reserved.                                                  *
@@ -43,17 +43,17 @@
 
 #include <iostream>
 
-#include <vegafem/tetMesh.h>
-#include <vegafem/delaunayMesher.h>
-#include <vegafem/distanceFieldCreator.h>
-#include <vegafem/isosurfaceMesher.h>
-#include <vegafem/performanceCounter.h>
-#include <vegafem/getopts.h>
-#include <vegafem/objMeshOrientable.h>
-#include <vegafem/matrixIO.h>
-#include <vegafem/predicates.h>
+#include <nexdynfem/tetMesh.h>
+#include <nexdynfem/delaunayMesher.h>
+#include <nexdynfem/distanceFieldCreator.h>
+#include <nexdynfem/isosurfaceMesher.h>
+#include <nexdynfem/performanceCounter.h>
+#include <nexdynfem/getopts.h>
+#include <nexdynfem/objMeshOrientable.h>
+#include <nexdynfem/matrixIO.h>
+#include <nexdynfem/predicates.h>
 using namespace std;
-using namespace vegafem;
+using namespace nexdynfem;
 
 int main(int argc, char **argv)
 {

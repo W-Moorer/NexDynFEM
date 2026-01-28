@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "matrix" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC         *
  * All rights reserved.                                                  *
@@ -35,12 +35,12 @@
   See also matrix.h.
 */
 
-#ifndef VEGAFEM_MATRIX_BLAS_H
-#define VEGAFEM_MATRIX_BLAS_H
+#ifndef NEXDYNFEM_MATRIX_BLAS_H
+#define NEXDYNFEM_MATRIX_BLAS_H
 
 #include <cstdlib>
 
-namespace vegafem
+namespace nexdynfem
 {
 
 template<class real>
@@ -85,7 +85,7 @@ template <class real>
 real VectorNorm(int m, const real * vec);
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "integrator" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC     *
  * All rights reserved.                                                  *
@@ -43,13 +43,13 @@
 
 */
 
-#ifndef VEGAFEM_INTEGRATORMULTI1D_H
-#define VEGAFEM_INTEGRATORMULTI1D_H
+#ifndef NEXDYNFEM_INTEGRATORMULTI1D_H
+#define NEXDYNFEM_INTEGRATORMULTI1D_H
 
 #include "integratorBaseDense.h"
 #include "reducedForceModel.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 class IntegratorMulti1D : public virtual IntegratorBaseDense
@@ -118,7 +118,7 @@ protected:
 };
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

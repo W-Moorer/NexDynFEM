@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "Large Modal Deformation Factory",                                    *
  * a pre-processing utility for model reduction of                       *
@@ -37,10 +37,10 @@
 
 // manage the simulation mesh
 
-#include <vegafem/volumetricMeshLoader.h>
-#include <vegafem/generateSurfaceMesh.h>
-#include <vegafem/volumetricMeshENuMaterial.h>
-#include <vegafem/objMeshOffsetVoxels.h>
+#include <nexdynfem/volumetricMeshLoader.h>
+#include <nexdynfem/generateSurfaceMesh.h>
+#include <nexdynfem/volumetricMeshENuMaterial.h>
+#include <nexdynfem/objMeshOffsetVoxels.h>
 #include "largeModalDeformationFactory.h"
 
 using namespace std;

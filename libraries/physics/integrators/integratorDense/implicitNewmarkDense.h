@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "integrator" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC     *
  * All rights reserved.                                                  *
@@ -41,12 +41,12 @@ values of r, there will be a computational slowdown.
 
 */
 
-#ifndef VEGAFEM_IMPLICITNEWMARKDENSE_H
-#define VEGAFEM_IMPLICITNEWMARKDENSE_H
+#ifndef NEXDYNFEM_IMPLICITNEWMARKDENSE_H
+#define NEXDYNFEM_IMPLICITNEWMARKDENSE_H
 
 #include "integratorBaseDense.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 class ImplicitNewmarkDense : public virtual IntegratorBaseDense
@@ -95,7 +95,7 @@ protected:
 };
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

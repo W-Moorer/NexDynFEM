@@ -3,7 +3,7 @@
 #include "polarDecomposition.h"
 #include "mat3d.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 /*
@@ -137,4 +137,4 @@ double PolarDecomposition::Compute(const double * M, double * Q, double * S, dou
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem

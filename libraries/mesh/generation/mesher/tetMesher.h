@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "mesher" library , Copyright (C) 2018 USC                             *
  * All rights reserved.                                                  *
@@ -50,8 +50,8 @@
   Note: The tet mesher is experimental. It may generate sliver tets with some inputs.
 */
 
-#ifndef VEGAFEM_TETMESHER_H
-#define VEGAFEM_TETMESHER_H
+#ifndef NEXDYNFEM_TETMESHER_H
+#define NEXDYNFEM_TETMESHER_H
 
 #include <vector>
 #include <set>
@@ -62,7 +62,7 @@
 #include "tetMesh.h"
 #include "delaunayMesher.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 class TetMesher
 {
@@ -251,7 +251,7 @@ protected:
   int faceRecoveryDepth;
 };
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif /* TETMESHER_H_ */
 

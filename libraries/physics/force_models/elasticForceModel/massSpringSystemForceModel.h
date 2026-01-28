@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "forceModel" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC     *
  * All rights reserved.                                                  *
@@ -34,13 +34,13 @@
   Force model for the mass-spring system material.
 */
 
-#ifndef VEGAFEM_MASSSPRINGSYSTEMFORCEMODEL_H
-#define VEGAFEM_MASSSPRINGSYSTEMFORCEMODEL_H
+#ifndef NEXDYNFEM_MASSSPRINGSYSTEMFORCEMODEL_H
+#define NEXDYNFEM_MASSSPRINGSYSTEMFORCEMODEL_H
 
 #include "massSpringSystem.h"
 #include "forceModel.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 class MassSpringSystemForceModel : public ForceModel
@@ -58,7 +58,7 @@ protected:
 };
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "basicAlgorithms" library , Copyright (C) 2018 USC                    *
  * All rights reserved.                                                  *
@@ -35,7 +35,7 @@
 #include <algorithm>
 #include <cstring>
 
-namespace vegafem
+namespace nexdynfem
 {
 using namespace std;
 
@@ -131,4 +131,4 @@ void upperCase(string & s)
     s[i] = toupper(s[i]);
 }
 
-}//namespace vegafem
+}//namespace nexdynfem

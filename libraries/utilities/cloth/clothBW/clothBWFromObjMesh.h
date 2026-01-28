@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "clothBW" library , Copyright (C) 2018 USC                            *
  * All rights reserved.                                                  *
@@ -34,13 +34,13 @@
   Constructs a cloth model from an obj mesh.
 */
 
-#ifndef VEGAFEM_CLOTHBWFROMOBJMESH_H
-#define VEGAFEM_CLOTHBWFROMOBJMESH_H
+#ifndef NEXDYNFEM_CLOTHBWFROMOBJMESH_H
+#define NEXDYNFEM_CLOTHBWFROMOBJMESH_H
 
 #include "clothBW.h"
 #include "objMesh.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 class ClothBWFromObjMesh
@@ -65,7 +65,7 @@ protected:
 };
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

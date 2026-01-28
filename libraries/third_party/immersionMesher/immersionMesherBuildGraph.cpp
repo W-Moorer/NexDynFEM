@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "immersionMesher" library , Copyright (C) 2018 USC                    *
  * All rights reserved.                                                  *
@@ -39,7 +39,7 @@
 #include "immersionMesher.h"
 #include "immersionGraphNode.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 using namespace std;
 
@@ -1069,4 +1069,4 @@ void ImmersionMesher::runNodeSearchMethod(vector<vector<ImmersionGraphNode>> & g
   else { cout << "Found " << graphs.size() << " possible immersion graph" << (graphs.size() == 1 ? "" : "s") << "." << endl; }
 }
 
-}//namespace vegafem
+}//namespace nexdynfem

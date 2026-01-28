@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "elasticForceModel" library , Copyright (C) 2007 CMU, 2009 MIT,       *
  *                                                       2018 USC        *
@@ -33,7 +33,7 @@
 
 #include "reducedSpringForceModel.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 ReducedSpringForceModel::ReducedSpringForceModel(double k_): k(k_)
@@ -57,4 +57,4 @@ void ReducedSpringForceModel::GetTangentHessianTensor(double * u, double * tange
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem

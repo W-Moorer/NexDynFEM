@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "integrator" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC     *
  * All rights reserved.                                                  *
@@ -44,8 +44,8 @@
   (run-time solver switching would be possible too with more coding).
 */
 
-#ifndef VEGAFEM_IMPLICITNEWMARKSPARSE_H
-#define VEGAFEM_IMPLICITNEWMARKSPARSE_H
+#ifndef NEXDYNFEM_IMPLICITNEWMARKSPARSE_H
+#define NEXDYNFEM_IMPLICITNEWMARKSPARSE_H
 
 #ifdef __APPLE__
   #include "TargetConditionals.h"
@@ -73,7 +73,7 @@
   #include "CGSolver.h"
 #endif
 
-namespace vegafem
+namespace nexdynfem
 {
 class ImplicitNewmarkSparse : public IntegratorBaseSparse
 {
@@ -133,6 +133,6 @@ protected:
     CGSolver * jacobiPreconditionedCGSolver;
   #endif
 };
-}//namespace vegafem
+}//namespace nexdynfem
 #endif
 

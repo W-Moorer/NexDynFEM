@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "modalMatrix" library , Copyright (C) 2007 CMU                        *
  * All rights reserved.                                                  *
@@ -35,7 +35,7 @@
 #include "lapack-headers.h"
 #include "modalMatrix.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 ModalMatrix::ModalMatrix(int n, int r, double * U, int flag)
@@ -212,4 +212,4 @@ void ModalMatrix::AddAssembleVector(double * q, double * u) //u = U * q;
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem

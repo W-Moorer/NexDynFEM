@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "mesh" library , Copyright (C) 2018 USC                               *
  * All rights reserved.                                                  *
@@ -34,7 +34,7 @@
 #include "triMeshNeighbor.h"
 #include <cassert>
 
-namespace vegafem
+namespace nexdynfem
 {
 using namespace std;
 
@@ -105,4 +105,4 @@ const Vec3d & TriMeshPseudoNormal::edgeNormal(int vtxID0, int vtxID1) const
   return iter->second;
 }
 
-}//namespace vegafem
+}//namespace nexdynfem

@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "mesh" library , Copyright (C) 2018 USC                               *
  * All rights reserved.                                                  *
@@ -30,20 +30,20 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_MESHINTERSECTION_H
-#define VEGAFEM_MESHINTERSECTION_H
+#ifndef NEXDYNFEM_MESHINTERSECTION_H
+#define NEXDYNFEM_MESHINTERSECTION_H
 
 #include "triMeshGeo.h"
 #include "tetMeshGeo.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 // return a vector of size #tets, each element is the sorted triangleIDs that intersect this tet
 std::vector<std::vector<int>> computeTrianglesIntersectingEachTetExact(const TetMeshRef tetMesh, const TriMeshRef triMesh);
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

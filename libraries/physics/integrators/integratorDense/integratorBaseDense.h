@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "integrator" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC     *
  * All rights reserved.                                                  *
@@ -40,13 +40,13 @@
   See also integratorBase.h.
 */
 
-#ifndef VEGAFEM_INTEGRATORBASEDENSE_H
-#define VEGAFEM_INTEGRATORBASEDENSE_H
+#ifndef NEXDYNFEM_INTEGRATORBASEDENSE_H
+#define NEXDYNFEM_INTEGRATORBASEDENSE_H
 
 #include "integratorBase.h"
 #include "reducedForceModel.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 class IPIVC;
@@ -129,7 +129,7 @@ protected:
   void ProcessPlasticDeformations();
 };
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

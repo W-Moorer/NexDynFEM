@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "elasticForceModel" library , Copyright (C) 2007 CMU, 2009 MIT,       *
  *                                                       2018 USC        *
@@ -38,7 +38,7 @@
   #include "mkl_spblas.h"
 #endif
 
-namespace vegafem
+namespace nexdynfem
 {
 
 ReducedMassSpringSystemForceModelWithHessian::ReducedMassSpringSystemForceModelWithHessian(MassSpringSystem * massSpringSystem, ModalMatrix * modalMatrix): ReducedMassSpringSystemForceModel(massSpringSystem, modalMatrix), ReducedForceModelWithHessian()
@@ -123,4 +123,4 @@ void ReducedMassSpringSystemForceModelWithHessian::GetStiffnessMatrixCorrection(
     dK[j] *= -1;
 }
 
-}//namespace vegafem
+}//namespace nexdynfem

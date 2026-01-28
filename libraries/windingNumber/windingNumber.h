@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "windingNumber" library , Copyright (C) 2018 USC                      *
  * All rights reserved.                                                  *
@@ -41,13 +41,13 @@
   in the paper above; instead, it loops over all the triangles.
 */
 
-#ifndef VEGAFEM_WINDINGNUMBER_H
-#define VEGAFEM_WINDINGNUMBER_H
+#ifndef NEXDYNFEM_WINDINGNUMBER_H
+#define NEXDYNFEM_WINDINGNUMBER_H
 
 #include "objMesh.h"
 #include "minivector.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 class WindingNumber 
@@ -59,7 +59,7 @@ public:
 };
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

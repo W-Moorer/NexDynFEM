@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "StVK" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC           *
  * All rights reserved.                                                  *
@@ -37,13 +37,13 @@
   See also StVKInternalForces.h .
 */
 
-#ifndef VEGAFEM_STVKSTIFFNESSMATRIX_H
-#define VEGAFEM_STVKSTIFFNESSMATRIX_H
+#ifndef NEXDYNFEM_STVKSTIFFNESSMATRIX_H
+#define NEXDYNFEM_STVKSTIFFNESSMATRIX_H
 
 #include "sparseMatrix.h"
 #include "StVKInternalForces.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 class StVKStiffnessMatrix
@@ -107,7 +107,7 @@ inline void StVKStiffnessMatrix::AddMatrix3x3Block(int c, int a, int element, Ma
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "sparseSolver" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC   *
  * All rights reserved.                                                  *
@@ -52,7 +52,7 @@
   #define PARDISO pardiso
 #endif
 
-namespace vegafem
+namespace nexdynfem
 {
 
 PardisoSolver::PardisoSolver(const SparseMatrix * A, int numThreads_, matrixType mtype_, reorderingType rtype_, int directIterative_, int verbose_): numThreads(numThreads_), mtype(mtype_), rtype(rtype_), directIterative(directIterative_), verbose(verbose_)
@@ -458,4 +458,4 @@ MKL_INT PardisoSolver::SolveLinearSystemDirectIterative(const SparseMatrix * A, 
 #endif
 
 
-}//namespace vegafem
+}//namespace nexdynfem

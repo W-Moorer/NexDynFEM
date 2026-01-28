@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "volumetricMesh" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC *
  * All rights reserved.                                                  *
@@ -34,7 +34,7 @@
 #include "mat3d.h"
 #include "volumetricMeshDeformationGradient.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 // computes the deformation gradient for the deformation given by the displacement vector u (length 3n, where n=#vertices), for the element with index "elementIndex"
@@ -96,4 +96,4 @@ double VolumetricMeshDeformationGradient::ComputeMaximalStretch(VolumetricMesh *
 
 
 
-}//namespace vegafem
+}//namespace nexdynfem

@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "mesher" library , Copyright (C) 2018 USC                             *
  * All rights reserved.                                                  *
@@ -49,7 +49,7 @@ using namespace std;
   #define M_PI 3.1415926525897932384
 #endif
 
-namespace vegafem
+namespace nexdynfem
 {
 IsosurfaceMesher::IsosurfaceMesher(DistanceFieldBase * f) : field(f)
 {
@@ -702,4 +702,4 @@ ObjMesh * IsosurfaceMesher::getMesh(bool enforceManifold)
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem

@@ -31,15 +31,15 @@
   (summation, normalization, dot product, cross product, etc.).
 */
 
-#ifndef VEGAFEM_MINIVEC3D_H
-#define VEGAFEM_MINIVEC3D_H
+#ifndef NEXDYNFEM_MINIVEC3D_H
+#define NEXDYNFEM_MINIVEC3D_H
 
 #include <cstdio>
 #include <cmath>
 #include <ostream>
 #include <cstring>
 
-namespace vegafem
+namespace nexdynfem
 {
 
 class Vec3d
@@ -331,7 +331,7 @@ inline bool Vec3d::isNaN(double x)
 #endif
 }
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "performanceCounter" library , Copyright (C) 2018 USC                 *
  * All rights reserved.                                                  *
@@ -38,7 +38,7 @@
 #include <cstring>
 #include <algorithm>
 
-namespace vegafem
+namespace nexdynfem
 {
 using namespace std;
 
@@ -296,4 +296,4 @@ bool IterationProfiler::saveHistory(const std::string & filename) const
   return ret == 0;
 }
 
-}//namespace vegafem
+}//namespace nexdynfem

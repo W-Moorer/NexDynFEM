@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "reducedStvk" library , Copyright (C) 2007 CMU, 2009 MIT              *
  * All rights reserved.                                                  *
@@ -34,19 +34,19 @@
   Load/save many internal force models from one file.
 */
 
-#ifndef VEGAFEM_STVKREDUCEDINTERNALFORCESMULTILOAD_H
-#define VEGAFEM_STVKREDUCEDINTERNALFORCESMULTILOAD_H
+#ifndef NEXDYNFEM_STVKREDUCEDINTERNALFORCESMULTILOAD_H
+#define NEXDYNFEM_STVKREDUCEDINTERNALFORCESMULTILOAD_H
 
 #include "StVKReducedInternalForces.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 int StVKReducedInternalForcesMultiLoad(const char * filename, int * numModels, StVKReducedInternalForces *** stVKReducedInternalForces, int verbose=0);
 int StVKReducedInternalForcesMultiSave(const char * filename, int numModels, StVKReducedInternalForces ** stVKReducedInternalForces, int verbose=0);
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

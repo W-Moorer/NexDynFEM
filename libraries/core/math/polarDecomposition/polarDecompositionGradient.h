@@ -49,12 +49,12 @@
   Authors of this code: Jernej Barbic, Yili Zhao
 */
 
-#ifndef VEGAFEM_POLARDECOMPOSITIONGRADIENT_H
-#define VEGAFEM_POLARDECOMPOSITIONGRADIENT_H
+#ifndef NEXDYNFEM_POLARDECOMPOSITIONGRADIENT_H
+#define NEXDYNFEM_POLARDECOMPOSITIONGRADIENT_H
 
 #include <cstdlib>
 
-namespace vegafem
+namespace nexdynfem
 {
 
 class PolarDecompositionGradient
@@ -90,7 +90,7 @@ protected:
 };
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

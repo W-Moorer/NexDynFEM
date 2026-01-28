@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * Copyright (C) 2007 CMU, 2009 MIT, 2018 USC                            *
  *                                                                       *
@@ -36,7 +36,7 @@
 #include <cstring>
 #include "invMKSolver.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 InvMKSolver::InvMKSolver(LinearSolver * invMSolver, SparseMatrix * K)
@@ -59,4 +59,4 @@ void InvMKSolver::ComputeInvMK(double * x, double * output)
   invMSolver->SolveLinearSystem(output, buffer);
 }
 
-}//namespace vegafem
+}//namespace nexdynfem

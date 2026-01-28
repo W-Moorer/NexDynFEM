@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "basicAlgorithms" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC*
  * All rights reserved.                                                  *
@@ -42,13 +42,13 @@
   Heuristics such as path compression etc. have been implemented.
 */
 
-#ifndef VEGAFEM_DISJOINT_SET_H
-#define VEGAFEM_DISJOINT_SET_H
+#ifndef NEXDYNFEM_DISJOINT_SET_H
+#define NEXDYNFEM_DISJOINT_SET_H
 
 #include <vector>
 #include <map>
 
-namespace vegafem
+namespace nexdynfem
 {
 
 // implementation of a disjoint set on a fixed array of elements with continuous IDs
@@ -132,7 +132,7 @@ void DisjointSet::unionRange(IntIterator itBegin, IntIterator itEnd)
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

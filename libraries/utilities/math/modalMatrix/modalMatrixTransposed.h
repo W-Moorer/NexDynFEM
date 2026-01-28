@@ -1,5 +1,5 @@
-#ifndef VEGAFEM_MODALMATRIXTRANSPOSED_H
-#define VEGAFEM_MODALMATRIXTRANSPOSED_H
+#ifndef NEXDYNFEM_MODALMATRIXTRANSPOSED_H
+#define NEXDYNFEM_MODALMATRIXTRANSPOSED_H
 
 /*
 * Copyright (c) 2007, Carnegie Mellon University
@@ -34,7 +34,7 @@
 
 #include "matrixMacros.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 template<class real>
@@ -168,7 +168,7 @@ inline void ModalMatrixTransposed<real>::AddAssembleSingleVertex
   *uz += regz;
 }
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

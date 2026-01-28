@@ -51,7 +51,7 @@
 #include "openGL-headers.h"
 #include "macros.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 SphericalCamera::SphericalCamera(double R, double Phi, double Theta, double * focusPosition_, double * up_, double movementSensitivity_, double camera2WorldScalingFactor_): R0(R), Phi0(Phi), Theta0(Theta), movementSensitivity(movementSensitivity_), camera2WorldScalingFactor(camera2WorldScalingFactor_)
 {
@@ -651,4 +651,4 @@ void SphericalCamera::MoveFocusUp(double amount)
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem

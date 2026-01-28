@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "objMeshGPUDeformer" library , Copyright (C) 2007 CMU, 2009 MIT,      *
  *                                                        2018 USC       *
@@ -39,7 +39,7 @@
 #include <cstring>
 #include "ObjMeshGPUDeformer_uUq_pbuffer.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 ObjMeshGPUDeformer_uUq_pbuffer::~ObjMeshGPUDeformer_uUq_pbuffer() {}
@@ -270,5 +270,5 @@ PFNWGLBINDTEXIMAGEARBPROC ObjMeshGPUDeformer_uUq_pbuffer::wglBindTexImageARB = N
 PFNWGLRELEASETEXIMAGEARBPROC ObjMeshGPUDeformer_uUq_pbuffer::wglReleaseTexImageARB = NULL;
 PFNWGLSETPBUFFERATTRIBARBPROC ObjMeshGPUDeformer_uUq_pbuffer::wglSetPbufferAttribARB = NULL;
 
-}//namespace vegafem
+}//namespace nexdynfem
 #endif

@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "virtualTets" library , Copyright (C) 2018 USC                        *
  * All rights reserved.                                                  *
@@ -44,7 +44,7 @@
 #include <cassert>
 using namespace std;
 
-namespace vegafem
+namespace nexdynfem
 {
 
 //extern Profiler profiler;
@@ -731,4 +731,4 @@ TriMeshRef TetTriPiece::mesh(const TetTriCuttingData & cut) const
   return { cut.cutVtxPos, gnrCutTri };
 }
 
-}//namespace vegafem
+}//namespace nexdynfem

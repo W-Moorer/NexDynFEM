@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "massSpringSystem" library, Copyright (C) 2007 CMU, 2009 MIT,         *
  *                                           2018 USC                    *
@@ -34,7 +34,7 @@
 #include "objMesh.h"
 #include "massSpringSystemFromObjMesh.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 int MassSpringSystemFromObjMesh::GenerateMassSpringSystem(ObjMesh * quadMesh, MassSpringSystem ** massSpringSystem, double surfaceDensity, double tensileStiffness, double shearStiffness, double bendStiffness, double damping, int addGravity)
@@ -62,4 +62,4 @@ int MassSpringSystemFromObjMesh::GenerateMassSpringSystem(ObjMesh * quadMesh, Ma
   return 0;
 }
 
-}//namespace vegafem
+}//namespace nexdynfem

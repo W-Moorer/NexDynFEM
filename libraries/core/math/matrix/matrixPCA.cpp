@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "matrix" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC         *
  * All rights reserved.                                                  *
@@ -41,7 +41,7 @@
 
 #include "lapack-headers.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 void DoTresholding_Epsilon(double * singularValues, int numberOfSingularValues, int * r, double epsilon)
 {
@@ -250,4 +250,4 @@ int MatrixPCA(ThresholdingSpecification * thresholdingSpecification,
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem

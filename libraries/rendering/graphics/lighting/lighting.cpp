@@ -35,7 +35,7 @@
 #include "lighting.h"
 #include "openGL-headers.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 
@@ -357,4 +357,4 @@ bool Lighting::HasLightDisabled() const
   return false; 
 }
 
-}//namespace vegafem
+}//namespace nexdynfem

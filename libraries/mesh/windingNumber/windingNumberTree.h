@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "mesh" library , Copyright (C) 2018 USC                               *
  * All rights reserved.                                                  *
@@ -30,8 +30,8 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_WINDINGNUMBERTREE_H
-#define VEGAFEM_WINDINGNUMBERTREE_H
+#ifndef NEXDYNFEM_WINDINGNUMBERTREE_H
+#define NEXDYNFEM_WINDINGNUMBERTREE_H
 
 // Winding number tree acceleration implementation from the paper:
 // Alec Jacobson, Ladislav Kavan, Olga Sorkine-Hornung:
@@ -48,7 +48,7 @@
 #include <limits>
 #include <climits>
 
-namespace vegafem
+namespace nexdynfem
 {
 
 class WindingNumberTree
@@ -88,7 +88,7 @@ protected:
 };
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

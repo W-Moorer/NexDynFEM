@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "objMeshGPUDeformer" library , Copyright (C) 2007 CMU, 2009 MIT,      *
  *                                                        2018 USC       *
@@ -31,13 +31,13 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_OBJMESHGPUDEFORMER_UUQ_SETLIGHTING_H
-#define VEGAFEM_OBJMESHGPUDEFORMER_UUQ_SETLIGHTING_H
+#ifndef NEXDYNFEM_OBJMESHGPUDEFORMER_UUQ_SETLIGHTING_H
+#define NEXDYNFEM_OBJMESHGPUDEFORMER_UUQ_SETLIGHTING_H
 
 #include "objMeshGPUDeformer_uUq.h"
 #include "lighting.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 class ObjMeshGPUDeformer_uUq_setLighting
@@ -47,7 +47,7 @@ public:
 };
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

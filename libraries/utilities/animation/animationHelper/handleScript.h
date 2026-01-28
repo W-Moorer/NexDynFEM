@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "animationHelper" library , Copyright (C) 2018 USC                    *
  * All rights reserved.                                                  *
@@ -30,14 +30,14 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_HANDLESCRIPT_H
-#define VEGAFEM_HANDLESCRIPT_H
+#ifndef NEXDYNFEM_HANDLESCRIPT_H
+#define NEXDYNFEM_HANDLESCRIPT_H
 
 #include "vec3d.h"
 #include <vector>
 #include <string>
 
-namespace vegafem
+namespace nexdynfem
 {
 
 // a simple class to load/save a script of handle creation/deletion/movement
@@ -78,7 +78,7 @@ protected:
 
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

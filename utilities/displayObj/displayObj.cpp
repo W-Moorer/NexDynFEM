@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * OBJ mesh visualization utility                                        *
  * Copyright (C) 2007 CMU, 2009 MIT, 2018 USC                            *
@@ -60,18 +60,18 @@
 #if defined(_WIN32) || defined(WIN32) || defined(linux) || defined(__linux__)
   #include <GL/glew.h>
 #endif
-#include <vegafem/openGL-headers.h>
-#include <vegafem/objMeshRender.h>
-#include <vegafem/getopts.h>
-#include <vegafem/matrixIO.h>
+#include <nexdynfem/openGL-headers.h>
+#include <nexdynfem/objMeshRender.h>
+#include <nexdynfem/getopts.h>
+#include <nexdynfem/matrixIO.h>
 #include <GL/glui.h>
-#include <vegafem/performanceCounter.h>
-#include <vegafem/openGLHelper.h>
-#include <vegafem/lighting.h>
-#include <vegafem/glslPhong.h>
-#include <vegafem/camera.h>
-#include <vegafem/listIO.h>
-using namespace vegafem;
+#include <nexdynfem/performanceCounter.h>
+#include <nexdynfem/openGLHelper.h>
+#include <nexdynfem/lighting.h>
+#include <nexdynfem/glslPhong.h>
+#include <nexdynfem/camera.h>
+#include <nexdynfem/listIO.h>
+using namespace nexdynfem;
 
 std::set<int> * selectedVerticesSet;  // each object will have a set storing selected vertices
 std::set<int> * selectedGroupsSet; // each object will have a set storing selected groups

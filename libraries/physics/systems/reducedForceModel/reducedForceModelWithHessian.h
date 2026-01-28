@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "reducedForceModel" library , Copyright (C) 2007 CMU, 2009 MIT,       *
  *                                                       2018 USC        *
@@ -36,12 +36,12 @@
   Serves as a connecting class between reduced integrators and classes to calculate reduced internal forces and tangent stiffness matrices.
 */
 
-#ifndef VEGAFEM_REDUCEDFORCEMODELWITHHESSIAN_H
-#define VEGAFEM_REDUCEDFORCEMODELWITHHESSIAN_H
+#ifndef NEXDYNFEM_REDUCEDFORCEMODELWITHHESSIAN_H
+#define NEXDYNFEM_REDUCEDFORCEMODELWITHHESSIAN_H
 
 #include "reducedForceModel.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 class ReducedForceModelWithHessian : public virtual ReducedForceModel
@@ -62,7 +62,7 @@ protected:
 };
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

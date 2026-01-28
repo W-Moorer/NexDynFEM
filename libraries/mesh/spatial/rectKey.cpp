@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "mesh" library , Copyright (C) 2018 USC                               *
  * All rights reserved.                                                  *
@@ -32,7 +32,7 @@
 
 #include "rectKey.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 const int URectKey::rectEdgeIndex[4][2] = { {0,1}, {1,2},{2,3},{3,0} };
@@ -40,4 +40,4 @@ const int URectKey::rectEdgeIndex[4][2] = { {0,1}, {1,2},{2,3},{3,0} };
 const int ORectKey::rectEdgeIndex[4][2] = { {0,1}, {1,2},{2,3},{3,0} };
 
 
-}//namespace vegafem
+}//namespace nexdynfem

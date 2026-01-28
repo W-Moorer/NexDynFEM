@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "distance field" library , Copyright (C) 2007 CMU, 2018 USC           *
  * All rights reserved.                                                  *
@@ -43,8 +43,8 @@
   Technical Report CERN CN 95–17, CERN, 1995.
 */
 
-#ifndef VEGAFEM_MARCHINGCUBES_H
-#define VEGAFEM_MARCHINGCUBES_H
+#ifndef NEXDYNFEM_MARCHINGCUBES_H
+#define NEXDYNFEM_MARCHINGCUBES_H
 
 #include <vector>
 #include <map>
@@ -52,7 +52,7 @@
 #include "objMesh.h"
 #include "distanceFieldBase.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 class MarchingCubes
 {
@@ -93,7 +93,7 @@ protected:
 };
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "Interactive deformable object simulator" driver application,         *
  *  Copyright (C) 2007 CMU, 2009 MIT, 2018 USC                           *
@@ -35,7 +35,7 @@
 #include "initGraphics.h"
 
 #include <cmath>
-using namespace vegafem;
+using namespace nexdynfem;
 
 #ifndef M_PI
   #define M_PI 3.141592653589793238462643

@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "Stencil Force Model" library , Copyright (C) 2018 USC                *
  * All rights reserved.                                                  *
@@ -30,17 +30,17 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_FORCEMODEL_ASSEMBLER_H
-#define VEGAFEM_FORCEMODEL_ASSEMBLER_H
+#ifndef NEXDYNFEM_FORCEMODEL_ASSEMBLER_H
+#define NEXDYNFEM_FORCEMODEL_ASSEMBLER_H
 
 #include "forceModel.h"
 #include "stencilForceModel.h"
 
-#ifdef VEGAFEM_USE_TBB
+#ifdef NEXDYNFEM_USE_TBB
   #include <tbb/tbb.h>
 #endif
 
-namespace vegafem
+namespace nexdynfem
 {
 
 /*
@@ -81,7 +81,7 @@ protected:
   std::vector<std::vector<int>> inverseIndices;
 
   // data structures for parallelism
-#ifdef VEGAFEM_USE_TBB
+#ifdef NEXDYNFEM_USE_TBB
   typedef tbb::cache_aligned_allocator<double> BufferAllocator;
   typedef std::vector<double, BufferAllocator> Buffer;
   std::vector<tbb::enumerable_thread_specific<Buffer>*> localBuffers;
@@ -98,7 +98,7 @@ protected:
 };
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

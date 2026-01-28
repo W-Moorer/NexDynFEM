@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "quaternion" library , Copyright (C) 2007 CMU                         *
  * All rights reserved.                                                  *
@@ -30,8 +30,8 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_QUATERNION_H
-#define VEGAFEM_QUATERNION_H
+#ifndef NEXDYNFEM_QUATERNION_H
+#define NEXDYNFEM_QUATERNION_H
 
 /*
   Quaternion C++ class.
@@ -54,7 +54,7 @@
 #include <cstdio>
 #include <cmath>
 
-namespace vegafem
+namespace nexdynfem
 {
 
 // forward declarations for the friend template
@@ -401,7 +401,7 @@ inline void Quaternion<real>::Print() const
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

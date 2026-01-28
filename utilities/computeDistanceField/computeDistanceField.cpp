@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "distance field" driver , Copyright (C) 2007 CMU, 2018 USC            *
  * All rights reserved.                                                  *
@@ -41,11 +41,11 @@
 #include <vector>
 using namespace std;
 
-#include <vegafem/distanceFieldCreator.h>
-#include <vegafem/closestPointField.h>
-#include <vegafem/objMesh.h>
-#include <vegafem/getopts.h>
-using namespace vegafem;
+#include <nexdynfem/distanceFieldCreator.h>
+#include <nexdynfem/closestPointField.h>
+#include <nexdynfem/objMesh.h>
+#include <nexdynfem/getopts.h>
+using namespace nexdynfem;
 
 /*
   Computes signed or unsigned distance field for a given triangle mesh,

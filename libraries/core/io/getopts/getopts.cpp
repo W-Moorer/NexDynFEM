@@ -80,7 +80,7 @@
 #include <cstdio>
 #include "vegalong.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 int getopts(int argc, char **argv, opt_t opttable[])
 {
@@ -188,4 +188,4 @@ int getopts(int argc, char **argv, opt_t opttable[])
   return (i);
 }
 
-}//namespace vegafem
+}//namespace nexdynfem

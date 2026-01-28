@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "matrix" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC         *
  * All rights reserved.                                                  *
@@ -30,8 +30,8 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_MATRIX_SVD_H
-#define VEGAFEM_MATRIX_SVD_H
+#ifndef NEXDYNFEM_MATRIX_SVD_H
+#define NEXDYNFEM_MATRIX_SVD_H
 
 /*
   Compute the first few principal components (the dominant column space) 
@@ -43,7 +43,7 @@
 
 #include "matrixIO.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 // specifies how to discard statistically insignificant components
@@ -70,7 +70,7 @@ int MatrixPCA(ThresholdingSpecification * thresholdingSpecification,
               int m, int n, double * A, int * r, double * weights=NULL);
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

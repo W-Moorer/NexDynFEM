@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "elasticForceModel" library , Copyright (C) 2007 CMU, 2009 MIT,       *
  *                                                       2018 USC        *
@@ -33,7 +33,7 @@
 
 #include "reducedStVKForceModelWithHessian.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 ReducedStVKForceModelWithHessian::ReducedStVKForceModelWithHessian(StVKReducedInternalForces * stVKReducedInternalForces): ReducedStVKForceModel(stVKReducedInternalForces), ReducedForceModelWithHessian()
@@ -52,4 +52,4 @@ void ReducedStVKForceModelWithHessian::GetTangentHessianTensor(double * q, doubl
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem

@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "mesh" library , Copyright (C) 2018 USC                               *
  * All rights reserved.                                                  *
@@ -40,7 +40,7 @@
 #include <iostream>
 #include <string>
 
-namespace vegafem
+namespace nexdynfem
 {
 using namespace std;
 
@@ -300,4 +300,4 @@ double TetMeshRef::computeSquaredDistanceToTet(int tetID, const Vec3d & queryPos
   return getSquaredDistanceToTet(queryPos, pos(tetID, 0), pos(tetID, 1), pos(tetID, 2), pos(tetID, 3));
 }
 
-}//namespace vegafem
+}//namespace nexdynfem

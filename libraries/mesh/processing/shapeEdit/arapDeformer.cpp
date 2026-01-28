@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "shapeEdit" library , Copyright (C) 2018 USC                          *
  * All rights reserved.                                                  *
@@ -45,7 +45,7 @@
 #include "basicAlgorithms.h"
 #include <algorithm>
 #include <iostream>
-#ifdef VEGAFEM_USE_TBB
+#ifdef NEXDYNFEM_USE_TBB
   #include <tbb/tbb.h>
 #else
   #include "range.h"
@@ -55,7 +55,7 @@ using namespace std;
 
 #define USE_DIRICHLET
 
-namespace vegafem
+namespace nexdynfem
 {
 
 // ARAP Energy: E = \sum_i \sum_j\in N(i) wij | (pi'-pj') - Ri (pi-pj) |^2,
@@ -101,7 +101,7 @@ ARAPModel::ARAPModel(const TetMesh * tetMesh, const double * vtxWeights)
   }
   sortAndDeduplicate(visitedFaces);
 
-#ifdef VEGAFEM_USE_TBB
+#ifdef NEXDYNFEM_USE_TBB
   tbb::enumerable_thread_specific<vector<triple<int,int,double>>> threadLocalWeightBuffer;
   tbb::parallel_for(tbb::blocked_range<int>(0, visitedFaces.size()), [&](const tbb::blocked_range<int> & rng)
   {
@@ -135,7 +135,7 @@ ARAPModel::ARAPModel(const TetMesh * tetMesh, const double * vtxWeights)
         weightBuffer.emplace_back(v1, v2, w);
       }
     }
-#ifdef VEGAFEM_USE_TBB
+#ifdef NEXDYNFEM_USE_TBB
   }, tbb::static_partitioner());
 
   for(const auto & weightBuffer : threadLocalWeightBuffer)
@@ -683,4 +683,4 @@ void ARAPDeformer::setNumThreads(int threads)
 //}
 
 
-}//namespace vegafem
+}//namespace nexdynfem

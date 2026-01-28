@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "virtualTets" library , Copyright (C) 2018 USC                        *
  * All rights reserved.                                                  *
@@ -32,7 +32,7 @@
 
 #include "geometryQueryER.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 using namespace std;
 
@@ -162,4 +162,4 @@ Vec3ER getClosestPointToTriangleWithFeature(const Vec3ER & queryPoint, const Vec
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem

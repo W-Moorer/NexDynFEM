@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "distance field" library , Copyright (C) 2007 CMU, 2018 USC           *
  * All rights reserved.                                                  *
@@ -38,7 +38,7 @@
 #include "performanceCounter.h"
 #include "vegalong.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 #ifdef COMPUTE_SIGNED_FIELD_NARROWBAND
@@ -374,4 +374,4 @@ namespace vegafem
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem

@@ -1,6 +1,6 @@
 /*************************************************************************
 *                                                                       *
-* Vega FEM Simulation Library Version 4.0                               *
+* NexDynFEM Simulation Library Version 4.0                               *
 *                                                                       *
 * "objMesh" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC        *
 * All rights reserved.                                                  *
@@ -43,7 +43,7 @@
 #include "openGLHelper.h"
 #include "imageIO.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 using namespace std;
 
@@ -915,4 +915,4 @@ bool ObjMeshRender::isFaceHidden(int groupID, int faceID) const
   return it->second.find(faceID) != it->second.end();
 }
 
-}//namespace vegafem
+}//namespace nexdynfem

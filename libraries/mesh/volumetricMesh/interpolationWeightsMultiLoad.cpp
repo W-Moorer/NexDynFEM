@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "reducedStvk" library , Copyright (C) 2007 CMU, 2009 MIT              *
  * All rights reserved.                                                  *
@@ -39,7 +39,7 @@
 #include "volumetricMesh.h"
 #include "vegalong.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 // input: filename, numModels
@@ -122,4 +122,4 @@ int multiSaveInterpolationWeightsBinary(const char * filename, int numModels, in
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem

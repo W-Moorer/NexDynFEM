@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "clothBW" library , Copyright (C) 2018 USC                            *
  * All rights reserved.                                                  *
@@ -45,13 +45,13 @@
  David Pritchard: Implementing Baraff & Witkin's Cloth Simulation, May 2003, with minor updates April 2012
 */
 
-#ifndef VEGAFEM_CLOTHBW_H
-#define VEGAFEM_CLOTHBW_H
+#ifndef NEXDYNFEM_CLOTHBW_H
+#define NEXDYNFEM_CLOTHBW_H
 
 #include "sparseMatrix.h"
 #include "vec3d.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 class ClothBW
@@ -233,7 +233,7 @@ protected:
 };
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "sparseSolver" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC   *
  * All rights reserved.                                                  *
@@ -42,7 +42,7 @@ extern "C" {
   #include "LinSol/BridgeMT.h"
 }
 
-namespace vegafem
+namespace nexdynfem
 {
 
 SPOOLESSolverMT::SPOOLESSolverMT(const SparseMatrix * A, int numThreads, int verbose)
@@ -255,9 +255,9 @@ int SPOOLESSolverMT::SolveLinearSystem(double * x, const double * rhs)
 
   return 0;
 }
-}//namespace vegafem
+}//namespace nexdynfem
 #else
-namespace vegafem
+namespace nexdynfem
 {
 // SPOOLES Solver is not available
 
@@ -281,5 +281,5 @@ int SPOOLESSolverMT::SolveLinearSystem(double * x, const double * rhs)
   DisabledSolverError();
   return 1;
 }
-}//namespace vegafem
+}//namespace nexdynfem
 #endif

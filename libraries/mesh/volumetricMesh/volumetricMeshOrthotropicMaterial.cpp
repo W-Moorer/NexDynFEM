@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "volumetricMesh" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC *
  * All rights reserved.                                                  *
@@ -32,7 +32,7 @@
 
 #include "volumetricMeshOrthotropicMaterial.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 VolumetricMesh::OrthotropicMaterial::OrthotropicMaterial(std::string name, double density, double E1, double E2, double E3, double nu12, double nu23, double nu31, double G12, double G23, double G31, double * R): VolumetricMesh::Material(name, density), E1_(E1), E2_(E2), E3_(E3), nu12_(nu12), nu23_(nu23), nu31_(nu31), G12_(G12), G23_(G23), G31_(G31)
@@ -84,4 +84,4 @@ void VolumetricMesh::OrthotropicMaterial::getR(double * R) const
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem

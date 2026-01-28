@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "objMesh" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC        *
  * All rights reserved.                                                  *
@@ -38,7 +38,7 @@ using namespace std;
 #include "objMeshClose.h"
 #include "objMeshOrientable.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 int ObjMeshClose::Close(ObjMesh * objMesh)
 {
@@ -143,4 +143,4 @@ int ObjMeshClose::Close(ObjMesh * objMesh)
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem

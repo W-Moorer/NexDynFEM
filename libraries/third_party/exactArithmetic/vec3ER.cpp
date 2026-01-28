@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "exactArithmetic" library , Copyright (C) 2018 USC                    *
  * All rights reserved.                                                  *
@@ -32,7 +32,7 @@
 
 #include "vec3ER.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 #include <CGAL/Exact_predicates_exact_constructions_kernel.h>
@@ -138,4 +138,4 @@ bool intersectTriAABB(const Vec3ER & ta, const Vec3ER tb, const Vec3ER tc, const
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem

@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "distance field" library , Copyright (C) 2007 CMU, 2018 USC           *
  * All rights reserved.                                                  *
@@ -73,13 +73,13 @@
   Note: once max depth level is reached, the maxTriCount bound is not imposed any more.
 */
 
-#ifndef VEGAFEM_DISTANCEFIELDBASE_H
-#define VEGAFEM_DISTANCEFIELDBASE_H
+#ifndef NEXDYNFEM_DISTANCEFIELDBASE_H
+#define NEXDYNFEM_DISTANCEFIELDBASE_H
 
 #include "objMesh.h"
 #include <algorithm>
 
-namespace vegafem
+namespace nexdynfem
 {
 
 class DistanceFieldBase
@@ -317,7 +317,7 @@ inline double DistanceFieldBase::gridUnitsToAbsoluteUnits(double gridUnits) cons
 
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

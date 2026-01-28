@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "mesh" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC           *
  * All rights reserved.                                                  *
@@ -35,8 +35,8 @@
   Jernej Barbic, CMU
 */
 
-#ifndef VEGAFEM_TRIANGLE_H
-#define VEGAFEM_TRIANGLE_H
+#ifndef NEXDYNFEM_TRIANGLE_H
+#define NEXDYNFEM_TRIANGLE_H
 
 #include <cmath>
 #include <vector>
@@ -44,7 +44,7 @@
 #include "boundingBox.h"
 #include "minivector.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 class TriangleBasic
@@ -158,7 +158,7 @@ protected:
 };
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

@@ -14,9 +14,9 @@
 /*************************************************************************
  *                                                                       *
  * We release our improvements to the wildMagic code under our standard  *
- * Vega FEM license, as follows:                                         *
+ * NexDynFEM license, as follows:                                         *
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "improvements to the wildMagic library" , Copyright (C) 2018 USC      *
  * All rights reserved.                                                  *
@@ -52,7 +52,7 @@
 #include <iostream>
 #include <cmath>
 
-namespace vegafem
+namespace nexdynfem
 {
 using namespace std;
 
@@ -182,4 +182,4 @@ VerticesInformation getVerticesInformation(const std::vector<Vec3d> & vertices, 
   return info;
 }
 
-}//namespace vegafem
+}//namespace nexdynfem

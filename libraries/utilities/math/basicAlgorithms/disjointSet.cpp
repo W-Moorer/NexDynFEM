@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "basicAlgorithms" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC*
  * All rights reserved.                                                  *
@@ -36,7 +36,7 @@
 #include <cassert>
 #include "disjointSet.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 using namespace::std;
 
@@ -185,4 +185,4 @@ vector<vector<int>> DisjointSetDynamic::getAllSets() const
   return ret;
 }
 
-}//namespace vegafem
+}//namespace nexdynfem

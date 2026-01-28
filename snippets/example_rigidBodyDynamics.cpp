@@ -1,7 +1,7 @@
 #include <cstdio>
 #include "rigidBody.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 // This example demonstrates how to use the rigidBody.h class
@@ -118,4 +118,4 @@ int main()
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem

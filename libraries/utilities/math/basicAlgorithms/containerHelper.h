@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "basicAlgorithms" library , Copyright (C) 2018 USC                    *
  * All rights reserved.                                                  *
@@ -30,8 +30,8 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_CONTAINERHELPER_H
-#define VEGAFEM_CONTAINERHELPER_H
+#ifndef NEXDYNFEM_CONTAINERHELPER_H
+#define NEXDYNFEM_CONTAINERHELPER_H
 
 #include <vector>
 #include <set>
@@ -43,7 +43,7 @@
 #include <numeric>
 #include <unordered_set>
 
-namespace vegafem
+namespace nexdynfem
 {
 
 /////////////////////////////////////////////////////
@@ -435,7 +435,7 @@ std::vector<T,A> findUniqueElements(const std::vector<T,A> vec, std::vector<int>
   return ret;
 }
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

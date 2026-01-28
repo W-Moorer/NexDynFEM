@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "integrator" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC     *
  * All rights reserved.                                                  *
@@ -37,7 +37,7 @@
 #include "integratorMulti1D.h"
 #include <cfloat>
 
-namespace vegafem
+namespace nexdynfem
 {
 
 IntegratorMulti1D::IntegratorMulti1D(int r, double timestep, double * massMatrix_, double * tangentStiffnessMatrix_, double dampingMassCoef, double dampingStiffnessCoef): IntegratorBaseDense(r, timestep, dampingMassCoef, dampingStiffnessCoef)
@@ -303,4 +303,4 @@ void IntegratorMulti1D::ComputeQTM(double * massMatrix_)
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem

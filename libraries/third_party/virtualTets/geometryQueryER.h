@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "virtualTets" library , Copyright (C) 2018 USC                        *
  * All rights reserved.                                                  *
@@ -30,12 +30,12 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_GEOMETRYQUERYER_H
-#define VEGAFEM_GEOMETRYQUERYER_H
+#ifndef NEXDYNFEM_GEOMETRYQUERYER_H
+#define NEXDYNFEM_GEOMETRYQUERYER_H
 
 #include "vec3ER.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 /*
@@ -55,7 +55,7 @@ ER squaredDistanceToTriangle(const Vec3ER & queryPoint, const Vec3ER & vertex0, 
 Vec3ER getClosestPointToTriangleWithFeature(const Vec3ER & queryPoint, const Vec3ER & vertex0, const Vec3ER & vertex1, const Vec3ER & vertex2, int feature);
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

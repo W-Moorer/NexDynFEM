@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "distance field" library , Copyright (C) 2007 CMU, 2018 USC           *
  * All rights reserved.                                                  *
@@ -36,7 +36,7 @@
 #include "signedDistanceFieldFromPolygonSoup.h"
 #include "marchingCubes.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 using namespace::std;
 
@@ -210,4 +210,4 @@ DistanceFieldNarrowBand * DistanceFieldCreator::ComputeDistanceFieldNarrowBand(i
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem

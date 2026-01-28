@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "integrator" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC     *
  * All rights reserved.                                                  *
@@ -37,14 +37,14 @@
   See also integratorBase.h .
 */
 
-#ifndef VEGAFEM_INTEGRATORBASESPARSE_H
-#define VEGAFEM_INTEGRATORBASESPARSE_H
+#ifndef NEXDYNFEM_INTEGRATORBASESPARSE_H
+#define NEXDYNFEM_INTEGRATORBASESPARSE_H
 
 #include "sparseMatrix.h"
 #include "forceModel.h"
 #include "integratorBase.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 class IntegratorBaseSparse : public IntegratorBase
@@ -95,7 +95,7 @@ protected:
 };
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

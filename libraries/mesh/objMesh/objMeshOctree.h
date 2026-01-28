@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "objMesh" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC        *
  * All rights reserved.                                                  *
@@ -30,8 +30,8 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_OBJMESHOCTREE_H
-#define VEGAFEM_OBJMESHOCTREE_H
+#ifndef NEXDYNFEM_OBJMESHOCTREE_H
+#define NEXDYNFEM_OBJMESHOCTREE_H
 
 //  Jernej Barbic, CMU
 //  builds an octree on top of the geometry from a given obj file
@@ -40,7 +40,7 @@
 #include "octree.h"
 #include "objMesh.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 template<class TriangleClass>
@@ -84,7 +84,7 @@ protected:
 };
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

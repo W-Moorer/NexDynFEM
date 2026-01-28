@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "sceneObject" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC    *
  * All rights reserved.                                                  *
@@ -38,7 +38,7 @@
 #include "sceneObject.h"
 #include "objMeshRender.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 SceneObject::SceneObject(const char * filename):
@@ -462,4 +462,4 @@ void SceneObject::TransformRigidly(double * centerOfMass, double * R)
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem

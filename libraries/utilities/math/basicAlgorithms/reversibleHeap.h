@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "basicAlgorithms" library , Copyright (C) 2018 USC                    *
  * All rights reserved.                                                  *
@@ -30,15 +30,15 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_REVERSIBLEHEAP_H
-#define VEGAFEM_REVERSIBLEHEAP_H
+#ifndef NEXDYNFEM_REVERSIBLEHEAP_H
+#define NEXDYNFEM_REVERSIBLEHEAP_H
 
 #include <map>
 #include <set>
 #include <cassert>
 #include <cstddef>
 
-namespace vegafem
+namespace nexdynfem
 {
 
 // a heap that finds the Key with the smallest Value
@@ -152,7 +152,7 @@ const Value * ReversibleHeap<Value, Key>::find(const Key & key) const
 
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
  /* REVERSIBLEHEAP_H_ */

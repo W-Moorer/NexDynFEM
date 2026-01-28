@@ -35,7 +35,7 @@
 #include <sstream>
 #include "configFile.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 using namespace std;
 
@@ -661,4 +661,4 @@ template int ConfigFile::addOptionOptional<string>(const char * optionName, stri
 template int ConfigFile::addOptionOptional<vector<string> >(const char * optionName, vector<string> * destLocation, const vector<string> & defaultValue);
 
 
-}//namespace vegafem
+}//namespace nexdynfem

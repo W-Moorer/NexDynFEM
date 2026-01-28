@@ -14,9 +14,9 @@
 /*************************************************************************
  *                                                                       *
  * We release our improvements to the wildMagic code under our standard  *
- * Vega FEM license, as follows:                                         *
+ * NexDynFEM license, as follows:                                         *
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "improvements to the wildMagic library" , Copyright (C) 2018 USC      *
  * All rights reserved.                                                  *
@@ -47,14 +47,14 @@
  *************************************************************************/
 
 
-#ifndef VEGAFEM_VERTICESINFO_H
-#define VEGAFEM_VERTICESINFO_H
+#ifndef NEXDYNFEM_VERTICESINFO_H
+#define NEXDYNFEM_VERTICESINFO_H
 
 // handles floating-point queries among vertices
 #include "minivector.h"
 #include <vector>
 
-namespace vegafem
+namespace nexdynfem
 {
 
 
@@ -102,7 +102,7 @@ struct VerticesInformation
 VerticesInformation getVerticesInformation(const std::vector<Vec3d> & vertices, double epsilon);
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

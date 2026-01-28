@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "mesh" library , Copyright (C) 2018 USC                               *
  * All rights reserved.                                                  *
@@ -30,12 +30,12 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_PLANE_H
-#define VEGAFEM_PLANE_H
+#ifndef NEXDYNFEM_PLANE_H
+#define NEXDYNFEM_PLANE_H
 
 #include "vec3d.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 // a plane implementation for fast geometry queries
@@ -76,7 +76,7 @@ inline double FastPlane::scaledDistance(const Vec3d & v) const
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

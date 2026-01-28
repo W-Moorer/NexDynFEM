@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "integrator" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC     *
  * All rights reserved.                                                  *
@@ -34,12 +34,12 @@
   A class to timestep large sparse dynamics using implicit backward Euler.
 */
 
-#ifndef VEGAFEM_IMPLICITBACKWARDEULERSPARSE_H
-#define VEGAFEM_IMPLICITBACKWARDEULERSPARSE_H
+#ifndef NEXDYNFEM_IMPLICITBACKWARDEULERSPARSE_H
+#define NEXDYNFEM_IMPLICITBACKWARDEULERSPARSE_H
 
 #include "implicitNewmarkSparse.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 class ImplicitBackwardEulerSparse : public ImplicitNewmarkSparse
@@ -62,7 +62,7 @@ protected:
 };
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

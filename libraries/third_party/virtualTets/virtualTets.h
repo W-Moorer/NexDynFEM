@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "virtualTets" library , Copyright (C) 2018 USC                        *
  * All rights reserved.                                                  *
@@ -30,8 +30,8 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_VIRTUALTETS_H
-#define VEGAFEM_VIRTUALTETS_H
+#ifndef NEXDYNFEM_VIRTUALTETS_H
+#define NEXDYNFEM_VIRTUALTETS_H
 
 #include "tetMeshGeo.h"
 #include "triMeshGeo.h"
@@ -40,7 +40,7 @@
 #include "tetTriCuttingData.h"
 #include "profiler.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 /*
@@ -108,7 +108,7 @@ TetMeshGeo createVirtualTetsMesh(
     Profiler * profiler = nullptr);
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

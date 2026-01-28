@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "isotropic hyperelastic FEM" library , Copyright (C) 2018 USC         *
  * All rights reserved.                                                  *
@@ -34,7 +34,7 @@
 #include "matrixIO.h"
 #include "mat3d.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 #define SVD_singularValue_eps 1e-8
@@ -1257,4 +1257,4 @@ void IsotropicHyperelasticFEM::ComputeDampingForces(double dampingPsi, double da
 #undef modifiedSVD_singularValue_eps
 
 
-}//namespace vegafem
+}//namespace nexdynfem

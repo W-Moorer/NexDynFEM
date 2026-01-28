@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "isotropic hyperelastic FEM" library , Copyright (C) 2018 USC         *
  * All rights reserved.                                                  *
@@ -30,12 +30,12 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_HOMOGENEOUSMOONEYRIVLINISOTROPICMATERIAL_H
-#define VEGAFEM_HOMOGENEOUSMOONEYRIVLINISOTROPICMATERIAL_H
+#ifndef NEXDYNFEM_HOMOGENEOUSMOONEYRIVLINISOTROPICMATERIAL_H
+#define NEXDYNFEM_HOMOGENEOUSMOONEYRIVLINISOTROPICMATERIAL_H
 
 #include "isotropicMaterialWithCompressionResistance.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 /*
@@ -77,7 +77,7 @@ protected:
 };
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "virtualTets" library , Copyright (C) 2018 USC                        *
  * All rights reserved.                                                  *
@@ -34,7 +34,7 @@
 #include <cassert>
 #include <array>
 
-namespace vegafem
+namespace nexdynfem
 {
 using namespace std;
 
@@ -148,4 +148,4 @@ vector<UTriKey> TetTriCutFeature::getTouchingTetFaces(const TetShape & tetShape)
   return { faces[0], faces[1], faces[2] };
 }
 
-}//namespace vegafem
+}//namespace nexdynfem

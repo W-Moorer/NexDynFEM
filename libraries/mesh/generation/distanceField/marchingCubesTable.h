@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "distance field" library , Copyright (C) 2007 CMU, 2018 USC           *
  * All rights reserved.                                                  *
@@ -30,7 +30,7 @@
  *                                                                       *
  *************************************************************************/
 
-namespace vegafem 
+namespace nexdynfem 
 {
 /*
   Marching cubes tables. These tables were generated programmatically,
@@ -1370,4 +1370,4 @@ static unsigned char ** triangleTable[256] =
   triangleTable_248, triangleTable_249, triangleTable_250, triangleTable_251, triangleTable_252, triangleTable_253, triangleTable_254, NULL
 };
 
-}//namespace vegafem
+}//namespace nexdynfem

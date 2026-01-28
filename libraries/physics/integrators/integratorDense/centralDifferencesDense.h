@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "integrator" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC     *
  * All rights reserved.                                                  *
@@ -63,12 +63,12 @@ take very small explicit timesteps, or use the ImplicitNewmark class.
 
 */
 
-#ifndef VEGAFEM_CENTRALDIFFERENCESDENSE_H
-#define VEGAFEM_CENTRALDIFFERENCESDENSE_H
+#ifndef NEXDYNFEM_CENTRALDIFFERENCESDENSE_H
+#define NEXDYNFEM_CENTRALDIFFERENCESDENSE_H
 
 #include "integratorBaseDense.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 class CentralDifferencesDense : public virtual IntegratorBaseDense
@@ -95,7 +95,7 @@ protected:
 };
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

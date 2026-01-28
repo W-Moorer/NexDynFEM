@@ -28,7 +28,7 @@
 #include <iostream>
 #include <algorithm>
 
-namespace vegafem
+namespace nexdynfem
 {
 namespace iglInterface
 {
@@ -181,4 +181,4 @@ SelfCutMeshData remeshSelfIntersection(TriMeshRef mesh, bool stitch,
 
 }
 
-}//namespace vegafem
+}//namespace nexdynfem

@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "listIO" library , Copyright (C) 2007 CMU, 2009 MIT                   *
  * All rights reserved.                                                  *
@@ -30,8 +30,8 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_LISTIO_H
-#define VEGAFEM_LISTIO_H
+#ifndef NEXDYNFEM_LISTIO_H
+#define NEXDYNFEM_LISTIO_H
 
 /*
   A class to load an integer list from a text file into memory. 
@@ -41,7 +41,7 @@
 #include <vector>
 #include <set>
 
-namespace vegafem
+namespace nexdynfem
 {
 
 class ListIO
@@ -78,7 +78,7 @@ protected:
 };
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

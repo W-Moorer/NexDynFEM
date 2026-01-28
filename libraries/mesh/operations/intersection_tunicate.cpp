@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "mesh" library , Copyright (C) 2018 USC                               *
  * All rights reserved.                                                  *
@@ -37,7 +37,7 @@
 #include <cassert>
 #include <cmath>
 
-namespace vegafem
+namespace nexdynfem
 {
 
 // Modified Bridson's code to use Shewchuk's orient2/3d because the later is faster
@@ -1073,4 +1073,4 @@ simplex_intersection4d(int k,
 }
 */
 
-}//namespace vegafem
+}//namespace nexdynfem

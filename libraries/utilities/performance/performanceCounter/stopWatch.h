@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "performanceCounter" library , Copyright (C) 2018 USC                 *
  * All rights reserved.                                                  *
@@ -30,8 +30,8 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_STOPWATCH_H
-#define VEGAFEM_STOPWATCH_H
+#ifndef NEXDYNFEM_STOPWATCH_H
+#define NEXDYNFEM_STOPWATCH_H
 
 /*
   === A stopwatch to measure code execution time. ===
@@ -59,7 +59,7 @@
 #include <sys/time.h>
 #endif
 
-namespace vegafem
+namespace nexdynfem
 {
 class StopWatch
 {
@@ -200,6 +200,6 @@ inline double StopWatch::getTime()
 #endif
 }
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif /* STOPWATCH_H */

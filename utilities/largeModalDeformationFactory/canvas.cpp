@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "Large Modal Deformation Factory",                                    *
  * a pre-processing utility for model reduction of                       *
@@ -39,10 +39,10 @@
   #include <windows.h>
 #endif
 
-#include <vegafem/openGL-headers.h>
-#include <vegafem/objMeshRender.h>
+#include <nexdynfem/openGL-headers.h>
+#include <nexdynfem/objMeshRender.h>
 #include "canvas.h"
-#include <vegafem/renderVolumetricMesh.h>
+#include <nexdynfem/renderVolumetricMesh.h>
 
 #ifndef M_PI
   #define M_PI 3.1415926535897932384

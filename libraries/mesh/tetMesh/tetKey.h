@@ -14,9 +14,9 @@
 /*************************************************************************
  *                                                                       *
  * We release our improvements to the wildMagic code under our standard  *
- * Vega FEM license, as follows:                                         *
+ * NexDynFEM license, as follows:                                         *
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "improvements to the wildMagic library" , Copyright (C) 2018 USC      *
  * All rights reserved.                                                  *
@@ -46,15 +46,15 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_TETKEYS_H
-#define VEGAFEM_TETKEYS_H
+#ifndef NEXDYNFEM_TETKEYS_H
+#define NEXDYNFEM_TETKEYS_H
 
 #include "triKey.h"
 #include "vec4i.h"
 #include <algorithm>
 #include <ostream>
 
-namespace vegafem
+namespace nexdynfem
 {
 
 // unoriented tet key based on vtx indices
@@ -248,7 +248,7 @@ inline int OTetKey::getInvertedTriIndex(const UTriKey & tri) const
   return -1;
 }
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

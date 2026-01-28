@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "sparseSolver" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC   *
  * All rights reserved.                                                  *
@@ -30,19 +30,19 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_SPARSESOLVERS_H
-#define VEGAFEM_SPARSESOLVERS_H
+#ifndef NEXDYNFEM_SPARSESOLVERS_H
+#define NEXDYNFEM_SPARSESOLVERS_H
 
 #include "PardisoSolver.h"
 #include "CGSolver.h"
 #include "SPOOLESSolver.h"
 #include "SPOOLESSolverMT.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

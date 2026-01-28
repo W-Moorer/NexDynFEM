@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "matrix" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC         *
  * All rights reserved.                                                  *
@@ -38,10 +38,10 @@
   See also matrix.h and expokit_xgpadm.h.
 */
 
-#ifndef VEGAFEM_MATRIXEXP_H
-#define VEGAFEM_MATRIXEXP_H
+#ifndef NEXDYNFEM_MATRIXEXP_H
+#define NEXDYNFEM_MATRIXEXP_H
 
-namespace vegafem
+namespace nexdynfem
 {
 // computes exp(mtx*t)
 template<class real>
@@ -50,6 +50,6 @@ int MatrixExp(int m, real * mtx, real t, real * output, int ideg=6);
 // computes w = exp(mtx*t)*v
 template<class real>
 int MatrixExpv(int m, real * mtx, real t, real * v, real * w, int ideg=6);
-}// namespace vegafem
+}// namespace nexdynfem
 
 #endif

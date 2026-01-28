@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "laplacianMatrix" library , Copyright (C) 2018 USC                    *
  * All rights reserved.                                                  *
@@ -36,13 +36,13 @@
    they transform scalar quantities defined on the elements. 
 */
 
-#ifndef VEGAFEM_LAPLACIANMATRIX_H
-#define VEGAFEM_LAPLACIANMATRIX_H
+#ifndef NEXDYNFEM_LAPLACIANMATRIX_H
+#define NEXDYNFEM_LAPLACIANMATRIX_H
 
 #include "sparseMatrix.h"
 #include "tetMesh.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 class LaplacianMatrix
@@ -79,7 +79,7 @@ public:
 };
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

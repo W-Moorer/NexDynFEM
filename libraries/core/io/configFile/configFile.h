@@ -1,5 +1,5 @@
-#ifndef VEGAFEM_CONFIGFILE_H
-#define VEGAFEM_CONFIGFILE_H
+#ifndef NEXDYNFEM_CONFIGFILE_H
+#define NEXDYNFEM_CONFIGFILE_H
 
 /*
 
@@ -88,7 +88,7 @@
 #include <string>
 #include "vec3d.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 class ConfigFile
@@ -195,7 +195,7 @@ protected:
 };
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

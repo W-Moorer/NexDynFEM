@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "StVK" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC           *
  * All rights reserved.                                                  *
@@ -30,8 +30,8 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_STVKINTERNALFORCES_H
-#define VEGAFEM_STVKINTERNALFORCES_H
+#ifndef NEXDYNFEM_STVKINTERNALFORCES_H
+#define NEXDYNFEM_STVKINTERNALFORCES_H
 
 /*
 
@@ -74,7 +74,7 @@ Note: all matrices are stored in the column-major order (same format as in LAPAC
 #include "volumetricMesh.h"
 #include "StVKElementABCD.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 class StVKInternalForces
@@ -125,7 +125,7 @@ protected:
 };
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

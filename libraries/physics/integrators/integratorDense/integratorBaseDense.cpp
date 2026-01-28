@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "integrator" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC     *
  * All rights reserved.                                                  *
@@ -40,7 +40,7 @@
 #include "integratorBaseDense.h"
 #include "IPIVC.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 IntegratorBaseDense::IntegratorBaseDense(int r, double timestep, double * massMatrix, ReducedForceModel * reducedForceModel, double dampingMassCoef, double dampingStiffnessCoef) : IntegratorBase(r, timestep, dampingMassCoef, dampingStiffnessCoef), useStaticSolver(0), usePlasticDeformations(0), plasticThreshold2(DBL_MAX), plasticfq(NULL), totalfq(NULL)
@@ -288,4 +288,4 @@ void IntegratorBaseDense::SetTotalForces(double * totalfq_)
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem

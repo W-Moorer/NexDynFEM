@@ -31,14 +31,14 @@
   (summation, normalization, dot product, cross product, etc.).
 */
 
-#ifndef VEGAFEM_MINIVEC3_H
-#define VEGAFEM_MINIVEC3_H
+#ifndef NEXDYNFEM_MINIVEC3_H
+#define NEXDYNFEM_MINIVEC3_H
 
 #include <cstdio>
 #include <cmath>
 #include <ostream>
 
-namespace vegafem
+namespace nexdynfem
 {
 
 // forward declarations for external helper functions
@@ -360,7 +360,7 @@ Vec3<real> Vec3<real>::findOrthonormalVector() const
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

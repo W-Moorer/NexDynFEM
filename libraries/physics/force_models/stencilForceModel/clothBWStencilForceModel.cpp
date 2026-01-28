@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "Stencil Force Model" library , Copyright (C) 2018 USC                *
  * All rights reserved.                                                  *
@@ -34,7 +34,7 @@
 #include <iostream>
 #include <cstdlib>
 
-namespace vegafem
+namespace nexdynfem
 {
 
 ClothBWStencilForceModel::ClothBWStencilForceModel(ClothBW * clothBW_): clothBW(clothBW_)
@@ -84,4 +84,4 @@ void ClothBWStencilForceModel::GetVertexGravityForce(int vid, double gravity[3])
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem

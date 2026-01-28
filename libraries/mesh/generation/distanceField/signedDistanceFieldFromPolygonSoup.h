@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "distance field" library , Copyright (C) 2007 CMU, 2018 USC           *
  * All rights reserved.                                                  *
@@ -38,8 +38,8 @@
 */
 
 
-#ifndef VEGAFEM_SIGNEDDISTANCEFIELDFROMPOLYGONSOUP_H
-#define VEGAFEM_SIGNEDDISTANCEFIELDFROMPOLYGONSOUP_H
+#ifndef NEXDYNFEM_SIGNEDDISTANCEFIELDFROMPOLYGONSOUP_H
+#define NEXDYNFEM_SIGNEDDISTANCEFIELDFROMPOLYGONSOUP_H
 
 #include <vector>
 #include "distanceField.h"
@@ -47,7 +47,7 @@
 #include "closestPointField.h"
 #include "objMesh.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 class SignedDistanceFieldFromPolygonSoup
@@ -112,7 +112,7 @@ protected:
 };
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

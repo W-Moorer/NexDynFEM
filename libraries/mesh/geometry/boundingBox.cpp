@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "mesh" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC           *
  * All rights reserved.                                                  *
@@ -44,7 +44,7 @@
 #include "valueIndex.h"
 
 using namespace std;
-namespace vegafem
+namespace nexdynfem
 {
 BoundingBox::BoundingBox(int numVertices, const Vec3d * vertices)
 {
@@ -434,4 +434,4 @@ template void BoundingBox::buildFromTriangles(const vector<TriangleWithCollision
 
 
 
-}//namespace vegafem
+}//namespace nexdynfem

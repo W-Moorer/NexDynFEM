@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "openGLHelper" library , Copyright (C) 2018 USC                       *
  * All rights reserved.                                                  *
@@ -30,11 +30,11 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_HANDLERENDER_H
-#define VEGAFEM_HANDLERENDER_H
+#ifndef NEXDYNFEM_HANDLERENDER_H
+#define NEXDYNFEM_HANDLERENDER_H
 #include "minivector.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 
@@ -92,7 +92,7 @@ protected:
 
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

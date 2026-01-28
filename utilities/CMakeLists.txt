@@ -8,9 +8,9 @@
 ################################################################################
 # Utilities
 ################################################################################
-if(VEGAFEM_BUILD_UTILITIES)
+if(NEXDYNFEM_BUILD_UTILITIES)
     #===========================================================================
-    set(VegaFEM_utilities
+    set(NexDynFEM_utilities
         computeDistanceField
         finiteDifferenceTest
         isosurfaceMesher
@@ -18,7 +18,7 @@ if(VEGAFEM_BUILD_UTILITIES)
         tetMesher
     )
 
-    foreach(exe ${VegaFEM_utilities})
+    foreach(exe ${NexDynFEM_utilities})
       file(GLOB_RECURSE sources CONFIGURE_DEPENDS "${CMAKE_CURRENT_SOURCE_DIR}/${exe}/*.c" "${CMAKE_CURRENT_SOURCE_DIR}/${exe}/*.cpp")
       add_executable(${exe} ${sources})
       target_link_libraries(${exe} ${PROJECT_NAME})
@@ -43,13 +43,13 @@ if(VEGAFEM_BUILD_UTILITIES)
 
     #===========================================================================
 
-    set(VegaFEM_utilities
+    set(NexDynFEM_utilities
         generateInterpolant
         generateInterpolationMatrix
         generateMassMatrix
         generateSurfaceMesh
     )
-    foreach(target_name ${VegaFEM_utilities})
+    foreach(target_name ${NexDynFEM_utilities})
         add_executable(${target_name} "volumetricMeshUtilities/${target_name}.cpp")
         target_link_libraries(${target_name} ${PROJECT_NAME})
         # DLL copy to install folder must be wrapped because generator expression
@@ -73,15 +73,15 @@ if(VEGAFEM_BUILD_UTILITIES)
 
     #===========================================================================
 
-    if(VEGAFEM_BUILD_COPYLEFT)
-      set(VegaFEM_utilities_gpl
+    if(NEXDYNFEM_BUILD_COPYLEFT)
+      set(NexDynFEM_utilities_gpl
           immersionMesher
           virtualTetsDriver
       )
-      foreach(exe ${VegaFEM_utilities_gpl})
+      foreach(exe ${NexDynFEM_utilities_gpl})
         file(GLOB_RECURSE sources CONFIGURE_DEPENDS "${CMAKE_CURRENT_SOURCE_DIR}/${exe}/*.c" "${CMAKE_CURRENT_SOURCE_DIR}/${exe}/*.cpp")
         add_executable(${exe} ${sources})
-        target_link_libraries(${exe} PRIVATE vegafem)
+        target_link_libraries(${exe} PRIVATE nexdynfem)
         # DLL copy to install folder must be wrapped because generator expression
         # TARGET_RUNTIME_DLLS ""On non-DLL platforms, this expression always evaluates to an empty string""
         # which fails on non-DLL platforms because the custom command becomes invalid by lack of argument
@@ -106,13 +106,13 @@ endif()
 ################################################################################
 # Utilities graphics
 ################################################################################
-if(VEGAFEM_BUILD_UTILITIES_GRAPHICS)
+if(NEXDYNFEM_BUILD_UTILITIES_GRAPHICS)
     find_package(X11 REQUIRED) # freeglut on Linux
     find_package(glui CONFIG REQUIRED) # clothBW-rt displayObj editShapeARAP interactiveDeformableSimulator reducedDynamicSolver
 
     #===========================================================================
 
-    set(VegaFEM_utilities
+    set(NexDynFEM_utilities
         clothBW-rt
         displayObj
         editShapeARAP
@@ -120,7 +120,7 @@ if(VEGAFEM_BUILD_UTILITIES_GRAPHICS)
         # largeModalDeformationFactory
         reducedDynamicSolver-rt
     )
-    foreach(target_name ${VegaFEM_utilities})
+    foreach(target_name ${NexDynFEM_utilities})
       file(GLOB_RECURSE sources RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} CONFIGURE_DEPENDS "${target_name}/*.c" "${target_name}/*.cpp")
       add_executable(${target_name} ${sources})
       target_link_libraries(${target_name} PRIVATE ${PROJECT_NAME} 

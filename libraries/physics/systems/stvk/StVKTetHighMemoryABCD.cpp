@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "StVK" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC           *
  * All rights reserved.                                                  *
@@ -33,7 +33,7 @@
 #include "StVKTetHighMemoryABCD.h"
 #include "geometryQuery.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 //#define CONTIGUOUSBLOCK
@@ -140,4 +140,4 @@ void StVKTetHighMemoryABCD::StVKSingleTetABCD(Vec3d vtx[4], Mat3d A[4][4], doubl
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem

@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "objMesh" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC        *
  * All rights reserved.                                                  *
@@ -59,8 +59,8 @@
 
 using namespace std;
 
-// for faster parallel loading of multimesh binary files, enable the -DVEGAFEM_USE_TBB macro line in the Makefile-header file (see also documentation)
-#ifdef VEGAFEM_USE_TBB
+// for faster parallel loading of multimesh binary files, enable the -DNEXDYNFEM_USE_TBB macro line in the Makefile-header file (see also documentation)
+#ifdef NEXDYNFEM_USE_TBB
   #include <tbb/tbb.h>
 #endif
 
@@ -106,7 +106,7 @@ void removeByIndices(InputVector & inputVector, const IndexRange & indices)
 
 } // end anonymous namespace
 
-namespace vegafem
+namespace nexdynfem
 {
 ObjMesh::ObjMesh(const std::string & filename_, fileFormatType fileFormat, int verbose) : filename(filename_)
 {
@@ -4598,7 +4598,7 @@ int ObjMesh::loadObjMeshesFromBinary(FILE * fin, int * numObjMeshes, ObjMesh ***
 
   // load every obj mesh from memory
 
-#ifdef VEGAFEM_USE_TBB
+#ifdef NEXDYNFEM_USE_TBB
   tbb::parallel_for(0, numMeshes, [&](int i)
 #else
   for(int i = 0; i < numMeshes; i++)
@@ -4612,7 +4612,7 @@ int ObjMesh::loadObjMeshesFromBinary(FILE * fin, int * numObjMeshes, ObjMesh ***
       (*objMeshes)[i] = new ObjMesh((void *)location, stream, verbose);
     }
   }
-#ifdef VEGAFEM_USE_TBB
+#ifdef NEXDYNFEM_USE_TBB
   );
 #endif
 
@@ -4962,4 +4962,4 @@ void ObjMesh::removeAllTextureCoordinates()
   });
 }
 
-}//namespace vegafem
+}//namespace nexdynfem

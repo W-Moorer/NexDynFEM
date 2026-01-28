@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "interpolationCoordinates" library , Copyright (C) 2018 USC           *
  * All rights reserved.                                                  *
@@ -30,8 +30,8 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_INTERPOLATIONCOORDINATES_H
-#define VEGAFEM_INTERPOLATIONCOORDINATES_H
+#ifndef NEXDYNFEM_INTERPOLATIONCOORDINATES_H
+#define NEXDYNFEM_INTERPOLATIONCOORDINATES_H
 
 class InterpolationCoordinates
 {

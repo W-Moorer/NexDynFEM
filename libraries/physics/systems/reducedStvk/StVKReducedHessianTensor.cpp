@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "reducedStvk" library , Copyright (C) 2007 CMU, 2009 MIT              *
  * All rights reserved.                                                  *
@@ -34,7 +34,7 @@
 #include "StVKReducedHessianTensor.h"
 #include "lapack-headers.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 StVKReducedHessianTensor::StVKReducedHessianTensor(StVKReducedStiffnessMatrix * stVKReducedStiffnessMatrix) : shallowCopy(0)
@@ -544,4 +544,4 @@ StVKReducedHessianTensor * StVKReducedHessianTensor::ShallowClone()
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem

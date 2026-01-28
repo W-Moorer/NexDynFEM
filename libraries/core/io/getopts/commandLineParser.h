@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "getopts" library , Copyright (C) 2018 USC                            *
  * All rights reserved.                                                  *
@@ -30,14 +30,14 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_COMMANDLINEPARSER_H
-#define VEGAFEM_COMMANDLINEPARSER_H
+#ifndef NEXDYNFEM_COMMANDLINEPARSER_H
+#define NEXDYNFEM_COMMANDLINEPARSER_H
 
 #include "vegalong.h"
 #include <string>
 #include <vector>
 
-namespace vegafem
+namespace nexdynfem
 {
 
 // parser for command line arguments
@@ -109,7 +109,7 @@ protected:
 
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

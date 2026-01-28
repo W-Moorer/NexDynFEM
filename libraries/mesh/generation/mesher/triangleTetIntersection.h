@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "mesher" library , Copyright (C) 2018 USC                             *
  * All rights reserved.                                                  *
@@ -34,12 +34,12 @@
   Intersection between a tet and a triangle.
 */
 
-#ifndef VEGAFEM_TRIANGLETETINTERSECTION_H
-#define VEGAFEM_TRIANGLETETINTERSECTION_H
+#ifndef NEXDYNFEM_TRIANGLETETINTERSECTION_H
+#define NEXDYNFEM_TRIANGLETETINTERSECTION_H
 
 #include "vec3d.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 // This class computes whether a tetrahedron intersects a triangle, excluding just touching.
@@ -94,7 +94,7 @@ private:
 };
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
  /* INTERSECTION_H_ */

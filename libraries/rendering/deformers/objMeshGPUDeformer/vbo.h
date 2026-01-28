@@ -2,8 +2,8 @@
   Virtual buffer object OpenGL extension function prototypes (under Windows)
 */
 
-#ifndef VEGAFEM_VBO_H
-#define VEGAFEM_VBO_H
+#ifndef NEXDYNFEM_VBO_H
+#define NEXDYNFEM_VBO_H
 
 #if defined(_WIN32) || defined(WIN32)
 
@@ -13,7 +13,7 @@
 #include <GL/glext.h>
 
 #endif
-namespace vegafem
+namespace nexdynfem
 {
 
 // call this to initialize the VBO extension
@@ -22,7 +22,7 @@ namespace vegafem
 //   "glBufferDataARB" and "glGenBuffersARB", and "glDeleteBuffersARB"
 bool InitializeVBOs(void);
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif 
 

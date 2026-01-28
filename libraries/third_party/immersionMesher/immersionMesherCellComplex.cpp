@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "immersionMesher" library , Copyright (C) 2018 USC                    *
  * All rights reserved.                                                  *
@@ -39,7 +39,7 @@
 #include <iostream>
 #include <fstream>
 
-namespace vegafem
+namespace nexdynfem
 {
 using namespace std;
 
@@ -915,4 +915,4 @@ void ImmersionMesher::prepareDataForSolve()
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem

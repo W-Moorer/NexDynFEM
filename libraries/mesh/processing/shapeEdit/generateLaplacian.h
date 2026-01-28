@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "shapeEdit" library , Copyright (C) 2018 USC                          *
  * All rights reserved.                                                  *
@@ -30,14 +30,14 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_GENERATELAPLACIAN_H
-#define VEGAFEM_GENERATELAPLACIAN_H
+#ifndef NEXDYNFEM_GENERATELAPLACIAN_H
+#define NEXDYNFEM_GENERATELAPLACIAN_H
 
 #include "sparseMatrix.h"
 #include "tetMesh.h"
 #include "objMesh.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 // generate Laplacian matrix for tet mesh [Wang 2015 Linear Subspace Design for Real-Time Shape Deformation]
@@ -55,7 +55,7 @@ double testLinearPrecision(const SparseMatrix * A, const VolumetricMesh * mesh);
 //double testLinearPrecision(const SparseMatrix * A, const ObjMesh * mesh);
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

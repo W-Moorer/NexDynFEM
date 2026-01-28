@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "volumetricMesh" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC *
  * All rights reserved.                                                  *
@@ -30,12 +30,12 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_VOLUMETRICMESHENUMATERIAL_H
-#define VEGAFEM_VOLUMETRICMESHENUMATERIAL_H
+#ifndef NEXDYNFEM_VOLUMETRICMESHENUMATERIAL_H
+#define NEXDYNFEM_VOLUMETRICMESHENUMATERIAL_H
 
 #include "volumetricMesh.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 // stores an isotropic material specified by E (Young's modulus), nu (Poisson's ratio), and density
@@ -73,7 +73,7 @@ inline void VolumetricMesh::ENuMaterial::setNu(double nu) { nu_ = nu; }
 VolumetricMesh::ENuMaterial * downcastENuMaterial(VolumetricMesh::Material * material); // performs a check via getType and returns NULL if material is not ENU
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

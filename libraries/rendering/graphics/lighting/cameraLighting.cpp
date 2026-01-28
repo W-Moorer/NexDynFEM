@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "lighting" library , Copyright (C) 2018 USC                           *
  * All rights reserved.                                                  *
@@ -36,7 +36,7 @@
 #include "camera.h"
 #include <iostream>
 
-namespace vegafem
+namespace nexdynfem
 {
 using namespace std;
 
@@ -149,4 +149,4 @@ int CameraLighting::SaveConfig(const char * filename)
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem

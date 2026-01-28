@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "virtualTets" library , Copyright (C) 2018 USC                        *
  * All rights reserved.                                                  *
@@ -30,14 +30,14 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_TETTRICUTTINGDATA_H
-#define VEGAFEM_TETTRICUTTINGDATA_H
+#ifndef NEXDYNFEM_TETTRICUTTINGDATA_H
+#define NEXDYNFEM_TETTRICUTTINGDATA_H
 
 #include "tetTriMeshCutting.h"
 #include <vector>
 #include <mutex>
 
-namespace vegafem
+namespace nexdynfem
 {
 
 /*
@@ -76,7 +76,7 @@ struct TetTriIntersectingData
   std::vector<Vec3ER> tetPosER;            // exact real for tet pos
 };
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

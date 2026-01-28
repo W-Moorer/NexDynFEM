@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "objMesh" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC        *
  * All rights reserved.                                                  *
@@ -32,7 +32,7 @@
 
 #include "objMesh.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 using namespace std;
 
@@ -129,4 +129,4 @@ ObjMesh createBoundingBoxObjMesh(Vec3d bmin, Vec3d bmax)
   return mesh;
 }
 
-}//namespace vegafem
+}//namespace nexdynfem

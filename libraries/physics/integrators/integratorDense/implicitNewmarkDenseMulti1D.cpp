@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "integrator" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC     *
  * All rights reserved.                                                  *
@@ -41,7 +41,7 @@
 #include "implicitNewmarkDenseMulti1D.h"
 #include "IPIVC.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 ImplicitNewmarkDenseMulti1D::ImplicitNewmarkDenseMulti1D(int r_, double timestep_, double * massMatrix_, double * tangentStiffnessMatrix_, double dampingMassCoef_, double dampingStiffnessCoef_, double NewmarkBeta_, double NewmarkGamma_):
@@ -150,4 +150,4 @@ void ImplicitNewmarkDenseMulti1D::SetDampingStiffnessCoef(double dampingStiffnes
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem

@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "corotational linear FEM" library , Copyright (C) 2018 USC            *
  * All rights reserved.                                                  *
@@ -30,8 +30,8 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_COROTATIONALLINEARFEM_H
-#define VEGAFEM_COROTATIONALLINEARFEM_H
+#ifndef NEXDYNFEM_COROTATIONALLINEARFEM_H
+#define NEXDYNFEM_COROTATIONALLINEARFEM_H
 
 /*
   Corotational linear FEM deformable model for tet meshes and cubic meshes.
@@ -74,7 +74,7 @@
 #include "tetMesh.h"
 #include "sparseMatrix.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 class CorotationalLinearFEM
@@ -140,7 +140,7 @@ protected:
 };
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

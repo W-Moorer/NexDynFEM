@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "virtualTets" library , Copyright (C) 2018 USC                        *
  * All rights reserved.                                                  *
@@ -30,8 +30,8 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_TETTRICUTFEATURE_H
-#define VEGAFEM_TETTRICUTFEATURE_H
+#ifndef NEXDYNFEM_TETTRICUTFEATURE_H
+#define NEXDYNFEM_TETTRICUTFEATURE_H
 
 #include "triKey.h"
 #include "tetKey.h"
@@ -40,7 +40,7 @@
 #include <vector>
 #include <map>
 
-namespace vegafem
+namespace nexdynfem
 {
 
 // to perform geometric queries on a tet
@@ -121,16 +121,16 @@ struct TetTriCutFeature
   std::vector<UTriKey> getTouchingTetFaces(const TetShape & tetShape) const;
 };
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 namespace std
 {
   template <>
-  struct hash<vegafem::TetTriCutFeature>
+  struct hash<nexdynfem::TetTriCutFeature>
   {
-    size_t operator()(const vegafem::TetTriCutFeature & k) const
+    size_t operator()(const nexdynfem::TetTriCutFeature & k) const
     {
-      using vegafem::hashCombine;
+      using nexdynfem::hashCombine;
       size_t v = hash<int>()(k.triFeature[0]);
       v = hashCombine(v, hash<int>()(k.triFeature[1]));
       v = hashCombine(v, hash<int>()(k.triFeature[2]));

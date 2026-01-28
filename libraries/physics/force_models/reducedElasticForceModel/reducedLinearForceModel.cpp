@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "elasticForceModel" library , Copyright (C) 2007 CMU, 2009 MIT,       *
  *                                                       2018 USC        *
@@ -34,7 +34,7 @@
 #include "reducedLinearForceModel.h"
 #include "lapack-headers.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 ReducedLinearForceModel::ReducedLinearForceModel(int r, double * stiffnessMatrix) : ReducedForceModel()
@@ -74,4 +74,4 @@ void ReducedLinearForceModel::GetTangentStiffnessMatrix(double * q, double * tan
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem

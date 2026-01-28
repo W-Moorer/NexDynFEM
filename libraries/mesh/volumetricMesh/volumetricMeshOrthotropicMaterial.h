@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "volumetricMesh" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC *
  * All rights reserved.                                                  *
@@ -34,12 +34,12 @@
   Stores an orthotropic material.
 */
 
-#ifndef VEGAFEM_VOLUMETRICMESHORTHOTROPICMATERIAL_H
-#define VEGAFEM_VOLUMETRICMESHORTHOTROPICMATERIAL_H
+#ifndef NEXDYNFEM_VOLUMETRICMESHORTHOTROPICMATERIAL_H
+#define NEXDYNFEM_VOLUMETRICMESHORTHOTROPICMATERIAL_H
 
 #include "volumetricMesh.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 // stores an orthotropic material
@@ -104,7 +104,7 @@ inline void VolumetricMesh::OrthotropicMaterial::setG31(double G31) { G31_ = G31
 VolumetricMesh::OrthotropicMaterial * downcastOrthotropicMaterial(VolumetricMesh::Material * material); // performs a check via getType and returns NULL if material is not Orthotropic
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "massSpringSystem" library, Copyright (C) 2007 CMU, 2009 MIT,         *
  *                                           2018 USC                    *
@@ -31,12 +31,12 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_MASSSPRINGSYSTEMFROMCUBICMESH_H
-#define VEGAFEM_MASSSPRINGSYSTEMFROMCUBICMESH_H
+#ifndef NEXDYNFEM_MASSSPRINGSYSTEMFROMCUBICMESH_H
+#define NEXDYNFEM_MASSSPRINGSYSTEMFROMCUBICMESH_H
 
 #include "massSpringSystem.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 /*
@@ -56,7 +56,7 @@ public:
 };
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

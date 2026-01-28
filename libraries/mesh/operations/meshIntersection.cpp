@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "mesh" library , Copyright (C) 2018 USC                               *
  * All rights reserved.                                                  *
@@ -34,11 +34,11 @@
 #include "basicAlgorithms.h"
 #include "exactOctree.h"
 #include "predicates.h"
-#ifdef VEGAFEM_USE_TBB
+#ifdef NEXDYNFEM_USE_TBB
 #include <tbb/tbb.h>
 #endif
 using namespace std;
-namespace vegafem
+namespace nexdynfem
 {
 
 
@@ -49,7 +49,7 @@ vector<vector<int>> computeTrianglesIntersectingEachTetExact(const TetMeshRef te
 
   vector<vector<int>> tetEmbedTri(tetMesh.numTets());
 
-#ifdef VEGAFEM_USE_TBB
+#ifdef NEXDYNFEM_USE_TBB
   tbb::parallel_for(tbb::blocked_range<int>(0, tetMesh.numTets()), [&](const tbb::blocked_range<int> & rng)
   {
     for (int tetID = rng.begin(); tetID != rng.end(); ++tetID)
@@ -74,10 +74,10 @@ vector<vector<int>> computeTrianglesIntersectingEachTetExact(const TetMeshRef te
       octree.rangeQuery(toBB, toTri, tetEmbedTri[tetID]);
       sortAndDeduplicate(tetEmbedTri[tetID]);
     }
-#ifdef VEGAFEM_USE_TBB
+#ifdef NEXDYNFEM_USE_TBB
   }, tbb::auto_partitioner()); //end for locations
 #endif
   return tetEmbedTri;
 }
 
-}//namespace vegafem
+}//namespace nexdynfem

@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "Large Modal Deformation Factory",                                    *
  * a pre-processing utility for model reduction of                       *
@@ -102,7 +102,7 @@ using namespace std;
   #include "PardisoSolver.h"
 #endif
 
-namespace vegafem
+namespace nexdynfem
 {
 
 int ARPACKSolver::SolveGenEigReg(SparseMatrix * KInput, SparseMatrix * MInput, int numEigenvalues, double * eigenvalues, double * eigenvectors, const char * mode, int numLinearSolverThreads, int verbose)
@@ -1014,4 +1014,4 @@ int ARPACKSolver::SolveGenEigShInv(SparseMatrix * K, SparseMatrix * M, SparseMat
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem

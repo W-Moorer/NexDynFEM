@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "hashTable" library , Copyright (C) 2007 CMU                          *
  * All rights reserved.                                                  *
@@ -39,13 +39,13 @@
   where appropriate p is chosen automatically by the constructor.
 */
 
-#ifndef VEGAFEM_HASHTABLE_H
-#define VEGAFEM_HASHTABLE_H
+#ifndef NEXDYNFEM_HASHTABLE_H
+#define NEXDYNFEM_HASHTABLE_H
 
 #include <vector>
 #include <list>
 
-namespace vegafem
+namespace nexdynfem
 {
 
 template<class Data>
@@ -87,7 +87,7 @@ inline unsigned int HashTable<Data>::hashFunction(unsigned int key)
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

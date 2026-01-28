@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "forceModel" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC     *
  * All rights reserved.                                                  *
@@ -32,7 +32,7 @@
 
 #include "isotropicHyperelasticFEMForceModel.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 IsotropicHyperelasticFEMForceModel::IsotropicHyperelasticFEMForceModel(IsotropicHyperelasticFEM * isotropicHyperelasticFEM_): isotropicHyperelasticFEM(isotropicHyperelasticFEM_)
@@ -68,4 +68,4 @@ void IsotropicHyperelasticFEMForceModel::GetForceAndMatrix(const double * u, dou
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem

@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "mesh" library , Copyright (C) 2018 USC                               *
  * All rights reserved.                                                  *
@@ -30,14 +30,14 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_EDGEKEY_H
-#define VEGAFEM_EDGEKEY_H
+#ifndef NEXDYNFEM_EDGEKEY_H
+#define NEXDYNFEM_EDGEKEY_H
 
 #include <ostream>
 #include <functional>
 #include <utility>
 
-namespace vegafem
+namespace nexdynfem
 {
 // unoriented edge
 struct UEdgeKey
@@ -75,14 +75,14 @@ protected:
 };
 
 inline std::ostream & operator << (std::ostream & s, const OEdgeKey & v);
-}//namespace vegafem
+}//namespace nexdynfem
 
 namespace std
 {
   template <>
-  struct hash<vegafem::UEdgeKey>
+  struct hash<nexdynfem::UEdgeKey>
   {
-    size_t operator()(const vegafem::UEdgeKey & k) const
+    size_t operator()(const nexdynfem::UEdgeKey & k) const
     {
       static_assert(sizeof(int) * 2 == sizeof(uint64_t), "uint64_t is not twice the same size as int");
       uint64_t v = (((uint64_t)k[0]) + ((uint64_t)(k[1]) << (sizeof(int)*8)));
@@ -91,9 +91,9 @@ namespace std
   };
 
   template <>
-  struct hash<vegafem::OEdgeKey>
+  struct hash<nexdynfem::OEdgeKey>
   {
-    size_t operator()(const vegafem::OEdgeKey & k) const
+    size_t operator()(const nexdynfem::OEdgeKey & k) const
     {
       static_assert(sizeof(int) * 2 == sizeof(uint64_t), "uint64_t is not twice the same size as int");
       uint64_t v = (((uint64_t)k[0]) + ((uint64_t)(k[1]) << (sizeof(int)*8)));
@@ -106,7 +106,7 @@ namespace std
 //                             IMPLEMENTATION                                //
 ///////////////////////////////////////////////////////////////////////////////
 
-namespace vegafem
+namespace nexdynfem
 {
 inline UEdgeKey::UEdgeKey(int v0, int v1)
 {
@@ -164,6 +164,6 @@ inline std::ostream & operator << (std::ostream & s, const OEdgeKey & v)
   return s << '(' << v[0] << ' ' << v[1] << ')';
 }
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif

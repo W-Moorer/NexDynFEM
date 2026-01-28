@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "integrator" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC     *
  * All rights reserved.                                                  *
@@ -64,8 +64,8 @@ See also integratorBase.h .
 
 */
 
-#ifndef VEGAFEM_CENTRALDIFFERENCESSPARSE_H
-#define VEGAFEM_CENTRALDIFFERENCESSPARSE_H
+#ifndef NEXDYNFEM_CENTRALDIFFERENCESSPARSE_H
+#define NEXDYNFEM_CENTRALDIFFERENCESSPARSE_H
 
 #include "integratorBaseSparse.h"
 #include "integratorSolverSelection.h"
@@ -79,7 +79,7 @@ See also integratorBase.h .
 #ifdef PCG
   #include "CGSolver.h"
 #endif
-namespace vegafem
+namespace nexdynfem
 {
 class CentralDifferencesSparse : public IntegratorBaseSparse
 {
@@ -131,6 +131,6 @@ protected:
     CGSolver * jacobiPreconditionedCGSolver;
   #endif
 };
-}//namespace vegafem
+}//namespace nexdynfem
 #endif
 

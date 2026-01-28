@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "StVK" library , Copyright (C) 2007 CMU, 2009 MIT, 2018 USC           *
  * All rights reserved.                                                  *
@@ -35,13 +35,13 @@
   See also StVKReducedInternalForces.h .
 */
 
-#ifndef VEGAFEM_STVKELEMENTABCDLOADER_H
-#define VEGAFEM_STVKELEMENTABCDLOADER_H
+#ifndef NEXDYNFEM_STVKELEMENTABCDLOADER_H
+#define NEXDYNFEM_STVKELEMENTABCDLOADER_H
 
 #include "volumetricMesh.h"
 #include "StVKElementABCD.h"
 
-namespace vegafem
+namespace nexdynfem
 {
 
 class StVKElementABCDLoader
@@ -55,7 +55,7 @@ public:
 };
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

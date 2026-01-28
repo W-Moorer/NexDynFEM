@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "performanceCounter" library , Copyright (C) 2018 USC                 *
  * All rights reserved.                                                  *
@@ -33,7 +33,7 @@
 #include "performanceCounter.h"
 #include <cassert>
 
-namespace vegafem
+namespace nexdynfem
 {
 // used to lock frame-rate
 class FrameRateLock
@@ -67,4 +67,4 @@ inline void FrameRateLock::lock()
   counter.StartCounter();
 }
 
-}//namespace vegafem
+}//namespace nexdynfem

@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "listIO" library , Copyright (C) 2007 CMU, 2009 MIT                   *
  * All rights reserved.                                                  *
@@ -42,7 +42,7 @@
 #include <sstream>
 #include <algorithm>
 
-namespace vegafem
+namespace nexdynfem
 {
 using namespace std;
 
@@ -414,4 +414,4 @@ int ListIO::saveBinaryMulti(const char * filename, int numLists, int * numListEn
 }
 
 
-}//namespace vegafem
+}//namespace nexdynfem

@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "Stencil Force Model" library , Copyright (C) 2018 USC                *
  * All rights reserved.                                                  *
@@ -30,12 +30,12 @@
  *                                                                       *
  *************************************************************************/
 
-#ifndef VEGAFEM_STENCILFORCEMODEL_H
-#define VEGAFEM_STENCILFORCEMODEL_H
+#ifndef NEXDYNFEM_STENCILFORCEMODEL_H
+#define NEXDYNFEM_STENCILFORCEMODEL_H
 
 #include <vector>
 
-namespace vegafem
+namespace nexdynfem
 {
 
 /*
@@ -98,7 +98,7 @@ protected:
 };
 
 
-}//namespace vegafem
+}//namespace nexdynfem
 
 #endif
 

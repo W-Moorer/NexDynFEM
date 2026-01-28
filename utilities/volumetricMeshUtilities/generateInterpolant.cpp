@@ -1,6 +1,6 @@
 /*************************************************************************
  *                                                                       *
- * Vega FEM Simulation Library Version 4.0                               *
+ * NexDynFEM Simulation Library Version 4.0                               *
  *                                                                       *
  * "generateInterpolant" utility , Copyright (C) 2007 CMU, 2009 MIT,     *
  *                                               2018 USC                *
@@ -38,16 +38,16 @@
 #include <vector>
 using namespace std;
 
-#include <vegafem/volumetricMesh.h>
-#include <vegafem/volumetricMeshLoader.h>
-#include <vegafem/tetMesh.h>
-#include <vegafem/cubicMesh.h>
-#include <vegafem/objMesh.h>
-#include <vegafem/matrixIO.h>
-#include <vegafem/matrixMacros.h>
-#include <vegafem/getopts.h>
-#include <vegafem/listIO.h>
-using namespace vegafem;
+#include <nexdynfem/volumetricMesh.h>
+#include <nexdynfem/volumetricMeshLoader.h>
+#include <nexdynfem/tetMesh.h>
+#include <nexdynfem/cubicMesh.h>
+#include <nexdynfem/objMesh.h>
+#include <nexdynfem/matrixIO.h>
+#include <nexdynfem/matrixMacros.h>
+#include <nexdynfem/getopts.h>
+#include <nexdynfem/listIO.h>
+using namespace nexdynfem;
 
 /*
   Builds an interpolant that can be used to efficiently transfer deformations from
