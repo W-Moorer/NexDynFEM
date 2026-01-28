@@ -1,0 +1,678 @@
+# VegaFEM Examples 使用指南
+
+本文档详细介绍了 VegaFEM 项目中所有示例的使用方法。
+
+## 目录
+
+1. [3D 固体弹性仿真示例](#3d-固体弹性仿真示例)
+2. [布料仿真示例](#布料仿真示例)
+3. [网格生成示例](#网格生成示例)
+4. [虚拟四面体示例](#虚拟四面体示例)
+5. [沉浸式网格生成示例](#沉浸式网格生成示例)
+
+---
+
+## 3D 固体弹性仿真示例
+
+这些示例演示了 VegaFEM 在 3D 固体弹性仿真方面的能力，按复杂度从低到高排列。
+
+### 1. beam3_tet - 简单梁（四面体网格）
+
+**复杂度：** 最低（208 个顶点）
+
+**描述：** 一个简单的梁模型，使用四面体网格，适合入门学习。
+
+**运行方法：**
+
+```bash
+cd /root/VegaFEM/examples/beam3_tet
+/root/VegaFEM/build/utilities/interactiveDeformableSimulator beam3_tet.config
+```
+
+**配置文件：** `beam3_tet.config`
+
+**关键参数：**
+- 求解器：implicitNewmark（隐式 Newmark 积分器）
+- 变形对象方法：InvertibleFEM（可逆有限元）
+- 材料：StVK（St. Venant-Kirchhoff）
+- 时间步长：0.0005
+- 阻尼：质量阻尼 0.0，刚度阻尼 0.01
+
+**质量弹簧模型：**
+```bash
+/root/VegaFEM/build/utilities/interactiveDeformableSimulator beam3_tet_massspring.config
+```
+
+### 2. turtle - 乌龟模型
+
+**复杂度：** 很低（347 个顶点）
+
+**描述：** 乌龟模型，具有非均匀材料属性（背壳由更硬的材料制成），是学习 VegaFEM 的很好起点。
+
+**运行方法：**
+
+```bash
+cd /root/VegaFEM/examples/turtle
+/root/VegaFEM/build/utilities/interactiveDeformableSimulator turtle.config
+```
+
+**配置文件：** `turtle.config`
+
+**关键参数：**
+- 求解器：implicitBackwardEuler（隐式后向欧拉积分器）
+- 变形对象方法：InvertibleFEM
+- 材料：StVK
+- 时间步长：0.01
+- 阻尼：质量阻尼 1.0，刚度阻尼 0.01
+- 压缩阻力：500
+- 反转阈值：0.1
+- 多线程：4 个内部力线程，2 个求解器线程
+
+**正交各向异性版本：**
+```bash
+/root/VegaFEM/build/utilities/interactiveDeformableSimulator turtle.ortho.config
+```
+
+**质量弹簧模型：**
+```bash
+/root/VegaFEM/build/utilities/interactiveDeformableSimulator turtle_massspring.config
+```
+
+### 3. asianDragon - 亚洲龙模型
+
+**复杂度：** 中等（959 个顶点）
+
+**描述：** 亚洲龙模型，演示无约束（自由飞行）运动和 Mooney-Rivlin 材料。
+
+**运行方法：**
+
+```bash
+cd /root/VegaFEM/examples/asianDragon
+/root/VegaFEM/build/utilities/interactiveDeformableSimulator asianDragon.config
+```
+
+**配置文件：** `asianDragon.config`
+
+**关键参数：**
+- 求解器：implicitBackwardEuler
+- 变形对象方法：InvertibleFEM
+- 材料：StVK（也可选择 neoHookean 或 MooneyRivlin）
+- 时间步长：0.01
+- 阻尼：质量阻尼 0.0，刚度阻尼 0.01
+- 多线程：4 个内部力线程，2 个求解器线程
+
+**无约束版本（自由飞行）：**
+```bash
+/root/VegaFEM/build/utilities/interactiveDeformableSimulator asianDragon_unconstrained.config
+```
+
+**Mooney-Rivlin 材料版本：**
+```bash
+/root/VegaFEM/build/utilities/interactiveDeformableSimulator asianDragon_MooneyRivlin.config
+```
+
+**质量弹簧模型：**
+```bash
+/root/VegaFEM/build/utilities/interactiveDeformableSimulator asianDragon_massspring.config
+```
+
+### 4. simpleBridge_tet - 简单桥梁（四面体网格）
+
+**复杂度：** 中等（4000 个顶点）
+
+**描述：** 使用四面体网格的简单桥梁模型。
+
+**运行方法：**
+
+```bash
+cd /root/VegaFEM/examples/simpleBridge_tet
+/root/VegaFEM/build/utilities/interactiveDeformableSimulator simpleBridge_tet.config
+```
+
+**质量弹簧模型：**
+```bash
+/root/VegaFEM/build/utilities/interactiveDeformableSimulator simpleBridge_tet_massspring.config
+```
+
+### 5. towerCrane - 塔式起重机
+
+**复杂度：** 高（9875 个顶点）
+
+**描述：** 塔式起重机模型，在测试机器上以约 2 fps 运行。
+
+**运行方法：**
+
+```bash
+cd /root/VegaFEM/examples/towerCrane
+/root/VegaFEM/build/utilities/interactiveDeformableSimulator towerCrane.config
+```
+
+**交互提示：**
+- 按 'e' 和 'w' 键查看嵌入式渲染网格
+- 主程序窗口必须获得焦点才能响应按键
+
+**质量弹簧模型：**
+```bash
+/root/VegaFEM/build/utilities/interactiveDeformableSimulator towerCrane_massspring.config
+```
+
+### 6. tube - 管道模型
+
+**复杂度：** 很高（25620 个顶点）
+
+**描述：** 管道模型，演示离线正交各向异性材料。
+
+**运行方法：**
+
+```bash
+cd /root/VegaFEM/examples/tube
+/root/VegaFEM/build/utilities/interactiveDeformableSimulator tube.config
+```
+
+### 7. dragon - 龙模型
+
+**复杂度：** 最高（47736 个顶点）
+
+**描述：** 龙模型，用于离线仿真。
+
+**运行方法：**
+
+```bash
+cd /root/VegaFEM/examples/dragon
+/root/VegaFEM/build/utilities/interactiveDeformableSimulator dragon.config
+```
+
+### 8. simpleBridge_vox - 简单桥梁（体素网格）
+
+**描述：** 使用体素网格的简单桥梁模型。
+
+**运行方法：**
+
+```bash
+cd /root/VegaFEM/examples/simpleBridge_vox
+/root/VegaFEM/build/utilities/interactiveDeformableSimulator simpleBridge_vox.config
+```
+
+**质量弹簧模型：**
+```bash
+/root/VegaFEM/build/utilities/interactiveDeformableSimulator simpleBridge_vox_massspring.config
+```
+
+### 9. beam3_vox - 简单梁（体素网格）
+
+**描述：** 使用体素网格的简单梁模型。
+
+**运行方法：**
+
+```bash
+cd /root/VegaFEM/examples/beam3_vox
+/root/VegaFEM/build/utilities/interactiveDeformableSimulator beam3_vox.config
+```
+
+**质量弹簧模型：**
+```bash
+/root/VegaFEM/build/utilities/interactiveDeformableSimulator beam3_vox_massspring.config
+```
+
+---
+
+## 布料仿真示例
+
+这些示例演示了布料仿真，包括弯曲和重力作用下的布料悬挂。
+
+### 1. cloth100 - 布料片
+
+**描述：** 一个 100x100 的布料片，演示布料在重力作用下的悬挂。
+
+**运行方法：**
+
+```bash
+cd /root/VegaFEM/examples/cloth
+/root/VegaFEM/build/utilities/clothBW-rt cloth100.config
+```
+
+**配置文件：** `cloth100.config`
+
+**关键参数：**
+- 拉伸刚度：5e7
+- 剪切刚度：5e6
+- 弯曲刚度 U：0.1
+- 弯曲刚度 V：0.1
+- 表面密度：100
+- 时间步长：0.02
+- 重力：9.81
+- 多线程：8 个内部力线程，4 个求解器线程
+
+**交互：**
+- 使用鼠标点击布料上的顶点进行交互
+- 程序会显示点击的顶点 ID
+
+### 2. bend1 - 弯曲示例 1
+
+**描述：** 演示布料弯曲的示例。
+
+**运行方法：**
+
+```bash
+/root/VegaFEM/build/utilities/clothBW-rt bend1.config
+```
+
+### 3. bend2 - 弯曲示例 2
+
+**描述：** 演示布料弯曲的另一个示例。
+
+**运行方法：**
+
+```bash
+/root/VegaFEM/build/utilities/clothBW-rt bend2.config
+```
+
+---
+
+## 网格生成示例
+
+这些示例演示如何使用 Vega 的网格生成功能。
+
+### 1. turtle - 乌龟模型网格生成
+
+**描述：** 为乌龟模型生成四面体网格。
+
+**运行方法：**
+
+```bash
+cd /root/VegaFEM/examples/mesher
+```
+
+**步骤 1：计算距离场**
+```bash
+/root/VegaFEM/build/utilities/computeDistanceField /root/VegaFEM/models/turtle/turtle.obj 64 64 64 -s -m 1 -g 0.1 -o turtle_64.dist
+```
+
+**步骤 2：生成等值面网格**
+```bash
+/root/VegaFEM/build/utilities/isosurfaceMesher turtle_64.dist 0.2 turtle.obj
+```
+
+**步骤 3：生成四面体网格**
+```bash
+/root/VegaFEM/build/utilities/tetMesher turtle.obj turtle.veg -q 1.1 -a 1.6
+```
+
+### 2. dragon - 龙模型网格生成
+
+**运行方法：**
+
+```bash
+cd /root/VegaFEM/examples/mesher
+/root/VegaFEM/build/utilities/computeDistanceField /root/VegaFEM/models/dragon/dragon.obj 64 64 64 -s -m 1 -g 0.1 -o dragon_64.dist
+/root/VegaFEM/build/utilities/isosurfaceMesher dragon_64.dist 0.2 dragon.obj
+/root/VegaFEM/build/utilities/tetMesher dragon.obj dragon.veg -q 1.1 -a 1.6
+```
+
+### 3. asianDragon - 亚洲龙模型网格生成
+
+**运行方法：**
+
+```bash
+cd /root/VegaFEM/examples/mesher
+/root/VegaFEM/build/utilities/computeDistanceField /root/VegaFEM/models/asianDragon/asianDragon.obj 64 64 64 -s -m 1 -g 0.1 -o asianDragon_64.dist
+/root/VegaFEM/build/utilities/isosurfaceMesher asianDragon_64.dist 0.2 asianDragon.obj
+/root/VegaFEM/build/utilities/tetMesher asianDragon.obj asianDragon.veg -q 1.1 -a 1.6
+```
+
+---
+
+## 虚拟四面体示例
+
+这些示例演示如何使用 Vega 的虚拟四面体算法为几乎自相交的表面创建四面体网格。
+
+### 1. comb - 梳子模型
+
+**描述：** 使用虚拟四面体算法为梳子模型创建四面体网格。
+
+**步骤 1：生成虚拟四面体网格**
+```bash
+cd /root/VegaFEM/examples/virtualTets
+/root/VegaFEM/build/utilities/virtualTetsDriver /root/VegaFEM/models/comb/comb.tet.veg /root/VegaFEM/models/comb/comb.obj comb-vt.veg -w comb-vt.interp
+```
+
+**步骤 2：使用 ARAP 编辑形状**
+```bash
+/root/VegaFEM/build/utilities/editShapeARAP comb-arap.config
+```
+
+**配置文件：** `comb-arap.config`
+
+**关键参数：**
+- 体积网格：comb-vt.veg
+- 嵌入网格：../../models/comb/comb.obj
+- 嵌入网格插值文件：comb-vt.interp
+- 求解器线程数：3
+- 相机半径：106
+
+### 2. dragon - 龙模型
+
+**描述：** 使用虚拟四面体算法为龙模型创建四面体网格。
+
+**步骤 1：生成虚拟四面体网格**
+```bash
+cd /root/VegaFEM/examples/virtualTets
+/root/VegaFEM/build/utilities/virtualTetsDriver /root/VegaFEM/models/dragon/dragon.tet.veg /root/VegaFEM/models/dragon/dragon.obj dragon-vt.veg -w dragon-vt.interp
+```
+
+**步骤 2：使用 ARAP 编辑形状**
+```bash
+/root/VegaFEM/build/utilities/editShapeARAP dragon-arap.config
+```
+
+---
+
+## 沉浸式网格生成示例
+
+这些示例演示如何使用 Vega 的沉浸式算法为自相交表面创建四面体网格。
+
+### 1. torus-easy - 简单圆环
+
+**描述：** 为简单的自相交圆环模型创建四面体网格。
+
+**步骤 1：生成沉浸式网格**
+```bash
+cd /root/VegaFEM/examples/immersionMesher
+/root/VegaFEM/build/utilities/immersionMesher /root/VegaFEM/models/selfIntersecting/torus/torus-easy.obj /root/VegaFEM/models/selfIntersecting/torus/torus-easy.veg -o torus-easy-im.veg -w torus-easy-im.interp
+```
+
+**步骤 2：使用 ARAP 编辑形状**
+```bash
+/root/VegaFEM/build/utilities/editShapeARAP torus-easy-arap.config
+```
+
+### 2. torus-difficult - 困难圆环
+
+**描述：** 为更复杂的自相交圆环模型创建四面体网格。
+
+**步骤 1：生成沉浸式网格**
+```bash
+/root/VegaFEM/build/utilities/immersionMesher /root/VegaFEM/models/selfIntersecting/torus/torus-difficult.obj /root/VegaFEM/models/selfIntersecting/torus/torus-difficult.veg -o torus-difficult-im.veg -w torus-difficult-im.interp
+```
+
+**步骤 2：使用 ARAP 编辑形状**
+```bash
+/root/VegaFEM/build/utilities/editShapeARAP torus-difficult-arap.config
+```
+
+### 3. helix - 螺旋
+
+**描述：** 为螺旋模型创建四面体网格。
+
+**步骤 1：生成沉浸式网格**
+```bash
+/root/VegaFEM/build/utilities/immersionMesher /root/VegaFEM/models/selfIntersecting/helix/helix.obj /root/VegaFEM/models/selfIntersecting/helix/helix.veg -o helix-im.veg -w helix-im.interp
+```
+
+**步骤 2：使用 ARAP 编辑形状**
+```bash
+/root/VegaFEM/build/utilities/editShapeARAP helix-arap.config
+```
+
+### 4. doubleLoop - 双环
+
+**描述：** 为双环模型创建四面体网格。
+
+**步骤 1：生成沉浸式网格**
+```bash
+/root/VegaFEM/build/utilities/immersionMesher /root/VegaFEM/models/selfIntersecting/doubleLoop/doubleLoop.obj /root/VegaFEM/models/selfIntersecting/doubleLoop/doubleLoop.veg -o doubleLoop-im.veg -w doubleLoop-im.interp
+```
+
+**步骤 2：使用 ARAP 编辑形状**
+```bash
+/root/VegaFEM/build/utilities/editShapeARAP doubleLoop-arap.config
+```
+
+### 5. quintupleTorus - 五重圆环
+
+**描述：** 为五重圆环模型创建四面体网格。
+
+**步骤 1：生成沉浸式网格**
+```bash
+/root/VegaFEM/build/utilities/immersionMesher /root/VegaFEM/models/selfIntersecting/quintupleTorus/quintupleTorus.obj /root/VegaFEM/models/selfIntersecting/quintupleTorus/quintupleTorus.veg -o quintupleTorus-im.veg -w quintupleTorus-im.interp
+```
+
+**步骤 2：使用 ARAP 编辑形状**
+```bash
+/root/VegaFEM/build/utilities/editShapeARAP quintupleTorus-arap.config
+```
+
+### 6. yeahright - 复杂模型
+
+**描述：** 为复杂的自相交模型创建四面体网格。
+
+**步骤 1：生成沉浸式网格**
+```bash
+/root/VegaFEM/build/utilities/immersionMesher /root/VegaFEM/models/selfIntersecting/yeahright/yeahright.obj /root/VegaFEM/models/selfIntersecting/yeahright/yeahright.veg -o yeahright-im.veg -w yeahright-im.interp
+```
+
+**步骤 2：使用 ARAP 编辑形状**
+```bash
+/root/VegaFEM/build/utilities/editShapeARAP yeahright-arap.config
+```
+
+---
+
+## 常用工具说明
+
+### 1. interactiveDeformableSimulator
+
+**用途：** 交互式可变形物体仿真器
+
+**使用方法：**
+```bash
+interactiveDeformableSimulator [config_file]
+```
+
+**功能：** 实时仿真 3D 可变形物体，支持多种求解器和材料模型。
+
+### 2. clothBW-rt
+
+**用途：** 布料仿真器（Baraff & Witkin 算法）
+
+**使用方法：**
+```bash
+clothBW-rt [config_file]
+```
+
+**功能：** 实时仿真布料物理，支持拉伸、剪切和弯曲力。
+
+### 3. editShapeARAP
+
+**用途：** ARAP（As-Rigid-As-Possible）形状编辑器
+
+**使用方法：**
+```bash
+editShapeARAP [config_file]
+```
+
+**功能：** 使用 ARAP 算法交互式编辑 3D 形状。
+
+### 4. computeDistanceField
+
+**用途：** 计算距离场
+
+**使用方法：**
+```bash
+computeDistanceField [input.obj] [resolutionX] [resolutionY] [resolutionZ] [options]
+```
+
+**功能：** 为 3D 模型计算距离场，用于网格生成。
+
+### 5. isosurfaceMesher
+
+**用途：** 等值面网格生成器
+
+**使用方法：**
+```bash
+isosurfaceMesher [distance_field] [isovalue] [output.obj]
+```
+
+**功能：** 从距离场生成等值面网格。
+
+### 6. tetMesher
+
+**用途：** 四面体网格生成器
+
+**使用方法：**
+```bash
+tetMesher [input.obj] [output.veg] [options]
+```
+
+**功能：** 为表面网格生成四面体网格。
+
+### 7. virtualTetsDriver
+
+**用途：** 虚拟四面体驱动器
+
+**使用方法：**
+```bash
+virtualTetsDriver [tet.veg] [surface.obj] [output.veg] [options]
+```
+
+**功能：** 为几乎自相交的表面创建虚拟四面体网格。
+
+### 8. immersionMesher
+
+**用途：** 沉浸式网格生成器
+
+**使用方法：**
+```bash
+immersionMesher [input.obj] [input.veg] [options]
+```
+
+**功能：** 为自相交表面创建沉浸式四面体网格。
+
+---
+
+## 配置文件格式说明
+
+VegaFEM 使用基于文本的配置文件格式，配置参数以 `*` 开头。
+
+### 常用配置参数
+
+#### 求解器相关
+- `*solver`: 求解器类型（implicitBackwardEuler, implicitNewmark, symplecticEuler, Euler, centralDifferences）
+- `*timestep`: 时间步长
+- `*syncTimestepWithGraphics`: 是否与图形同步时间步长
+
+#### 变形对象相关
+- `*deformableObjectMethod`: 变形对象方法（StVK, InvertibleFEM, CLFEM, LinearFEM）
+- `*invertibleMaterial`: 可逆材料（StVK, neoHookean, MooneyRivlin）
+- `*deformableObjectCompliance`: 变形对象柔顺度
+- `*inversionThreshold`: 反转阈值
+- `*enableCompressionResistance`: 启用压缩阻力
+- `*compressionResistance`: 压缩阻力值
+
+#### 阻尼相关
+- `*dampingMassCoef`: 质量阻尼系数
+- `*dampingStiffnessCoef`: 刚度阻尼系数
+
+#### 网格相关
+- `*volumetricMeshFilename`: 体积网格文件名
+- `*renderingMeshFilename`: 渲染网格文件名
+- `*secondaryRenderingMeshFilename`: 次级渲染网格文件名
+- `*secondaryRenderingMeshInterpolationFilename`: 次级渲染网格插值文件名
+- `*fixedVerticesFilename`: 固定顶点文件名
+
+#### 相机相关
+- `*cameraRadius`: 相机半径
+- `*cameraLongitude`: 相机经度
+- `*cameraLattitude`: 相机纬度
+- `*focusPositionX/Y/Z`: 焦点位置
+
+#### 多线程相关
+- `*numInternalForceThreads`: 内部力线程数
+- `*numSolverThreads`: 求解器线程数
+
+#### 其他
+- `*lightingConfigFilename`: 光照配置文件名
+- `*frequencyScaling`: 频率缩放
+
+---
+
+## 材料模型说明
+
+### 1. StVK (St. Venant-Kirchhoff)
+- 描述：线性弹性材料，适用于小变形
+- 特点：计算简单，稳定性好
+
+### 2. neoHookean
+- 描述：非线性弹性材料，适用于中等变形
+- 特点：比 StVK 更准确，适用于大变形
+
+### 3. Mooney-Rivlin
+- 描述：橡胶类材料模型
+- 特点：适用于橡胶等超弹性材料
+
+---
+
+## 求解器说明
+
+### 1. implicitBackwardEuler（隐式后向欧拉）
+- 描述：一阶隐式积分器
+- 特点：稳定性好，适合实时仿真
+
+### 2. implicitNewmark（隐式 Newmark）
+- 描述：二阶隐式积分器
+- 特点：精度高，适合需要高精度的仿真
+
+### 3. symplecticEuler（辛欧拉）
+- 描述：半隐式积分器
+- 特点：能量守恒性好
+
+### 4. Euler（显式欧拉）
+- 描述：一阶显式积分器
+- 特点：计算快，但稳定性差，需要小时间步长
+
+### 5. centralDifferences（中心差分）
+- 描述：二阶显式积分器
+- 特点：精度比 Euler 高，但稳定性仍然较差
+
+---
+
+## 性能优化建议
+
+1. **多线程：** 使用 `*numInternalForceThreads` 和 `*numSolverThreads` 参数启用多线程
+2. **时间步长：** 根据模型复杂度调整时间步长，简单模型可以使用较大的时间步长
+3. **求解器选择：** 对于实时仿真，推荐使用 implicitBackwardEuler；对于离线仿真，可以使用 implicitNewmark
+4. **材料模型：** StVK 计算最快，neoHookean 和 Mooney-Rivlin 更准确但计算更慢
+
+---
+
+## 故障排除
+
+### 问题 1：找不到网格文件
+**解决方案：** 确保配置文件中的路径正确，可以使用绝对路径或相对于配置文件的相对路径。
+
+### 问题 2：仿真不稳定
+**解决方案：**
+- 减小时间步长
+- 增加阻尼系数
+- 检查网格质量
+
+### 问题 3：性能太慢
+**解决方案：**
+- 启用多线程
+- 使用更简单的材料模型（如 StVK）
+- 使用更简单的求解器（如 implicitBackwardEuler）
+- 减少网格分辨率
+
+---
+
+## 参考资源
+
+- VegaFEM 官方网站：http://www.jernejbarbic.com/vega
+- 论文：Baraff and Witkin, "Large Steps in Cloth Simulation", SIGGRAPH 1998
+- 论文：Pritchard, "Implementing Baraff & Witkin's Cloth Simulation", 2003
+
+---
+
+## 总结
+
+VegaFEM 提供了丰富的示例，涵盖了从简单的梁模型到复杂的龙模型的各种仿真场景。建议从简单的模型（如 beam3_tet 或 turtle）开始学习，逐步掌握 VegaFEM 的各种功能和配置选项。
