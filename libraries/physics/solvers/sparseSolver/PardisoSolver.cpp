@@ -412,9 +412,13 @@ MKL_INT PardisoSolver::SolveLinearSystemDirectIterative(const SparseMatrix * A, 
   return error;
 }
 
+}//namespace nexdynfem
+
 #else
 
 // Pardiso Solver is not available
+
+namespace nexdynfem {
 
 PardisoSolver::PardisoSolver(const SparseMatrix * A, int numThreads_, matrixType mtype_, reorderingType rtype_, int directIterative_, int verbose_): numThreads(numThreads_), mtype(mtype_), rtype(rtype_), directIterative(directIterative_), verbose(verbose_)
 {
@@ -431,31 +435,30 @@ void PardisoSolver::DisabledSolverError()
   throw 1;
 }
 
-MKL_INT PardisoSolver::FactorMatrix(const SparseMatrix * A)
+int PardisoSolver::FactorMatrix(const SparseMatrix * A)
 {
   DisabledSolverError();
   return 1;
 }
 
-MKL_INT PardisoSolver::SolveLinearSystem(double * x, const double * rhs)
+int PardisoSolver::SolveLinearSystem(double * x, const double * rhs)
 {
   DisabledSolverError();
   return 1;
 }
 
-MKL_INT PardisoSolver::SolveLinearSystemMultipleRHS(double * x, const double * rhs, int numRHS)
+int PardisoSolver::SolveLinearSystemMultipleRHS(double * x, const double * rhs, int numRHS)
 {
   DisabledSolverError();
   return 1;
 }
 
-MKL_INT PardisoSolver::SolveLinearSystemDirectIterative(const SparseMatrix * A, double * x, const double * rhs)
+int PardisoSolver::SolveLinearSystemDirectIterative(const SparseMatrix * A, double * x, const double * rhs)
 {
   DisabledSolverError();
   return 1;
 }
-
-#endif
-
 
 }//namespace nexdynfem
+
+#endif

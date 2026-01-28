@@ -74,7 +74,7 @@ find_package(TBB CONFIG REQUIRED)
 target_link_libraries(${PROJECT_NAME} PUBLIC TBB::tbb TBB::tbbmalloc $<$<PLATFORM_ID:Windows>:TBB::tbbmalloc_proxy>)
 target_compile_definitions(${PROJECT_NAME} PUBLIC NEXDYNFEM_USE_TBB)
 ### MKL
-set(MKL_ARCH intel64)           # intel64 ia32 
+set(MKL_ARCH intel64)           # intel64 ia32
 set(MKL_INTERFACE lp64)         # lp64 ilp64 https://en.wikipedia.org/wiki/64-bit_computing#64-bit_data_models
 set(MKL_THREADING sequential)   # intel_thread gnu_thread pgi_thread tbb_thread sequential
 set(MKL_LINK static)            # static dynamic sdl # Must be static otherwise largeModalDeformationFactory fails on calculating linear modes
@@ -83,6 +83,12 @@ find_package(MKL CONFIG)
 if(MKL_FOUND)
   target_link_libraries(${PROJECT_NAME} PRIVATE MKL::MKL)
   target_compile_definitions(${PROJECT_NAME} PUBLIC PARDISO_SOLVER_IS_AVAILABLE)
+else()
+  # Fallback to OpenBLAS and LAPACK if MKL is not available
+  find_package(OpenBLAS CONFIG REQUIRED)
+  target_link_libraries(${PROJECT_NAME} PRIVATE OpenBLAS::OpenBLAS)
+  find_package(LAPACK REQUIRED)
+  target_link_libraries(${PROJECT_NAME} PRIVATE ${LAPACK_LIBRARIES})
 endif()
 ### ARPACK
 find_package(arpackng CONFIG)

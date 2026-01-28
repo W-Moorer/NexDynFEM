@@ -121,7 +121,9 @@ void ReducedMassSpringSystemForceModel::GetTangentStiffnessMatrixHelper(
 
   // project matrix
   #if USE_MKL_SPARSE_BLAS
-    mkl_set_num_threads(8);
+    #if defined(PARDISO_SOLVER_IS_AVAILABLE)
+      mkl_set_num_threads(8);
+    #endif
     //PerformanceCounter counter;
 
     int upperTriangleOnly=1;
